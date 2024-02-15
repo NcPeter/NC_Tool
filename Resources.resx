@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Bild01_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild01_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild01_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild02_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild02_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild03_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild03_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild04_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild04_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild05_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild05_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild06_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild06_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild07_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild07_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild08_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild08_11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild09_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild09_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_12.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild10_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild10_13.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild11_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild11_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild12_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild12_12.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild13_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild13_12.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild14_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild14_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild14_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild14_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild14_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild14_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild14_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild14_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild14_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild14_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild14_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild14_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_01_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_01_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_02_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_02_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_03_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_03_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_04_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_04_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_06_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_06_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_07_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_07_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_10_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_10_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild15_11_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild15_11_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_06.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_08.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_10.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bild16_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Bild16_12.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flagge_de" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\flagge_de.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flagge_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\flagge_en.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Logo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Suche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Suche.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nctool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\nctool.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ansicht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pictures\Ansicht.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
