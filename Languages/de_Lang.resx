@@ -1,0 +1,1737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Taschen</value>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>Anzahl der Spalten</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>Abst. Y</value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>Abst. X</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>Startp. Y</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>Startp. X</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>Bohrbild auf Linien</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>Öffnungswinkel in Grad</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>Seitenlänge (mm)</value>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>Teilkreisdurchmesser (mm)</value>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>Mitte in Y (mm)</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Zapfen</value>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>Mitte in X (mm)</value>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>Schriftart</value>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>Schrifthöhe in mm</value>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>Eingabetext</value>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>Außengewinde</value>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value>Innengewinde</value>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>Gewindedurchmesser (mm)</value>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value>Versatz in -Z (mm)</value>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>Gewindetiefe (mm)</value>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value>Gewindesteigung</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Nuten fräsen</value>
+  </data>
+  <data name="String120" xml:space="preserve">
+    <value>Ellipsen als Polyline darstellen</value>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value>Datei öffnen</value>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>Nuten</value>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value>Planfräsen einer Oberfläche mit programmiertem Vorschub Zeilenförmig über das Werkstück.
+1. Die Maschine fährt das Werkzeug zum Startpunkt.
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+3. Die Außenkanten werden bearbeitet.
+4. Die Oberfläche wird abgezeilt.
+5. Danach wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>Sicherheits-Abstand:
+Abstand zwischen Werkzeugspitze und Werkstückoberfläche für die Positionierung am
+Zyklus-Anfang und am Zyklus-Ende.</value>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe, auf die die Fläche gefräst werden soll.</value>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>Zustellung in Z:
+Maß, um welches das Werkzeug jeweils maximal zugestellt wird.</value>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value>Vorschub Zustellung:
+Verfahrgeschwindigkeit des Werkzeugs beim Fahren vom Sicherheits-Abstand auf die
+Frästiefe in mm/min.</value>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>Abmessung in X-Richtung:
+Die Abmessung des Rohmaterial bzw. der zu bearbeitenden Fläche vom Nullpunkt in X-Richtung.</value>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>Abmessung in Y-Richtung:
+Die Abmessung des Rohmaterial bzw. der zu bearbeitenden Fläche vom Nullpunkt in Y-Richtung.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Bohrbilder</value>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>Vorschub fräsen:
+Verfahrgeschwindigkeit des Werkzeugs beim Fräsen in mm/min.</value>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>Schräge Flächen mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Nullpunkt und versetzt
+    dann zum Startpunkt, welcher von der zu fräsenden Fläche abhängt.
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+3. Danach wird die schräge Fläche abgezeilt, wobei Restmaterial mit entfernt wird.
+4. Nach jeder Bewegung in X oder Y erfolgt wieder eine Zustellung in Z, bis zur finalen Tiefe.
+Tip: Zustellung in Z bestimmt die Abstufung der Fläche. Radius oder Kugelfräser verwenden.</value>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>Abmessung in X-Richtung:
+Die Abmessung des Materials, bzw. der Fräsrichtung in X.</value>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>Abmessung in Y-Richtung:
+Die Abmessung des Materials, bzw. der Fräsrichtung in Y.</value>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>Winkel:
+Hier den Winkel der schrägen Fläche in Grad eingeben.
+Immer ausgehend vom rechten Winkel (90°) zum Werkstück hin angeben!</value>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value>Fräsrichtung in X</value>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>Fräsrichtung in Y</value>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value>Tiefloch bohren.
+1. Die Maschine fährt das Werkzeug zum Startpunkt.
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren,
+   dabei wird immer nur eine programmierte Zustellung gebohrt.
+   Der Bohrer wird danach zum Spanbruch angehoben.
+   Ab einer bestimmten Tiefe wird der Bohrer zusätzlich zum ausspanen angehoben.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value>Bohriefe:
+Die Tiefe von Werkstückoberfläche (Z = 0) bis Bohrerspitze.</value>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>Vorschub Zustellung:
+Verfahrgeschwindigkeit des Werkzeugs beim Fahren vom Sicherheits-Abstand auf die
+Bohrtiefe in mm/min.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Sonderzyklen</value>
+  </data>
+  <data name="String140" xml:space="preserve">
+    <value>Bohrtiefe Spanbruch:
+Zustellung in Z, nach der ein Spanbruch durchgeführt wird.</value>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>Rückzug bis Spanbruch:
+Wert, um den das Werkzeug nach Spanbrechen zurückfährt.</value>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value>Ausspantiefe:
+Ab dieser Tiefe wird nach jeder Zustellung bis 2mm unter Z=0 ausgespant.</value>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>Mitte in X:
+Der Abstand der Bohrung in X-Richtung vom Antastpunkt.
+Kann auch negative Werte erhalten.</value>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>Mitte in Y:
+Der Abstand der Bohrung in Y-Richtung vom Antastpunkt.
+Kann auch negative Werte erhalten.</value>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>Werstücklänge in X:
+Die Länge in X-Richtung vom Antastpunkt.</value>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value>Werstückbreite in Y:
+Die Breite in Y-Richtung vom Antastpunkt.</value>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value>Ein Metrisches Innengewinde fräsen.
+1. Die Maschine fährt das Werkzeug zum Mittelpunkt des Gewindes.
+2. Als erstes wird der Senkvorgang ausgeführt.
+3. Danach wird das Gewinde mit programmiertem Vorschub.
+   und Tiefe mit einer Helixbahn ausgefräst.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.</value>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>Ein Metrisches Aussengewinde fräsen.
+1. Die Maschine fährt das Werkzeug zum Mittelpunkt des Gewindes.
+2. Versetzt dann in X (Radius + Sicherheitsabstand).
+3. Danach wird das Gewinde mit programmiertem Vorschub.
+   und Tiefe mit einer Helixbahn gefräst.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.</value>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value>Gewindedurchmesser:
+Frei wählbar, wenn es mit der Steigung passt.</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Planfräsen</value>
+  </data>
+  <data name="String150" xml:space="preserve">
+    <value>Gewindesteigung:
+Abstand von Gewindegang zu Gewindegang.
+Entspricht dem Eintauchen in Z- in mm pro Umdrehung.</value>
+  </data>
+  <data name="String151" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die das Gewinde gefräst werden soll.
+
+Es wird ein Vorbohren auf (Tiefe + 2mm) empfohlen!
+Idealerweise wird ein Bohrer verwendet, der dem Kerndurchmesser entspricht.</value>
+  </data>
+  <data name="String152" xml:space="preserve">
+    <value>Versatz in Z-:
+Abstand zwischen Werkstückoberfläche und Gewinde.
+Zum Beispiel bei einem Gewinde in einer Tasche.</value>
+  </data>
+  <data name="String153" xml:space="preserve">
+    <value>Mitte in X:
+Der Abstand des Gewindes in X-Richtung vom Antastpunkt.</value>
+  </data>
+  <data name="String154" xml:space="preserve">
+    <value>Mitte in Y:
+Der Abstand des Gewindes in Y-Richtung vom Antastpunkt.</value>
+  </data>
+  <data name="String155" xml:space="preserve">
+    <value>Eine Rechtecktasche mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Startpunkt (Taschenmitte).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+    Dabei wird eine pendelnde Bewegung in X oder Y ausgeführt.
+3. Danach wird die Tasche von Innen nach Außen ausgeräumt.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String156" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die die Rechtecktasche gefräst werden soll.</value>
+  </data>
+  <data name="String157" xml:space="preserve">
+    <value>Abmessung in X:
+Die Abmessung der Tasche in X-Richtung.</value>
+  </data>
+  <data name="String158" xml:space="preserve">
+    <value>Abmessung in Y:
+Die Abmessung der Tasche in Y-Richtung.</value>
+  </data>
+  <data name="String159" xml:space="preserve">
+    <value>Eckenradius:
+Eckenradius fräsen. Der Eckenradius wird immer dem Werkzeugradius entsprechen
+wenn der angegebene Wert kleiner oder gleich dem Werkzeugradius ist.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Schräge / Fase</value>
+  </data>
+  <data name="String160" xml:space="preserve">
+    <value>nur schlichten:
+Ist diese Option gewählt, entfällt das Ausräumen der Tasche.
+Das Programm nimmt an, im Inneren der Tasche befindet sich kein Material mehr.
+
+Es wird nur das bei 'Schlichtaufmaß' angegebene Maß in X/Y entfernt.
+Dabei positioniert die Maschine das Werkzeug kurz vor der Wandung + Schlichtaufmaß.</value>
+  </data>
+  <data name="String161" xml:space="preserve">
+    <value>Schlichtaufmaß:
+Mit dem Schlichtaufmaß wird angegeben, wie viel Material von der Wand der Tasche
+in X und Y entfernt werden muss um das gewünsche Fertigmaß der Tasche zu erhalten.</value>
+  </data>
+  <data name="String162" xml:space="preserve">
+    <value>Einen Rechteckzapfen mit programmierten Vorschüben und Abmessungen fräsen.
+1. Muss entsprechend viel Rohmaterial um den Zapfen entfernt werden,
+    (Angabe Aufmaß Rohteil) fährt die Maschine das Werkzeug zum entsprechenden
+    Startpunkt um das Rohmaterial um den Zapfen zu entfernen.
+2. Danach wird der Zapfen auf die gewünschten Maße gefräst.
+3. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String163" xml:space="preserve">
+    <value>Aufmaß Rohteil in X (mm)</value>
+  </data>
+  <data name="String164" xml:space="preserve">
+    <value>Aufmaß Rohteil in Y (mm)</value>
+  </data>
+  <data name="String165" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die der Rechteckzapfen gefräst werden soll.</value>
+  </data>
+  <data name="String166" xml:space="preserve">
+    <value>Abmessung in X:
+Die Abmessung des Zapfen in X-Richtung.</value>
+  </data>
+  <data name="String167" xml:space="preserve">
+    <value>Abmessung in Y:
+Die Abmessung des Zapfen in Y-Richtung.</value>
+  </data>
+  <data name="String168" xml:space="preserve">
+    <value>Eckenradius:
+Eckenradius fräsen. Wird kein Eckenradius angegeben (Eingabe = 0), wird der Zapfen scharfkantig ausgeführt.</value>
+  </data>
+  <data name="String169" xml:space="preserve">
+    <value>Aufmaß Rohteil in X:
+Mit dem Aufmaß für das Rohteil wird angegeben, wie viel Material pro Seite in X entfernt
+werden muss, um das gewünsche Fertigmaß des Zapfen zu erhalten. Ist immer &gt;= 0.
+Hier das größte Aufmaß einer Seite eingeben!
+Tipp: Zapfen nur schlichten, Aufmaß kleiner Werkzeugradius eingeben.</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Tiefloch bohren</value>
+  </data>
+  <data name="String170" xml:space="preserve">
+    <value>Aufmaß Rohteil in Y:
+Mit dem Aufmaß für das Rohteil wird angegeben, wie viel Material pro Seite in Y entfernt
+werden muss, um das gewünsche Fertigmaß des Zapfen zu erhalten. Ist immer &gt;= 0.
+Hier das größte Aufmaß einer Seite eingeben!
+Tipp: Zapfen nur schlichten, Aufmaß kleiner Werkzeugradius eingeben.</value>
+  </data>
+  <data name="String171" xml:space="preserve">
+    <value>Durchmesser Rohteil (mm)</value>
+  </data>
+  <data name="String172" xml:space="preserve">
+    <value>Durchmesser Fertigteil (mm)</value>
+  </data>
+  <data name="String173" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die die Kreistasche gefräst werden soll.</value>
+  </data>
+  <data name="String174" xml:space="preserve">
+    <value>nur schlichten:
+Ist diese Option gewählt, entfällt das Ausräumen der Tasche.
+Das Programm nimmt an, im Inneren der Tasche befindet sich kein Material mehr.
+
+Es wird nur das bei 'Druchmesser Rohteil' angegebene Maß in X/Y entfernt.
+Dabei positioniert die Maschine das Werkzeug kurz vor der Wandung + Schlichtaufmaß.</value>
+  </data>
+  <data name="String175" xml:space="preserve">
+    <value>Druchmesser Rohteil:
+Mit dem Druchmesser Rohteil wird angegeben, wie viel Material von der Wand der Tasche
+entfernt werden muss um den gewünschen Fertigdurchmesser der Tasche zu erhalten.
+Dieser Parameter muss nur angegeben werden, wenn 'nur schlichten' aktiviert ist.
+Hinweis: Bei Rohteildurchmesser kleiner 3 * Fräserdurchmesser wird zuerst geschruppt!</value>
+  </data>
+  <data name="String176" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die der Kreiszapfen gefräst werden soll.</value>
+  </data>
+  <data name="String177" xml:space="preserve">
+    <value>Druchmesser Rohteil:
+Mit dem Druchmesser Rohteil wird angegeben, wie viel Material von der Wand des Zapfen
+entfernt werden muss um den gewünschen Fertigdurchmesser zu erhalten.</value>
+  </data>
+  <data name="String178" xml:space="preserve">
+    <value>Fertigteildurchmesser:
+Der Durchmesser des fertigen Kreiszapfen.</value>
+  </data>
+  <data name="String179" xml:space="preserve">
+    <value>Aufmaß Rohteil in X:
+Wird ein Aufmaß für das Rohteil wird angegeben, wird dieses Material pro Seite in X bis auf die Frästiefe um den Zapfen entfernt. Es wird zunächst ein Rechteckzapfen und danach der Kreiszapfen gefräst. Eine Angabe von 0 in X und Y Richtung, schaltet diese Option aus!</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Gewinde fräsen</value>
+  </data>
+  <data name="String180" xml:space="preserve">
+    <value>Aufmaß Rohteil in Y:
+Wird ein Aufmaß für das Rohteil wird angegeben, wird dieses Material pro Seite in Y bis auf die Frästiefe um den Zapfen entfernt. Es wird zunächst ein Rechteckzapfen und danach der Kreiszapfen gefräst. Eine Angabe von 0 in X und Y Richtung, schaltet diese Option aus!</value>
+  </data>
+  <data name="String181" xml:space="preserve">
+    <value>Eine Nut mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Startpunkt (Nutnmitte).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+    Dabei wird eine pendelnde Bewegung in X oder Y ausgeführt.
+3. Danach wird die Nut an der Kontur ausgeräumt.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String182" xml:space="preserve">
+    <value>Verdrehwinkel in Grad</value>
+  </data>
+  <data name="String183" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die die Nut gefräst werden soll.</value>
+  </data>
+  <data name="String184" xml:space="preserve">
+    <value>Abmessung in X:
+Die Abmessung der Nut in X-Richtung.</value>
+  </data>
+  <data name="String185" xml:space="preserve">
+    <value>Abmessung in Y:
+Die Abmessung der Nut in Y-Richtung.</value>
+  </data>
+  <data name="String186" xml:space="preserve">
+    <value>Verdrehwinkel:
+Damit kann die Nut mit in einem bestimmten Winkel in ihrer Lage verdreht werden.
+Positive Werte drehen gegen Uhrzeigersinn, negative Werte im Uhrzeigersinn.</value>
+  </data>
+  <data name="String187" xml:space="preserve">
+    <value>Eine Kreistasche mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Startpunkt (Taschenmitte).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+    Dabei wird eine kreisförmige Bewegung in X und Y (Helix) ausgeführt.
+3. Danach wird die Tasche von Innen nach Außen ausgeräumt.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String188" xml:space="preserve">
+    <value>Einen Kreiszapfen mit programmierten Vorschüben und Abmessungen fräsen.
+1. Muss entsprechend viel Rohmaterial um den Zapfen entfernt werden,
+    (Angabe Aufmaß Rohteil) fährt die Maschine das Werkzeug zum entsprechenden
+    Startpunkt um das Rohmaterial um den Zapfen zu entfernen.
+2. Dabei wird zunächst ein Rechteckzapfen gefräst, der anschließend zu
+    einem Kreiszapfen geschlichtet wird. Ohne eine Angabe bei 'Aufmaß Rohteil'
+    wird nur der Zapfen von den Durchmessern Rohteil zu Fertigteil geschlichtet.</value>
+  </data>
+  <data name="String189" xml:space="preserve">
+    <value>Eine Ringnut mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Nullpunkt (Mitte Ringnut)
+    und versetzt dann zum Startpunkt (Rand des Innendurchmesser).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+    Dabei wird eine kreisförmige Bewegung in X und Y (Helix) ausgeführt.
+3. Danach wird die Ringnut bis an den Rand des Außendurchmesser ausgeräumt.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Rechtecktasche</value>
+  </data>
+  <data name="String190" xml:space="preserve">
+    <value>Eine Bohrtabelle mit programmierten Bohrpositionen abarbeiten.
+1. Die Maschine fährt das Werkzeug im Eilgang und im Sicherheitsabstand,
+    vom Nullpunkt zur ersten Bohrposition der Bohrtabelle.
+2. Danach wird an diese Stelle mit programmiertem Vorschub und Tiefe gebohrt.
+3. Anschließend wird das Werkzeug wieder auf Sicherheitsabstand verfahren und
+   die nächste Position in der Bohrtabelle im Eilgang angefahren.
+Tip: Nicht benötigte Positionen der Tabelle einfach frei lassen.</value>
+  </data>
+  <data name="String191" xml:space="preserve">
+    <value>Eine Anzahl von Bohrungen, auf einem Durchmesser angeordnet, bohren.
+1. Die Maschine fährt das Werkzeug im Eilgang und im Sicherheitsabstand,
+    vom Nullpunkt zur ersten Bohrposition auf dem Lochkreis.
+2. Danach wird an diese Stelle mit programmiertem Vorschub und Tiefe gebohrt.
+3. Anschließend wird das Werkzeug wieder auf Sicherheitsabstand verfahren und
+   die nächste Position auf dem Lochkreis im Eilgang angefahren.
+Dieser Vorgeng wiederholt sich, bis alle Löcher auf dem Lochkreis gebohrt sind.</value>
+  </data>
+  <data name="String192" xml:space="preserve">
+    <value>Eine Dichtungsnut mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Nullpunkt (Mitte Nut)
+    und versetzt dann zum Startpunkt (innerer Rand der Kontur).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+    Dabei wird eine pendelnde Bewegung in X oder Y ausgeführt.
+3. Danach wird die Nut bis an den Rand der Außenkontur ausgeräumt.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.</value>
+  </data>
+  <data name="String193" xml:space="preserve">
+    <value>Eine Anzahl von Bohrungen, in Zeilen und Spalten angeordnet, bohren.
+1. Die Maschine fährt das Werkzeug im Eilgang und im Sicherheitsabstand
+    zur ersten Bohrposition.
+2. Danach wird an diese Stelle mit programmiertem Vorschub und Tiefe gebohrt.
+3. Anschließend wird das Werkzeug wieder auf Sicherheitsabstand verfahren und
+   die nächste Bohrposition im Eilgang angefahren.
+Dieser Vorgeng wiederholt sich, bis alle Bohrungen gebohrt sind.</value>
+  </data>
+  <data name="String194" xml:space="preserve">
+    <value>Einen Buchstaben oder einen Schriftzug fräsen.
+1. Die Maschine fährt das Werkzeug zum Startpunkt (1. Buchstabe).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+3. Danach wird der Buchstabe oder der Schriftzug in einer Mittel-.
+   punktsbahn gefräst (Schriftbreite = Fräserdurchmesser).
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String195" xml:space="preserve">
+    <value>2D DXF-Daten gravieren.
+1. Die Maschine fährt das Werkzeug zum Startpunkt.
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+3. Danach werden die einzelnen Elemente in einer Mittelpunktsbahn gefräst.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.</value>
+  </data>
+  <data name="String196" xml:space="preserve">
+    <value>Eine Nut mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Startpunkt (Nutnmitte).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+    Dabei wird eine pendelnde Bewegung in X oder Y ausgeführt.
+3. Danach wird die Nut an der Kontur ausgeräumt.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String197" xml:space="preserve">
+    <value>Startpunkt in X-Richtung:
+Hier wird der Startpunkt der ersten Bohrung vom Nullpunkt aus angeben.</value>
+  </data>
+  <data name="String198" xml:space="preserve">
+    <value>Startpunkt in Y-Richtung:
+Hier wird der Startpunkt der ersten Bohrung vom Nullpunkt aus angeben.</value>
+  </data>
+  <data name="String199" xml:space="preserve">
+    <value>Abstand in X-Richtung:
+Hier wird der Abstand der Bohrungen in X-Richtung angeben.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Kreistasche</value>
+  </data>
+  <data name="String200" xml:space="preserve">
+    <value>Abstand in Y-Richtung:
+Hier wird der Abstand der Bohrungen in Y-Richtung angeben.</value>
+  </data>
+  <data name="String201" xml:space="preserve">
+    <value>Anzahl der Spalten:
+Hier wird die Anzahl der Spalten angeben.</value>
+  </data>
+  <data name="String202" xml:space="preserve">
+    <value>Anzahl der Zeilen:
+Hier wird die Anzahl der Zeilen angeben.</value>
+  </data>
+  <data name="String203" xml:space="preserve">
+    <value>Verdrehwinkel:
+Damit kann das Bohrbild mit einem bestimmten Winkel in seiner Lage verdreht werden.
+Gedreht wird um die Koordinate der Startbohrung.
+Positive Werte drehen gegen Uhrzeigersinn, negative Werte im Uhrzeigersinn.</value>
+  </data>
+  <data name="String204" xml:space="preserve">
+    <value>Nutbreite in mm</value>
+  </data>
+  <data name="String205" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die die Ringnut gefräst werden soll.</value>
+  </data>
+  <data name="String206" xml:space="preserve">
+    <value>Außendurchmesser:
+Hier den Außendruchmesser der Ringnut angeben!</value>
+  </data>
+  <data name="String207" xml:space="preserve">
+    <value>Innendurchmesser:
+Hier den Innendurchmesser der Ringnut angeben!</value>
+  </data>
+  <data name="String208" xml:space="preserve">
+    <value>Mitte in X:
+Der Abstand der Nut in X-Richtung vom Antastpunkt.
+
+Bei Eingabe von 0.0 liegt die Mitte im Zentrum des Teilkreises!</value>
+  </data>
+  <data name="String209" xml:space="preserve">
+    <value>Mitte in Y:
+Der Abstand der Nut in Y-Richtung vom Antastpunkt.
+
+Bei Eingabe von 0.0 liegt die Mitte im Zentrum des Teilkreises!</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Rechteckzapfen</value>
+  </data>
+  <data name="String210" xml:space="preserve">
+    <value>Teilkreisdurchmesser:
+Der Radius, der durch die Mitte der Nut verläuft.</value>
+  </data>
+  <data name="String211" xml:space="preserve">
+    <value>Seitenlänge (Nutbreite):
+Hier wird die Breite der Nut eingegeben.</value>
+  </data>
+  <data name="String212" xml:space="preserve">
+    <value>Startwinkel:
+Hier wird der Startwinkel, vom Radiusmittelpunkt zum rechten Ende der Nut angegeben.
+Dabei wird gegen den Uhrzeigersinn gerechnet.</value>
+  </data>
+  <data name="String213" xml:space="preserve">
+    <value>Öffnungswinkel:
+Hier wird der Öffnungswinkel, vom rechten Ende der Nut zum linken Ende der Nut angegeben.
+Dabei wird gegen den Uhrzeigersinn gerechnet.</value>
+  </data>
+  <data name="String214" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe auf die die Dichtungsnut gefräst werden soll.</value>
+  </data>
+  <data name="String215" xml:space="preserve">
+    <value>Abmessung aussen in X-Richtung:
+Die Abmessung der Dichtungsnut aussen, in X-Richtung.</value>
+  </data>
+  <data name="String216" xml:space="preserve">
+    <value>Abmessung aussen in Y-Richtung:
+Die Abmessung der Dichtungsnut aussen, in Y-Richtung.</value>
+  </data>
+  <data name="String217" xml:space="preserve">
+    <value>Nutbreite:
+Hier die Nutbreite eingeben.</value>
+  </data>
+  <data name="String218" xml:space="preserve">
+    <value>Lochkreis Durchmesser:
+Gibt den Durchmesser des Lochkreis an. Der Durchmesser verläuft durch das Zentrum jeder Bohrung.</value>
+  </data>
+  <data name="String219" xml:space="preserve">
+    <value>Anzahl der Bohrungen:
+Hier wird die Anzahl der Bohrungen angegeben, die auf dem Lochkreis auf 360° verteilt werden.
+Hinweis: Es können maximal 12 Bohrungen verwendet werden!</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Kreiszapfen</value>
+  </data>
+  <data name="String220" xml:space="preserve">
+    <value>Startwinkel:
+Startwinkel der ersten Bohrung ausgehend von rechts Mitte des Lochkreis.
+Die Bohrungen werden dann gegen den Uhrzeigersinn verteilt.</value>
+  </data>
+  <data name="String221" xml:space="preserve">
+    <value>Fräserdurchmesser:
+Gefräst wird jeweils eine Mittelpunkbahn in der Mitte des Buchstaben.
+Empfohlen wird ein kleiner Fräser, ein Gavierfräser oder ein Kugelfräser.</value>
+  </data>
+  <data name="String222" xml:space="preserve">
+    <value>Spindeldrehzahl:
+Es sollte hier auf Grund des kleinen Fräserdurchmessers, eine hohe Drehzahl gewählt werden.</value>
+  </data>
+  <data name="String223" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe, auf die die Schrift gefräst werden soll.</value>
+  </data>
+  <data name="String224" xml:space="preserve">
+    <value>Zustellung in Z:
+Maß, um welches das Werkzeug jeweils maximal bei einem Durchgang zugestellt wird, um die finale Tiefe zu erreichen.</value>
+  </data>
+  <data name="String225" xml:space="preserve">
+    <value>Buchstabe oder Text:
+Hier kann wahlweise ein Buchstabe, Ziffern, Sonderzeichen oder ein kurzer Text eingegeben werden.
+
+Erlaubte Sonderzeichen sind:
+. &amp; ' @ \\\\ } ) ] ; , $ \\ = ! / &gt; # &lt; - { ( [ | % + ? ^ ; *</value>
+  </data>
+  <data name="String226" xml:space="preserve">
+    <value>Schrifthöhe:
+Hier wird die Schrifthöhe in mm eingegeben!</value>
+  </data>
+  <data name="String227" xml:space="preserve">
+    <value>Schriftart:
+Hier die Schriftart ausgewählt werden!</value>
+  </data>
+  <data name="String228" xml:space="preserve">
+    <value>Fräserdurchmesser:
+Gefräst wird jeweils eine Mittelpunkbahn in der Mitte der Linien.
+Empfohlen wird ein kleiner Fräser, ein Gavierfräser oder ein Kugelfräser.</value>
+  </data>
+  <data name="String229" xml:space="preserve">
+    <value>Finale Tiefe:
+Die Tiefe, auf die die Linien gefräst werden sollen.</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Nut</value>
+  </data>
+  <data name="String230" xml:space="preserve">
+    <value>Fräsmethode</value>
+  </data>
+  <data name="String231" xml:space="preserve">
+    <value>Die Code Generierung wurde gestoppt!
+
+Es liegt ein Eingabefehler vor!
+Alle Parameter auf korrekte Eingabe kontrollieren!
+Es dürfen nur Zahlen und das ',' verwendet werden!</value>
+  </data>
+  <data name="String232" xml:space="preserve">
+    <value>Warnmeldung</value>
+  </data>
+  <data name="String233" xml:space="preserve">
+    <value>Die Code Generierung wurde gestoppt!
+
+Es wurde keine Datei ausgewählt!</value>
+  </data>
+  <data name="String234" xml:space="preserve">
+    <value>Die Code Generierung wurde gestoppt!
+
+Die eingelesene DXF-Datei enthält Werte in Z,
+die kleiner oder größer sind.
+Keine reine 2D-Zeichnung !"</value>
+  </data>
+  <data name="String235" xml:space="preserve">
+    <value>( NC-Daten erstellt mit NC-Tool )</value>
+  </data>
+  <data name="String236" xml:space="preserve">
+    <value>( Programm: Planfraesen in X und Y-Richtung )</value>
+  </data>
+  <data name="String237" xml:space="preserve">
+    <value>( Werkzeugdurchmesser </value>
+  </data>
+  <data name="String238" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Fräserdurchmesser muss größer als 0 und kleiner oder gleich 16 mm sein!</value>
+  </data>
+  <data name="String239" xml:space="preserve">
+    <value>Eingabefehler</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Ringnut</value>
+  </data>
+  <data name="String240" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Spindeldrehzahl muss größer als 0 sein!</value>
+  </data>
+  <data name="String241" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Spindeldrehzahl kontrollieren (Eingabewert ist größer als 25000)!</value>
+  </data>
+  <data name="String242" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Sicherheitsabstand zwischen Werkzeug und Werkstückoberfläche sollte größer als 0 sein!</value>
+  </data>
+  <data name="String243" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Sicherheitsabstand zwischen Werkzeug und Werkstückoberfläche muss sich im Arbeitsbereich der Maschine befinden!</value>
+  </data>
+  <data name="String244" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Frästiefe muss kleiner als 0 sein !</value>
+  </data>
+  <data name="String245" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Frästiefe muss sich im Arbeitsbereich der Maschine befinden!</value>
+  </data>
+  <data name="String246" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Zustellung in Z für einen Umlauf muss größer als 0 sein!</value>
+  </data>
+  <data name="String247" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Vorschub in Z muss größer als 0 sein!</value>
+  </data>
+  <data name="String248" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Vorschub in Z ist größer als der maximale Vorschub der Maschine!</value>
+  </data>
+  <data name="String249" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Arbeitsvorschub in X/Y muss größer als 0 sein!</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Dichtungsnut</value>
+  </data>
+  <data name="String250" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Arbeitsvorschub in X/Y ist zu groß!</value>
+  </data>
+  <data name="String251" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Maßangaben für das Rohmaterial in X müssen größer als 0 und kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String252" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Maßangaben für das Rohmaterial in Y müssen größer als 0 und kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String253" xml:space="preserve">
+    <value>( Durchgang </value>
+  </data>
+  <data name="String254" xml:space="preserve">
+    <value>( Programmende )</value>
+  </data>
+  <data name="String255" xml:space="preserve">
+    <value> Zustellung Z=</value>
+  </data>
+  <data name="String256" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Taschenbreiten müssen größer als der Werkzeugdurchmesser sein!</value>
+  </data>
+  <data name="String257" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Eckenradius wurde für dieses Werkzeug zu klein gewählt!</value>
+  </data>
+  <data name="String258" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Eckenradius darf nicht größer sein, als die halbe Taschenbreite!</value>
+  </data>
+  <data name="String259" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Es ist kein Schlichtaufmaß zum schlichten angegeben, der Wert muss größer oder gleich 0 sein!</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Runde Nut</value>
+  </data>
+  <data name="String260" xml:space="preserve">
+    <value>Diffision durch Null nicht möglich!</value>
+  </data>
+  <data name="String261" xml:space="preserve">
+    <value>( Programm: Rechtecktasche schruppen )</value>
+  </data>
+  <data name="String262" xml:space="preserve">
+    <value>( Programm: Rechtecktasche schlichten )</value>
+  </data>
+  <data name="String263" xml:space="preserve">
+    <value>( Programm: Rechteckzapfen fräsen )</value>
+  </data>
+  <data name="String264" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Frästiefe muss kleiner als 0 sein (negative Werte einegeben) und sie muss sich im Arbeitsbereich der Maschine befinden!</value>
+  </data>
+  <data name="String265" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Abmessung für den Zapfen in X müssen größer als 0 sein!</value>
+  </data>
+  <data name="String266" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Abmessung für den Zapfen in X müssen kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String267" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Abmessung für den Zapfen in Y müssen größer als 0 sein!</value>
+  </data>
+  <data name="String268" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Abmessung für den Zapfen in Y müssen kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String269" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Maßangaben für das Rohmaterial in X müssen größer oder gleich 0 sein!</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Bohrtabelle</value>
+  </data>
+  <data name="String270" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Maßangaben für das Rohmaterial in X müssen kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String271" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Maßangaben für das Rohmaterial in Y müssen größer oder gleich 0 sein!</value>
+  </data>
+  <data name="String272" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Maßangaben für das Rohmaterial in Y müssen kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String273" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Durchmesser des Rohteil muss kleiner als der Durchmesser des Fertigteil sein!</value>
+  </data>
+  <data name="String274" xml:space="preserve">
+    <value>Der Durchmesser des Rohteil ist zu klein zum Schlichten, es wird vorher geschruppt!</value>
+  </data>
+  <data name="String275" xml:space="preserve">
+    <value>HINWEIS</value>
+  </data>
+  <data name="String276" xml:space="preserve">
+    <value>( schruppen )</value>
+  </data>
+  <data name="String277" xml:space="preserve">
+    <value>( schlichten )</value>
+  </data>
+  <data name="String278" xml:space="preserve">
+    <value>( Programm: Kreiszapfen fräsen )</value>
+  </data>
+  <data name="String279" xml:space="preserve">
+    <value>( Programm: Kreistasche fräsen )</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Bohrbild Lochkreis</value>
+  </data>
+  <data name="String280" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Durchmesser des Rohteil muss kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String281" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Durchmesser des Fertigteil muss größer als 0 sein!</value>
+  </data>
+  <data name="String282" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Durchmesser des Fertiteil muss kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String283" xml:space="preserve">
+    <value>( Programm: Ringnut fräsen )</value>
+  </data>
+  <data name="String284" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Innendurchmesser kann nicht größer als der Außendurchmesser sein!</value>
+  </data>
+  <data name="String285" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Das ausgewählte Werkzeug passt nicht in die gewünschte Ringnut (kleineres Werkzeug wählen)!</value>
+  </data>
+  <data name="String286" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Maßangaben für den Außendurchmesser müssen kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String287" xml:space="preserve">
+    <value>( Programm: Bohrtabelle )</value>
+  </data>
+  <data name="String288" xml:space="preserve">
+    <value>( Bohrerdurchmesser </value>
+  </data>
+  <data name="String289" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Bohrerdurchmesser muss größer als 0 und kleiner oder gleich 8 mm sein!</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Bohrbild Lochmuster auf Linien</value>
+  </data>
+  <data name="String290" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Bohrtiefe muss kleiner als 0 sein! (negative Werte eingeben)</value>
+  </data>
+  <data name="String291" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Bohrtiefe muss sich im Arbeitsbereich der Maschine befinden!</value>
+  </data>
+  <data name="String292" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+ie Zustellung in Z muss größer als 0 sein!</value>
+  </data>
+  <data name="String293" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Bohrtiefe Spanbruch darf nicht kleiner als 0 sein!</value>
+  </data>
+  <data name="String294" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Rückzug bis Spanbruch darf nicht kleiner als 0 sein!</value>
+  </data>
+  <data name="String295" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Ausspantiefe muss kleiner als 0 sein! (negative Werte eingeben)</value>
+  </data>
+  <data name="String296" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Drehwinkel darf nicht größer als 90° oder kleiner als -90° sein!</value>
+  </data>
+  <data name="String297" xml:space="preserve">
+    <value>( Bohrposition </value>
+  </data>
+  <data name="String298" xml:space="preserve">
+    <value>anfahren )</value>
+  </data>
+  <data name="String299" xml:space="preserve">
+    <value> Grad </value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>NC-Tool (CNC Zyklen zum Bohren und Fräsen)</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Schrift gavieren</value>
+  </data>
+  <data name="String300" xml:space="preserve">
+    <value>( Programm: Bohrbild Lochkreis )</value>
+  </data>
+  <data name="String301" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Bohrposition in Tabellenzeile </value>
+  </data>
+  <data name="String302" xml:space="preserve">
+    <value> liegt für X
+
+außerhalb des Arbeitsbereiches der Maschine!</value>
+  </data>
+  <data name="String303" xml:space="preserve">
+    <value> liegt für Y
+
+außerhalb des Arbeitsbereiches der Maschine!</value>
+  </data>
+  <data name="String304" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Durchmesser muss größer als 0 sein!</value>
+  </data>
+  <data name="String305" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Durchmesser muss sich im Arbeitsbereiches der Maschine befinden!</value>
+  </data>
+  <data name="String306" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Anzahl der Bohrungen muss größer als 0 sein!</value>
+  </data>
+  <data name="String307" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Anzahl der Bohrungen muss kleiner oder gleich 12 sein!</value>
+  </data>
+  <data name="String308" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Winkelangabe muss zwischen 0 und 360° liegen!</value>
+  </data>
+  <data name="String309" xml:space="preserve">
+    <value>( Programm: Dichtungsnut fräsen )</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>2D DXF-Daten gravieren</value>
+  </data>
+  <data name="String310" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Abmessung in X muss kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String311" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Abmessung in Y muss kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String312" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Das ausgewählte Werkzeug passt nicht in die gewünschte Nut (kleineres Werkzeug wählen)!</value>
+  </data>
+  <data name="String313" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Eckenradius darf nicht größer sein, als die halbe Taschenbreite!
+Dies betrifft die Angaben bei 'Abmessung in X' und 'Abmessung in Y'!</value>
+  </data>
+  <data name="String314" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Eckenradius kann nicht kleiner als der Werkzeugradius sein!</value>
+  </data>
+  <data name="String315" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Ein Winkel ab 90° ist keine schräge Fläche mehr!</value>
+  </data>
+  <data name="String316" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Winkel macht keinen sinn, die Schräge ist größer als die Abmessung in Y!</value>
+  </data>
+  <data name="String317" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Winkel macht keinen sinn, die Schräge ist größer als die Abmessung in X!</value>
+  </data>
+  <data name="String318" xml:space="preserve">
+    <value>X-Richtung</value>
+  </data>
+  <data name="String319" xml:space="preserve">
+    <value>Y-Richtung</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Postprozessor für:</value>
+  </data>
+  <data name="String320" xml:space="preserve">
+    <value>( Programm: schräge Fläche in </value>
+  </data>
+  <data name="String321" xml:space="preserve">
+    <value>( Programm: Nut fräsen )</value>
+  </data>
+  <data name="String322" xml:space="preserve">
+    <value>( Verdrehwinkel =</value>
+  </data>
+  <data name="String323" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Nutbreite muss größer als der Werkzeugdurchmesser sein!</value>
+  </data>
+  <data name="String324" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Nutlänge muss kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String325" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Nutbreite muss kleiner als der maximale Fahrweg der Maschine sein!</value>
+  </data>
+  <data name="String326" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Bitte Eingabe überprüfen: Länge ist kleiner als Breite!</value>
+  </data>
+  <data name="String327" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Bei gleichen Seitenlängen bitte Zyklus Rechtecktasche verwenden!</value>
+  </data>
+  <data name="String328" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Eckenradius wurde für dieses Werkzeug zu klein gewählt!</value>
+  </data>
+  <data name="String329" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Eckenradius darf nicht größer sein, als die halbe Nutbreite!</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Dateneingabe in Zoll   (G20)</value>
+  </data>
+  <data name="String330" xml:space="preserve">
+    <value>Diffision durch Null nicht möglich!</value>
+  </data>
+  <data name="String331" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Die Nutmitte muss sich im Fahrweg der Maschine befinden!</value>
+  </data>
+  <data name="String332" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Teilkreisdurchmesser muss größer als der Werkzeugdurchmesser sein!</value>
+  </data>
+  <data name="String333" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Eingabe Startwinkel überprüfen (Vollkreis = 360°)!</value>
+  </data>
+  <data name="String334" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Eingabe Öffnungswinkel überprüfen (Vollkreis = 360°)!</value>
+  </data>
+  <data name="String335" xml:space="preserve">
+    <value>( Programm: runde Nut fräsen )</value>
+  </data>
+  <data name="String336" xml:space="preserve">
+    <value>( Programm: Bohrungen auf Linien )</value>
+  </data>
+  <data name="String337" xml:space="preserve">
+    <value>( Programm: Schrift gravieren )</value>
+  </data>
+  <data name="String338" xml:space="preserve">
+    <value>( Buchstabe: </value>
+  </data>
+  <data name="String339" xml:space="preserve">
+    <value>( Programm: Gewinde </value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Dateneingabe metrisch   (G21)</value>
+  </data>
+  <data name="String340" xml:space="preserve">
+    <value> fräsen )</value>
+  </data>
+  <data name="String341" xml:space="preserve">
+    <value>Die G-Code Generierung wurde abgebrochen!
+
+Der Durchmesser muss größer als 0 sein!</value>
+  </data>
+  <data name="String342" xml:space="preserve">
+    <value>( Programm: Tiefloch bohren )</value>
+  </data>
+  <data name="String343" xml:space="preserve">
+    <value>DXF-Datei erfolgreich eingelesen.</value>
+  </data>
+  <data name="String344" xml:space="preserve">
+    <value>( Programm: DXF-Daten gravieren )</value>
+  </data>
+  <data name="String345" xml:space="preserve">
+    <value>( Datei: </value>
+  </data>
+  <data name="String346" xml:space="preserve">
+    <value>( Senken )</value>
+  </data>
+  <data name="String347" xml:space="preserve">
+    <value>( Linie )</value>
+  </data>
+  <data name="String348" xml:space="preserve">
+    <value>( Rechteck )</value>
+  </data>
+  <data name="String349" xml:space="preserve">
+    <value>( Kreis )</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Absolutbemassung ein   (G90)</value>
+  </data>
+  <data name="String350" xml:space="preserve">
+    <value>( Polylinie )</value>
+  </data>
+  <data name="String351" xml:space="preserve">
+    <value>( Bogen )</value>
+  </data>
+  <data name="String352" xml:space="preserve">
+    <value>( Ellipse )</value>
+  </data>
+  <data name="String353" xml:space="preserve">
+    <value>Fertigteildurchmesser:
+
+Der Durchmesser der fertigen Kreistasche.</value>
+  </data>
+  <data name="String354" xml:space="preserve">
+    <value>G-Code Generierung gestartet ...</value>
+  </data>
+  <data name="String355" xml:space="preserve">
+    <value>NC-Tool - Speicherhinweis!</value>
+  </data>
+  <data name="String356" xml:space="preserve">
+    <value>Die Konfiguration wurde neu gespeichert.
+
+Bitte den Speicherpfad für die *.nc- Dateien unter: 'Programm/Einstellungen' überprüfen und gegebenenfalls neu einstellen!
+Die Anwendung startet wenn diese Meldung mit 'OK' bestätigt wurde.</value>
+  </data>
+  <data name="String357" xml:space="preserve">
+    <value>Die Eingabezeile hat keine X- als auch Y-Koordinaten!! Unerwartete Eingabedaten</value>
+  </data>
+  <data name="String358" xml:space="preserve">
+    <value> kann nicht gefunden werden!</value>
+  </data>
+  <data name="String359" xml:space="preserve">
+    <value>Beim Öffnen der DXF-Datei ist ein Fehler aufgetreten!</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Inkrementalbemassung ein   (G91.1)</value>
+  </data>
+  <data name="String360" xml:space="preserve">
+    <value>Nicht genügend Arbeitsspeicher!</value>
+  </data>
+  <data name="String361" xml:space="preserve">
+    <value>( Gewinde )</value>
+  </data>
+  <data name="String362" xml:space="preserve">
+    <value>Planfräsen</value>
+  </data>
+  <data name="String363" xml:space="preserve">
+    <value>Rechtecktasche_schruppen</value>
+  </data>
+  <data name="String364" xml:space="preserve">
+    <value>Rechtecktasche_schlichten</value>
+  </data>
+  <data name="String365" xml:space="preserve">
+    <value>Rechteckzapfen</value>
+  </data>
+  <data name="String366" xml:space="preserve">
+    <value>Kreistasche</value>
+  </data>
+  <data name="String367" xml:space="preserve">
+    <value>Kreiszapfen</value>
+  </data>
+  <data name="String368" xml:space="preserve">
+    <value>Ringnut</value>
+  </data>
+  <data name="String369" xml:space="preserve">
+    <value>Bohrtabelle</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>konstante Geschwindigkeit   (G64)</value>
+  </data>
+  <data name="String370" xml:space="preserve">
+    <value>Bohrbild_Lochkreis</value>
+  </data>
+  <data name="String371" xml:space="preserve">
+    <value>Dichtungsnut</value>
+  </data>
+  <data name="String372" xml:space="preserve">
+    <value>Abzeilen</value>
+  </data>
+  <data name="String373" xml:space="preserve">
+    <value>Nut_fraesen</value>
+  </data>
+  <data name="String374" xml:space="preserve">
+    <value>Runde_Nut_fraesen</value>
+  </data>
+  <data name="String375" xml:space="preserve">
+    <value>Schrift</value>
+  </data>
+  <data name="String376" xml:space="preserve">
+    <value>Gewinde_fraesen</value>
+  </data>
+  <data name="String377" xml:space="preserve">
+    <value>G-Code Editor / Fräsbahnanzeige</value>
+  </data>
+  <data name="String378" xml:space="preserve">
+    <value>Editor - NC-Programm</value>
+  </data>
+  <data name="String379" xml:space="preserve">
+    <value>Zeilennummern aktiviert / deaktiviert</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Fräserradiuskorrektur aus   (G40)</value>
+  </data>
+  <data name="String380" xml:space="preserve">
+    <value>Anzeige der Fräsbahnen in X und Y (Ansicht von Oben)</value>
+  </data>
+  <data name="String381" xml:space="preserve">
+    <value>Auswahl der Ansicht</value>
+  </data>
+  <data name="String382" xml:space="preserve">
+    <value>G-Code in Datei speichern</value>
+  </data>
+  <data name="String383" xml:space="preserve">
+    <value>Druckvorschau</value>
+  </data>
+  <data name="String384" xml:space="preserve">
+    <value>drucken</value>
+  </data>
+  <data name="String385" xml:space="preserve">
+    <value>Fenster schließen</value>
+  </data>
+  <data name="String386" xml:space="preserve">
+    <value>Anzeige der Fräsbahnen in Y und Z (Ansicht von Vorn)</value>
+  </data>
+  <data name="String387" xml:space="preserve">
+    <value>Anzeige der Fräsbahnen in X und Z (Ansicht von der Seite)</value>
+  </data>
+  <data name="String388" xml:space="preserve">
+    <value>G-Code Datei (*.nc)|*.nc|G-Code Datei (*.cnc)|*.cnc|Textdatei (*.txt)|*.txt</value>
+  </data>
+  <data name="String389" xml:space="preserve">
+    <value>Fertigmaß des Zyklus</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Fräserradiuskorrektur links   (G41)</value>
+  </data>
+  <data name="String390" xml:space="preserve">
+    <value>Verfahrbewegungen:</value>
+  </data>
+  <data name="String391" xml:space="preserve">
+    <value> Bewegungen im Eilgang</value>
+  </data>
+  <data name="String392" xml:space="preserve">
+    <value> Bewegungen mit programmiertem Vorschub</value>
+  </data>
+  <data name="String393" xml:space="preserve">
+    <value> Kreisbewegungen mit programmiertem Vorschub</value>
+  </data>
+  <data name="String394" xml:space="preserve">
+    <value>Fräsbahnanzeige in X und Y-Richtung</value>
+  </data>
+  <data name="String395" xml:space="preserve">
+    <value>Fräsbahnanzeige in Y und Z-Richtung</value>
+  </data>
+  <data name="String396" xml:space="preserve">
+    <value>Fräsbahnanzeige in X und Z-Richtung</value>
+  </data>
+  <data name="String397" xml:space="preserve">
+    <value>Name: </value>
+  </data>
+  <data name="String398" xml:space="preserve">
+    <value>Version: </value>
+  </data>
+  <data name="String399" xml:space="preserve">
+    <value>Programmierung: 2022 - 2024</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Fräserradiuskorrektur rechts  (G42)</value>
+  </data>
+  <data name="String400" xml:space="preserve">
+    <value>Author: </value>
+  </data>
+  <data name="String401" xml:space="preserve">
+    <value>Beschreibung:
+
+NC-Tool stellt einfache Zyklen für das Fräsen und das Bohren von gängigen
+Formen zur Verfügung.
+Dabei erleichtern grafische Eingabemasken und Hilfestellungen das Erstellen
+von einfachen Fräsprogrammen für die Heimanwendung.
+
+Die Ausgabe erfolgt im Standard G-Code!</value>
+  </data>
+  <data name="String402" xml:space="preserve">
+    <value>Informationen:
+
+1. Die Zyklen sind denen von Heidenhain nachempfunden, wurden aber komplett
+    neu programmiert und optimiert. Es wird immer im Gleichlauf gefräst und bei
+    Taschen entfällt das Vorbohren, da die Werkzeuge auf einer Helixbahn in die
+    Zustelltiefe fahren.
+
+2. Bei dem Zyklus 'Schrift' habe ich mir Inspiration von 'dingolovethrob' geholt.
+    https://drive.google.com/drive/folders/1nEmfoT8EGrREhB8wdw893vRD0nuCrPLf
+
+3. Bei dem Zyklus 'DXF Daten gravieren' habe ich mir Inspiration von 'Evren DAGLIOGLU'
+    geholt.
+    Projekt: 'DXFImporter'   /   E-mail: evrenda@yahoo.com
+
+4. Dieses Projekt ist Open Source. Größere Veränderungen bitte mit mir absprechen.
+    Komerzielle Verwendung ist nicht erwünscht.
+    E-mail: petervoigt.dipps@gmx.de</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>maximale Verarbeitungswege der Maschine in mm</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>maximaler Vorschub in X/YZ in mm/min</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Absolute Sicherheitshöhe vor Zyklenbeginn in mm</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Speicherpfad für *.nc Dateien</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>speichern und schließen</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>abbrechen</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Planfräsen in X und Y-Richtung</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Verwerfen (Standardwerte)</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>G-Code erzeugen</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Rechtecktasche fräsen</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Rechteckzapfen fräsen</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Kreistasche fräsen</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>Kreistzapfen fräsen</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Ringnut fräsen</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Dichtungsnut (rechteckig) fräsen</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Schrägen in X oder Y-Richtung fräsen</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Schrift (Text) gravieren</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Tiefloch bohren (mit ausspanen)</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Fräserdurchmesser (mm)</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>über</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Bohrerdurchmesser (mm)</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Spindeldrehzahl in U/min</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Methode</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>von Außen nach Innen</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>abzeilen von Y=0 nach Y+</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>Vorschub Zustellung mm/min</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>Vorschub Fräsen in mm/min</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Sicherheits-Abstand (mm)</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Finale Tiefe in Z (mm)</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Zustellung in Z (mm)</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Zyklen</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Abmessung in X (mm)</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>Abmessung in Y (mm)</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>Abstand in X (mm)</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>Abstand in Y (mm)</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Eckenradius R in mm</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>nur schlichten</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>Schlichtaufmass in X/Y (mm)</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>Winkel in Grad</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>Frässeite</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Seite anklicken! -&gt;</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Flächenbearbeitung</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>Aufmaß Rohteil in Y (mm)</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>Aufmaß Rohteil in X (mm)</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>Durchmesser Rohteil (mm)</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Durchmesser Fertigteil (mm)</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>Verdrehwinkel in Grad</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Innendurchmesser (mm)</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Außendurchmesser (mm)</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>Nutbreite in mm</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>Bohrtabelle löschen</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>Ausspantiefe (mm)</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Standardbohren / Gewinde fräsen</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>Rückzug bei Spanbruch (mm)</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>Bohrtiefe Spanbruch (mm)</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Zustelltiefe (mm)</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Bohriefe (mm)</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>Rückzug bei Spanbruch (mm)</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>Startwinkel in Grad</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Anzahl der Bohrungen</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>Lochkreis Durchmesser (mm)</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Anzahl der Zeilen</value>
+  </data>
+</root>

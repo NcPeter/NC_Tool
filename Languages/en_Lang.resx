@@ -1,0 +1,1724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Bags</value>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>Number of columns</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>Dist. Y</value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>Dist. X</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>Startp. Y</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>Startp. X</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>Drilling pattern on lines</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>Opening angle in degrees</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>Side length (mm)</value>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>Pitch circle diameter (mm)</value>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>Center in Y (mm)</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Tenon</value>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>Center in X (mm)</value>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>Typeface</value>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>Font height in mm</value>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>Input text</value>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>External thread</value>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value>Inner thread</value>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>Thread diameter (mm)</value>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value>Offset in -Z (mm)</value>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>Thread depth (mm)</value>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value>Thread pitch</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Milling grooves</value>
+  </data>
+  <data name="String120" xml:space="preserve">
+    <value>Display ellipses as polylines</value>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value>Open file</value>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>Grooves</value>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value>Face milling of a surface with programmed feed in lines over the workpiece.
+1. The machine moves the tool to the starting point.
+2. The tool is then moved in Z with programmed infeed.
+3. The outer edges are processed.
+4. The surface is lined.
+5. The tool is then returned to the starting point.
+This process is repeated until the desired depth is reached.</value>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>Safety distance:
+Distance between tool tip and workpiece surface for positioning on
+At the beginning of the cycle and at the end of the cycle.</value>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value>Final depth:
+The depth to which the surface should be milled.</value>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>Delivery in Z:
+The maximum amount by which the tool is advanced.</value>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value>Feed delivery:
+Travel speed of the tool when moving from the safety distance to the
+Milling depth in mm/min.</value>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>Dimension in X direction:
+The dimension of the raw material or the surface to be processed from the zero point in the X direction.</value>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>Dimension in Y direction:
+The dimension of the raw material or the surface to be processed from the zero point in the Y direction.</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Drilling patterns</value>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>Milling feed:
+Traversing speed of the tool during milling in mm/min.</value>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>Mill inclined surfaces with programmed feeds and dimensions.
+1. The machine moves the tool to the zero point and offsets it
+     then to the starting point, which depends on the surface to be milled.
+2. The tool is then moved in Z with programmed infeed.
+3. The sloping surface is then leveled off, removing any remaining material.
+4. After each movement in X or Y, there is another infeed in Z, up to the final depth.
+Tip: Infeed in Z determines the gradation of the area. Use radius or ball end mill.</value>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>Dimension in X direction:
+The dimensions of the material or the milling direction in X.</value>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>Dimension in Y direction:
+The dimensions of the material or the milling direction in Y.</value>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>Angle:
+Enter the angle of the inclined surface in degrees here.
+Always specify starting from a right angle (90°) to the workpiece!</value>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value>Milling direction in X</value>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>Milling direction in Y</value>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value>Drill a deep hole.
+1. The machine moves the tool to the starting point.
+2. The tool is then moved in Z with programmed infeed,
+    Only one programmed infeed is ever drilled.
+    The drill is then raised to break the chip.
+    From a certain depth, the drill is raised to remove the material.
+This process is repeated until the desired depth is reached.</value>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value>Drilling depth:
+The depth from the workpiece surface (Z = 0) to the drill tip.</value>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>Feed delivery:
+Travel speed of the tool when moving from the safety distance to the
+Drilling depth in mm/min.</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Special cycles</value>
+  </data>
+  <data name="String140" xml:space="preserve">
+    <value>Drilling depth chip breakage:
+Infeed in Z, after which a chip break is carried out.</value>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>Retraction until chip breakage:
+Value by which the tool moves back after chip breaking.</value>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value>Spout depth:
+From this depth onwards, the system moves back to 2mm below Z=0 after each infeed.</value>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>Middle in X:
+The distance of the hole in the X direction from the touch point.
+Can also receive negative values.</value>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>Middle in Y:
+The distance of the hole in the Y direction from the touch point.
+Can also receive negative values.</value>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>Workpiece length in X:
+The length in the X direction from the touch point.</value>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value>Workpiece width in Y:
+The width in the Y direction from the touch point.</value>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value>Mill a metric internal thread.
+1. The machine moves the tool to the center of the thread.
+2. The lowering process is carried out first.
+3. The thread is then machined with programmed feed.
+    and depth milled out with a helix track.
+4. The tool is then returned to the starting point.</value>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>Mill a metric external thread.
+1. The machine moves the tool to the center of the thread.
+2. Then offset in X (radius + safety distance).
+3. The thread is then machined with programmed feed.
+    and depth milled with a helix track.
+4. The tool is then returned to the starting point.</value>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value>Thread diameter:
+Freely selectable if it fits the thread pitch.</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Face milling</value>
+  </data>
+  <data name="String150" xml:space="preserve">
+    <value>Thread:
+
+Distance from thread gear to thread gear.
+
+Corresponds to immersion in Z- in mm per revolution.</value>
+  </data>
+  <data name="String151" xml:space="preserve">
+    <value>Final depth:
+The depth to which the thread should be milled.
+
+Pre-drilling to (depth + 2mm) is recommended!
+Ideally, a drill bit that matches the core diameter is used.</value>
+  </data>
+  <data name="String152" xml:space="preserve">
+    <value>Offset in Z-:
+Distance between workpiece surface and thread.
+For example, a thread in a bag.</value>
+  </data>
+  <data name="String153" xml:space="preserve">
+    <value>Middle in X:
+The distance of the thread in the X direction from the probing point.</value>
+  </data>
+  <data name="String154" xml:space="preserve">
+    <value>Middle in Y:
+The distance of the thread in the Y direction from the probing point.</value>
+  </data>
+  <data name="String155" xml:space="preserve">
+    <value>Mill a rectangular pocket with programmed feeds and dimensions.
+1. The machine moves the tool to the starting point (middle of the pocket).
+2. The tool is then moved in Z with programmed infeed.
+     An oscillating movement in X or Y is carried out.
+3. The bag is then emptied from the inside out.
+4. The tool is then returned to the starting point.
+This process is repeated until the desired depth is reached.</value>
+  </data>
+  <data name="String156" xml:space="preserve">
+    <value>Final depth:
+The depth to which the rectangular pocket should be milled.</value>
+  </data>
+  <data name="String157" xml:space="preserve">
+    <value>Dimension in X:
+The dimension of the pocket in the X direction.</value>
+  </data>
+  <data name="String158" xml:space="preserve">
+    <value>Dimension in Y:
+The dimension of the pocket in the Y direction.</value>
+  </data>
+  <data name="String159" xml:space="preserve">
+    <value>Corner radius:
+Mill corner radius. The corner radius will always correspond to the tool radius
+if the specified value is less than or equal to the tool radius.</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Bevel/Chamfer</value>
+  </data>
+  <data name="String160" xml:space="preserve">
+    <value>just finished:
+If this option is selected, there is no need to empty the bag.
+The program assumes that there is no more material inside the bag.
+
+Only the dimension in X/Y specified under 'Finishing allowance' is removed.
+The machine positions the tool just in front of the wall + finishing allowance.</value>
+  </data>
+  <data name="String161" xml:space="preserve">
+    <value>Finishing allowance:
+The finishing allowance indicates how much material is removed from the wall of the pocket
+must be removed in X and Y in order to obtain the desired finished size of the bag.</value>
+  </data>
+  <data name="String162" xml:space="preserve">
+    <value>Mill a rectangular tenon with programmed feeds and dimensions.
+1. A corresponding amount of raw material must be removed around the tenon,
+     (Indicating the allowance for the raw part), the machine moves the tool to the
+     corresponding starting point to remove the raw material around the tenon.
+2. The tenon is then milled to the desired dimensions.
+3. The tool is then returned to the starting point.
+This process is repeated until the desired depth is reached.</value>
+  </data>
+  <data name="String163" xml:space="preserve">
+    <value>Oversize raw part in X (mm)</value>
+  </data>
+  <data name="String164" xml:space="preserve">
+    <value>Oversize raw part in Y (mm)</value>
+  </data>
+  <data name="String165" xml:space="preserve">
+    <value>Final depth:
+The depth to which the rectangular tenon should be milled.</value>
+  </data>
+  <data name="String166" xml:space="preserve">
+    <value>Dimension in X:
+The dimension of the tenon in the X direction.</value>
+  </data>
+  <data name="String167" xml:space="preserve">
+    <value>Dimension in Y:
+The dimension of the tenon in the Y direction.</value>
+  </data>
+  <data name="String168" xml:space="preserve">
+    <value>Corner radius:
+Mill corner radius. If no corner radius is specified (entry = 0), the tenon has sharp edges.</value>
+  </data>
+  <data name="String169" xml:space="preserve">
+    <value>Measurement of raw part in X:
+The allowance for the blank indicates how much material must be removed per side in X
+in order to obtain the desired finished dimension of the tenon. Is always &gt;= 0.
+Enter the largest dimension of a side here!
+Tip: Just finish the tenon, enter the allowance for a small tool radius.</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Drill a deep hole</value>
+  </data>
+  <data name="String170" xml:space="preserve">
+    <value>Measurement of raw part in Y:
+The allowance for the blank indicates how much material must be removed per side in Y
+in order to obtain the desired finished dimension of the tenon. Is always &gt;= 0.
+Enter the largest dimension of a side here!
+Tip: Just finish the tenon, enter the allowance for a small tool radius.</value>
+  </data>
+  <data name="String171" xml:space="preserve">
+    <value>Diameter of raw part (mm)</value>
+  </data>
+  <data name="String172" xml:space="preserve">
+    <value>Diameter finished part (mm)</value>
+  </data>
+  <data name="String173" xml:space="preserve">
+    <value>Final depth:
+The depth to which the circular pocket should be milled.</value>
+  </data>
+  <data name="String174" xml:space="preserve">
+    <value>just finished:
+If this option is selected, there is no need to empty the bag.
+The program assumes that there is no more material inside the bag.
+
+Only the dimension in X/Y specified under 'Diameter of raw part' is removed.
+The machine positions the tool just in front of the wall + finishing allowance.</value>
+  </data>
+  <data name="String175" xml:space="preserve">
+    <value>Diameter of raw part:
+The diameter of the raw part indicates how much material must be removed from the wall of the pocket in order to obtain the desired finished diameter of the pocket.
+This parameter only needs to be specified if 'finish only' is enabled.
+Note: For raw part diameters smaller than 3 * milling cutter diameter, roughing is carried out first!</value>
+  </data>
+  <data name="String176" xml:space="preserve">
+    <value>Final depth:
+The depth to which the circular spigot should be milled.</value>
+  </data>
+  <data name="String177" xml:space="preserve">
+    <value>Diameter of raw part:
+The diameter of the raw part indicates how much material must be removed from the wall of the tenon in order to obtain the desired finished diameter.</value>
+  </data>
+  <data name="String178" xml:space="preserve">
+    <value>Finished part diameter:
+The diameter of the finished circular spigot.</value>
+  </data>
+  <data name="String179" xml:space="preserve">
+    <value>Measurement of raw part in X:
+If an allowance is specified for the blank, this material is removed per side in X down to the milling depth around the tenon. First a rectangular tenon is milled and then the circular tenon. Specifying 0 in the X and Y directions switches this option off!</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Milling threads</value>
+  </data>
+  <data name="String180" xml:space="preserve">
+    <value>Measurement of raw part in Y:
+If an allowance is specified for the blank, this material is removed per side in Y down to the milling depth around the tenon. First a rectangular tenon is milled and then the circular tenon. Specifying 0 in the X and Y directions switches this option off!</value>
+  </data>
+  <data name="String181" xml:space="preserve">
+    <value>Mill a groove with programmed feeds and dimensions.
+1. The machine moves the tool to the starting point (center of the groove).
+2. The tool is then moved in Z with programmed infeed.
+     An oscillating movement in X or Y is carried out.
+3. The groove on the contour is then cleared out.
+4. The tool is then returned to the starting point.
+This process is repeated until the desired depth is reached.</value>
+  </data>
+  <data name="String182" xml:space="preserve">
+    <value>Twist angle in degrees</value>
+  </data>
+  <data name="String183" xml:space="preserve">
+    <value>Final depth:
+The depth to which the groove should be milled.</value>
+  </data>
+  <data name="String184" xml:space="preserve">
+    <value>Dimension in X:
+The dimension of the groove in the X direction.</value>
+  </data>
+  <data name="String185" xml:space="preserve">
+    <value>Dimension in Y:
+The dimension of the groove in the Y direction.</value>
+  </data>
+  <data name="String186" xml:space="preserve">
+    <value>Twist angle:
+This allows the groove to be rotated in position at a certain angle.
+Positive values rotate counterclockwise, negative values rotate clockwise.</value>
+  </data>
+  <data name="String187" xml:space="preserve">
+    <value>Mill a circular pocket with programmed feeds and dimensions.
+1. The machine moves the tool to the starting point (middle of the pocket).
+2. The tool is then moved in Z with programmed infeed.
+     A circular movement in X and Y (helix) is carried out.
+3. The bag is then emptied from the inside out.
+4. The tool is then returned to the starting point.
+This process is repeated until the desired depth is reached.</value>
+  </data>
+  <data name="String188" xml:space="preserve">
+    <value>Mill a circular spigot with programmed feeds and dimensions.
+1. If a corresponding amount of raw material has to be removed around the tenon, (specify the allowance for the raw part), the machine moves the tool to the corresponding starting point in order to remove the raw material around the tenon.
+2. A rectangular tenon is first milled, which is then finished into a circular tenon. Without a specification in the 'Oversize blank', only the tenon will be trimmed from the diameter of the blank to the finished part.</value>
+  </data>
+  <data name="String189" xml:space="preserve">
+    <value>Mill an annular groove with programmed feeds and dimensions.
+1. The machine moves the tool to the zero point (middle of the ring groove) and then moves it to the starting point (edge of the inner diameter).
+2. The tool is then moved in Z with programmed infeed. A circular movement in X and Y (helix) is carried out.
+3. The annular groove is then cleared out to the edge of the outer diameter.
+4. The tool is then returned to the starting point.</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Rectangle bag</value>
+  </data>
+  <data name="String190" xml:space="preserve">
+    <value>Process a drilling table with programmed drilling positions.
+1. The machine moves the tool in rapid traverse and at a safety distance, from the zero point to the first drilling position in the drilling table.
+2. Then drill at this point with programmed feed and depth.
+3. The tool is then moved again to the safety distance and the next position in the drilling table is approached in rapid traverse.
+Tip: Simply leave positions in the table that are not required blank.</value>
+  </data>
+  <data name="String191" xml:space="preserve">
+    <value>Drill a number of holes arranged on a diameter.
+1. The machine moves the tool in rapid traverse and at a safety distance, from the zero point to the first drilling position on the hole circle.
+2. Then drill at this point with programmed feed and depth.
+3. The tool is then moved again to the safety distance and the next position on the hole circle is approached in rapid traverse.
+This process is repeated until all holes on the bolt circle have been drilled.</value>
+  </data>
+  <data name="String192" xml:space="preserve">
+    <value>Mill a seal groove with programmed feeds and dimensions.
+1. The machine moves the tool to the zero point (middle of the groove) and then moves it to the starting point (inner edge of the contour).
+2. The tool is then moved in Z with programmed infeed. An oscillating movement in X or Y is carried out.
+3. The groove is then cleared out to the edge of the outer contour.
+4. The tool is then returned to the starting point.</value>
+  </data>
+  <data name="String193" xml:space="preserve">
+    <value>Drill a number of holes arranged in rows and columns.
+1. The machine moves the tool in rapid traverse and at a safety distance to the first drilling position.
+2. Then drill at this point with programmed feed and depth.
+3. The tool is then moved again to the safety distance and the next drilling position is approached in rapid traverse.
+This process is repeated until all holes have been drilled.</value>
+  </data>
+  <data name="String194" xml:space="preserve">
+    <value>Mill a letter or lettering.
+1. The machine moves the tool to the starting point (1st letter).
+2. The tool is then moved in Z with programmed infeed.
+3. The letter or lettering is then milled in a center path (font width = milling cutter diameter).
+4. The tool is then returned to the starting point.
+This process is repeated until the desired depth is reached.</value>
+  </data>
+  <data name="String195" xml:space="preserve">
+    <value>Engrave 2D DXF data.
+1. The machine moves the tool to the starting point.
+2. The tool is then moved in Z with programmed infeed.
+3. The individual elements are then milled in a center path.
+4. The tool is then returned to the starting point.</value>
+  </data>
+  <data name="String196" xml:space="preserve">
+    <value>Eine Nut mit programmierten Vorschüben und Abmessungen fräsen.
+1. Die Maschine fährt das Werkzeug zum Startpunkt (Nutnmitte).
+2. Das Werkzeug wird dann in Z mit programmierter Zustellung verfahren.
+    Dabei wird eine pendelnde Bewegung in X oder Y ausgeführt.
+3. Danach wird die Nut an der Kontur ausgeräumt.
+4. Anschließend wird das Werkzeug zum Startpunkt zurück geführt.
+Dieser Vorgang wiederholt sich, bis die gewünschte Tiefe erreicht ist.</value>
+  </data>
+  <data name="String197" xml:space="preserve">
+    <value>Starting point in X direction:
+The starting point of the first hole from the zero point is specified here.</value>
+  </data>
+  <data name="String198" xml:space="preserve">
+    <value>Starting point in Y direction:
+The starting point of the first hole from the zero point is specified here.</value>
+  </data>
+  <data name="String199" xml:space="preserve">
+    <value>Distance in X direction:
+The distance between the holes in the X direction is specified here.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Circle pocket</value>
+  </data>
+  <data name="String200" xml:space="preserve">
+    <value>Distance in Y direction:
+The distance between the holes in the Y direction is specified here.</value>
+  </data>
+  <data name="String201" xml:space="preserve">
+    <value>Number of columns:
+The number of columns is specified here.</value>
+  </data>
+  <data name="String202" xml:space="preserve">
+    <value>Number of lines:
+The number of lines is specified here.</value>
+  </data>
+  <data name="String203" xml:space="preserve">
+    <value>Twist angle:
+This allows the hole pattern to be rotated in position at a specific angle.
+The rotation is based on the coordinates of the starting hole.
+Positive values rotate counterclockwise, negative values rotate clockwise.</value>
+  </data>
+  <data name="String204" xml:space="preserve">
+    <value>Groove width in mm</value>
+  </data>
+  <data name="String205" xml:space="preserve">
+    <value>Final depth:
+The depth to which the ring groove is to be milled.</value>
+  </data>
+  <data name="String206" xml:space="preserve">
+    <value>Outer diameter:
+Specify the external diameter of the ring groove here!</value>
+  </data>
+  <data name="String207" xml:space="preserve">
+    <value>Inner diameter:
+Specify the inner diameter of the ring groove here!</value>
+  </data>
+  <data name="String208" xml:space="preserve">
+    <value>Middle in X:
+The distance of the groove in the X direction from the touch point.
+
+If you enter 0.0, the center is in the center of the partial circle!</value>
+  </data>
+  <data name="String209" xml:space="preserve">
+    <value>Middle in Y:
+The distance of the groove in the Y direction from the touch point.
+
+If you enter 0.0, the center is in the center of the partial circle!</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Rectangular tenon</value>
+  </data>
+  <data name="String210" xml:space="preserve">
+    <value>Pitch circle diameter:
+The radius that passes through the center of the groove.</value>
+  </data>
+  <data name="String211" xml:space="preserve">
+    <value>Side length (groove width):
+The width of the groove is entered here.</value>
+  </data>
+  <data name="String212" xml:space="preserve">
+    <value>Start angle:
+The starting angle from the center of the radius to the right end of the groove is specified here.
+The calculation is counterclockwise.</value>
+  </data>
+  <data name="String213" xml:space="preserve">
+    <value>Opening angle:
+The opening angle from the right end of the groove to the left end of the groove is specified here.
+The calculation is counterclockwise.</value>
+  </data>
+  <data name="String214" xml:space="preserve">
+    <value>Final depth:
+The depth to which the seal groove should be milled.</value>
+  </data>
+  <data name="String215" xml:space="preserve">
+    <value>Dimensions outside in the X direction:
+The dimension of the sealing groove outside, in the X direction.</value>
+  </data>
+  <data name="String216" xml:space="preserve">
+    <value>Dimensions outside in the Y direction:
+The dimension of the sealing groove outside, in the Y direction.</value>
+  </data>
+  <data name="String217" xml:space="preserve">
+    <value>Groove width:
+Enter the groove width here.</value>
+  </data>
+  <data name="String218" xml:space="preserve">
+    <value>Hole circle diameter:
+Specifies the diameter of the bolt circle. The diameter runs through the center of each hole.</value>
+  </data>
+  <data name="String219" xml:space="preserve">
+    <value>Number of holes:
+The number of holes that are distributed over 360° on the bolt circle is specified here.
+Note: A maximum of 12 holes can be used!</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Circular tenon</value>
+  </data>
+  <data name="String220" xml:space="preserve">
+    <value>Start angle:
+Starting angle of the first hole starting from the right middle of the bolt circle.
+The holes are then distributed counterclockwise.</value>
+  </data>
+  <data name="String221" xml:space="preserve">
+    <value>Cutter diameter:
+A center line is milled in the middle of each letter.
+A small milling cutter, a Gavier milling cutter or a ball milling cutter is recommended.</value>
+  </data>
+  <data name="String222" xml:space="preserve">
+    <value>Spindle speed:
+Due to the small cutter diameter, a high speed should be selected.</value>
+  </data>
+  <data name="String223" xml:space="preserve">
+    <value>Final depth:
+The depth to which the font should be milled.</value>
+  </data>
+  <data name="String224" xml:space="preserve">
+    <value>Delivery in Z:
+Dimension by which the tool is advanced in one pass in order to reach the final depth.</value>
+  </data>
+  <data name="String225" xml:space="preserve">
+    <value>Letter or text:
+Here you can enter either a letter, numbers, special characters or a short text.
+
+Allowed special characters are:
+. &amp; ' @ \\\\ } ) ] ; , $ \\ = ! / &gt; # &lt; - { ( [ | % + ? ^ ; *</value>
+  </data>
+  <data name="String226" xml:space="preserve">
+    <value>Font height:
+The font height is entered here in mm!</value>
+  </data>
+  <data name="String227" xml:space="preserve">
+    <value>Font:
+The font can be selected here!</value>
+  </data>
+  <data name="String228" xml:space="preserve">
+    <value>Cutter diameter:
+A center line is milled in the middle of each line.
+A small milling cutter, a Gavier milling cutter or a ball milling cutter is recommended.</value>
+  </data>
+  <data name="String229" xml:space="preserve">
+    <value>Final depth:
+The depth to which the lines should be milled.</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>Groove</value>
+  </data>
+  <data name="String230" xml:space="preserve">
+    <value>Milling method</value>
+  </data>
+  <data name="String231" xml:space="preserve">
+    <value>Code generation has stopped!
+
+There is an input error!
+Check all parameters for correct entry!
+Only numbers and the ',' may be used!</value>
+  </data>
+  <data name="String232" xml:space="preserve">
+    <value>Warning message</value>
+  </data>
+  <data name="String233" xml:space="preserve">
+    <value>Code generation has stopped!
+
+No file was selected!</value>
+  </data>
+  <data name="String234" xml:space="preserve">
+    <value>Code generation has stopped!
+
+The imported DXF file contains values in Z,
+which are smaller or larger.
+Not a pure 2D drawing!"</value>
+  </data>
+  <data name="String235" xml:space="preserve">
+    <value>( NC data created with NC tool )</value>
+  </data>
+  <data name="String236" xml:space="preserve">
+    <value>( Programm: Plane milling in X and Y directions )</value>
+  </data>
+  <data name="String237" xml:space="preserve">
+    <value>( Tool diameter </value>
+  </data>
+  <data name="String238" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The cutter diameter must be greater than 0 and less than or equal to 16 mm!</value>
+  </data>
+  <data name="String239" xml:space="preserve">
+    <value>Input error</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Ring Groove</value>
+  </data>
+  <data name="String240" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The spindle speed must be greater than 0!</value>
+  </data>
+  <data name="String241" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+Check spindle speed (input value is greater than 25000)!</value>
+  </data>
+  <data name="String242" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The safety distance between the tool and the workpiece surface should be greater than 0!</value>
+  </data>
+  <data name="String243" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The safety distance between the tool and the workpiece surface must be within the working area of the machine!</value>
+  </data>
+  <data name="String244" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The milling depth must be less than 0!</value>
+  </data>
+  <data name="String245" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The milling depth must be within the working area of the machine!</value>
+  </data>
+  <data name="String246" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The delivery in Z for one round must be greater than 0!</value>
+  </data>
+  <data name="String247" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The feed in Z must be greater than 0!</value>
+  </data>
+  <data name="String248" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The feed in Z is greater than the maximum feed of the machine!</value>
+  </data>
+  <data name="String249" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The work feedrate in X/Y must be greater than 0!</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Sealing Groove</value>
+  </data>
+  <data name="String250" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The work feed in X/Y is too large!</value>
+  </data>
+  <data name="String251" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the raw material in X must be greater than 0 and less than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String252" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the raw material in Y must be greater than 0 and less than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String253" xml:space="preserve">
+    <value>( Passage </value>
+  </data>
+  <data name="String254" xml:space="preserve">
+    <value>( end of program )</value>
+  </data>
+  <data name="String255" xml:space="preserve">
+    <value> Delivery Z=</value>
+  </data>
+  <data name="String256" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The pocket widths must be larger than the tool diameter!</value>
+  </data>
+  <data name="String257" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The corner radius was chosen too small for this tool!</value>
+  </data>
+  <data name="String258" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The corner radius must not be larger than half the pocket width!</value>
+  </data>
+  <data name="String259" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+There is no finishing allowance specified for finishing, the value must be greater than or equal to 0!</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Round Groove</value>
+  </data>
+  <data name="String260" xml:space="preserve">
+    <value>Division by zero not possible!</value>
+  </data>
+  <data name="String261" xml:space="preserve">
+    <value>( Program: roughing rectangular pocket )</value>
+  </data>
+  <data name="String262" xml:space="preserve">
+    <value>( Program: Finish rectangle bag )</value>
+  </data>
+  <data name="String263" xml:space="preserve">
+    <value>(Program: milling rectangular tenons)</value>
+  </data>
+  <data name="String264" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The milling depth must be less than 0 (enter negative values) and it must be within the machine's working area!</value>
+  </data>
+  <data name="String265" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimension for the tenon in X must be greater than 0!</value>
+  </data>
+  <data name="String266" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the pin in X must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String267" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimension for the tenon in Y must be greater than 0!</value>
+  </data>
+  <data name="String268" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the pin in Y must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String269" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the raw material in X must be greater than or equal to 0!</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Drilling table</value>
+  </data>
+  <data name="String270" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the raw material in X must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String271" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the raw material in Y must be greater than or equal to 0!</value>
+  </data>
+  <data name="String272" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the raw material in Y must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String273" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The diameter of the raw part must be smaller than the diameter of the finished part!</value>
+  </data>
+  <data name="String274" xml:space="preserve">
+    <value>The diameter of the raw part is too small for finishing, it needs to be roughed first!</value>
+  </data>
+  <data name="String275" xml:space="preserve">
+    <value>A NOTICE</value>
+  </data>
+  <data name="String276" xml:space="preserve">
+    <value>( roughing )</value>
+  </data>
+  <data name="String277" xml:space="preserve">
+    <value>( finish )</value>
+  </data>
+  <data name="String278" xml:space="preserve">
+    <value>( Program: Milling circular spigots )</value>
+  </data>
+  <data name="String279" xml:space="preserve">
+    <value>( Program: Milling circular pocket )</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Drilling pattern hole circle</value>
+  </data>
+  <data name="String280" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The diameter of the raw part must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String281" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The diameter of the finished part must be greater than 0!</value>
+  </data>
+  <data name="String282" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The diameter of the finished part must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String283" xml:space="preserve">
+    <value>( Program: milling ring groove )</value>
+  </data>
+  <data name="String284" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The inside diameter cannot be larger than the outside diameter!</value>
+  </data>
+  <data name="String285" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The selected tool does not fit into the desired ring groove (select a smaller tool)!</value>
+  </data>
+  <data name="String286" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimensions for the outside diameter must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String287" xml:space="preserve">
+    <value>( Program: drilling table )</value>
+  </data>
+  <data name="String288" xml:space="preserve">
+    <value>( Drill diameter </value>
+  </data>
+  <data name="String289" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The drill diameter must be greater than 0 and less than or equal to 8 mm!</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Hole pattern on lines</value>
+  </data>
+  <data name="String290" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The drilling depth must be less than 0! (enter negative values)</value>
+  </data>
+  <data name="String291" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The drilling depth must be within the working area of the machine!</value>
+  </data>
+  <data name="String292" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The infeed in Z must be greater than 0!</value>
+  </data>
+  <data name="String293" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The drilling depth of chip breakage must not be smaller than 0!</value>
+  </data>
+  <data name="String294" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The retraction until the chip breaks must not be less than 0!</value>
+  </data>
+  <data name="String295" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The chipping depth must be less than 0! (enter negative values)</value>
+  </data>
+  <data name="String296" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The angle of rotation must not be greater than 90° or less than -90°!</value>
+  </data>
+  <data name="String297" xml:space="preserve">
+    <value>(Drilling position </value>
+  </data>
+  <data name="String298" xml:space="preserve">
+    <value>to drive )</value>
+  </data>
+  <data name="String299" xml:space="preserve">
+    <value> Degree </value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>NC-Tool (CNC cycles for drilling and milling)</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Engrave font</value>
+  </data>
+  <data name="String300" xml:space="preserve">
+    <value>( Program: drilling pattern hole circle )</value>
+  </data>
+  <data name="String301" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The drill position in table row</value>
+  </data>
+  <data name="String302" xml:space="preserve">
+    <value> lies for X
+
+outside the working area of the machine!</value>
+  </data>
+  <data name="String303" xml:space="preserve">
+    <value> lies for Y
+
+outside the working area of the machine!</value>
+  </data>
+  <data name="String304" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The diameter must be greater than 0!</value>
+  </data>
+  <data name="String305" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The diameter must be within the working range of the machine!</value>
+  </data>
+  <data name="String306" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The number of holes must be greater than 0!</value>
+  </data>
+  <data name="String307" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The number of holes must be less than or equal to 12!</value>
+  </data>
+  <data name="String308" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The angle specification must be between 0 and 360°!</value>
+  </data>
+  <data name="String309" xml:space="preserve">
+    <value>( Program: milling seal groove )</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Engrave 2D DXF data</value>
+  </data>
+  <data name="String310" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimension in X must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String311" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The dimension in Y must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String312" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The selected tool does not fit into the desired groove (select a smaller tool)!</value>
+  </data>
+  <data name="String313" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The corner radius must not be larger than half the pocket width!
+This affects the information for 'Dimension in X' and 'Dimension in Y'!</value>
+  </data>
+  <data name="String314" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The corner radius cannot be smaller than the tool radius!</value>
+  </data>
+  <data name="String315" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+An angle of 90° or more is no longer an inclined surface!</value>
+  </data>
+  <data name="String316" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The angle doesn't make sense, the slope is larger than the dimension in Y!</value>
+  </data>
+  <data name="String317" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The angle doesn't make sense, the slope is larger than the dimension in X!</value>
+  </data>
+  <data name="String318" xml:space="preserve">
+    <value>X direction</value>
+  </data>
+  <data name="String319" xml:space="preserve">
+    <value>Y direction</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Post processor for:</value>
+  </data>
+  <data name="String320" xml:space="preserve">
+    <value>( Program: sloping surface in </value>
+  </data>
+  <data name="String321" xml:space="preserve">
+    <value>( Program: Milling groove )</value>
+  </data>
+  <data name="String322" xml:space="preserve">
+    <value>( Twist angle = </value>
+  </data>
+  <data name="String323" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The groove width must be larger than the tool diameter!</value>
+  </data>
+  <data name="String324" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The groove length must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String325" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The groove width must be smaller than the maximum travel distance of the machine!</value>
+  </data>
+  <data name="String326" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+Please check your entry: length is smaller than width!</value>
+  </data>
+  <data name="String327" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+If the side lengths are the same, please use a cycle rectangular pocket!</value>
+  </data>
+  <data name="String328" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The corner radius was chosen too small for this tool!</value>
+  </data>
+  <data name="String329" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The corner radius must not be larger than half the groove width!</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Data entry in inches (G20)</value>
+  </data>
+  <data name="String330" xml:space="preserve">
+    <value>Division by zero not possible!</value>
+  </data>
+  <data name="String331" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The center of the groove must be in the path of the machine!</value>
+  </data>
+  <data name="String332" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The pitch circle diameter must be larger than the tool diameter!</value>
+  </data>
+  <data name="String333" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+Check entry of starting angle (full circle = 360°)!</value>
+  </data>
+  <data name="String334" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+Check the opening angle entry (full circle = 360°)!</value>
+  </data>
+  <data name="String335" xml:space="preserve">
+    <value>( Program: milling round grooves )</value>
+  </data>
+  <data name="String336" xml:space="preserve">
+    <value>( Program: Drilling on lines )</value>
+  </data>
+  <data name="String337" xml:space="preserve">
+    <value>( Program: Engrave font )</value>
+  </data>
+  <data name="String338" xml:space="preserve">
+    <value>( Letter: </value>
+  </data>
+  <data name="String339" xml:space="preserve">
+    <value>(Program: Thread </value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Data entry metric (G21)</value>
+  </data>
+  <data name="String340" xml:space="preserve">
+    <value> milling )</value>
+  </data>
+  <data name="String341" xml:space="preserve">
+    <value>G-code generation was aborted!
+
+The diameter must be greater than 0!</value>
+  </data>
+  <data name="String342" xml:space="preserve">
+    <value>( Program: drill deep hole )</value>
+  </data>
+  <data name="String343" xml:space="preserve">
+    <value>DXF file read successfully.</value>
+  </data>
+  <data name="String344" xml:space="preserve">
+    <value>( Program: Engrave DXF data )</value>
+  </data>
+  <data name="String345" xml:space="preserve">
+    <value>( File: </value>
+  </data>
+  <data name="String346" xml:space="preserve">
+    <value>( lowering )</value>
+  </data>
+  <data name="String347" xml:space="preserve">
+    <value>( line )</value>
+  </data>
+  <data name="String348" xml:space="preserve">
+    <value>( rectangle )</value>
+  </data>
+  <data name="String349" xml:space="preserve">
+    <value>( circle )</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Absolute dimension on (G90)</value>
+  </data>
+  <data name="String350" xml:space="preserve">
+    <value>( polyline )</value>
+  </data>
+  <data name="String351" xml:space="preserve">
+    <value>( arc )</value>
+  </data>
+  <data name="String352" xml:space="preserve">
+    <value>( ellipse )</value>
+  </data>
+  <data name="String353" xml:space="preserve">
+    <value>Finished part diameter:
+
+The diameter of the finished circle pocket.</value>
+  </data>
+  <data name="String354" xml:space="preserve">
+    <value>G-code generation started...</value>
+  </data>
+  <data name="String355" xml:space="preserve">
+    <value>NC Tool - Memory Note!</value>
+  </data>
+  <data name="String356" xml:space="preserve">
+    <value>The configuration has been resaved.
+
+Please check the storage path for the *.nc files under: 'Program/Settings' and reset if necessary!
+The application starts when this message is confirmed with 'OK'.</value>
+  </data>
+  <data name="String357" xml:space="preserve">
+    <value>The input line has no X or Y coordinates!! Unexpected input data</value>
+  </data>
+  <data name="String358" xml:space="preserve">
+    <value> can not be found!</value>
+  </data>
+  <data name="String359" xml:space="preserve">
+    <value>An error occurred while opening the DXF file!</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Incremental dimension on (G91.1)</value>
+  </data>
+  <data name="String360" xml:space="preserve">
+    <value>Not enough RAM!</value>
+  </data>
+  <data name="String361" xml:space="preserve">
+    <value>( thread )</value>
+  </data>
+  <data name="String362" xml:space="preserve">
+    <value>Face_milling</value>
+  </data>
+  <data name="String363" xml:space="preserve">
+    <value>Rectangular_pocket_roughing</value>
+  </data>
+  <data name="String364" xml:space="preserve">
+    <value>Rectangular_pocket_finishing</value>
+  </data>
+  <data name="String365" xml:space="preserve">
+    <value>Rectangular_tenon</value>
+  </data>
+  <data name="String366" xml:space="preserve">
+    <value>Circle_pocket</value>
+  </data>
+  <data name="String367" xml:space="preserve">
+    <value>Circular_tenon</value>
+  </data>
+  <data name="String368" xml:space="preserve">
+    <value>Ring_groove</value>
+  </data>
+  <data name="String369" xml:space="preserve">
+    <value>Drilling_table</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Constant velocity (G64)</value>
+  </data>
+  <data name="String370" xml:space="preserve">
+    <value>Drilling_pattern_hole_circle</value>
+  </data>
+  <data name="String371" xml:space="preserve">
+    <value>Sealing_groove</value>
+  </data>
+  <data name="String372" xml:space="preserve">
+    <value>Ablines</value>
+  </data>
+  <data name="String373" xml:space="preserve">
+    <value>Slot_milling</value>
+  </data>
+  <data name="String374" xml:space="preserve">
+    <value>Mill_a_round_groove</value>
+  </data>
+  <data name="String375" xml:space="preserve">
+    <value>Writing</value>
+  </data>
+  <data name="String376" xml:space="preserve">
+    <value>Thread_milling</value>
+  </data>
+  <data name="String377" xml:space="preserve">
+    <value>G-Code Editor / Milling Path Display</value>
+  </data>
+  <data name="String378" xml:space="preserve">
+    <value>Editor - NC program</value>
+  </data>
+  <data name="String379" xml:space="preserve">
+    <value>Line numbers enabled/disabled</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Cutter radius correction off (G40)</value>
+  </data>
+  <data name="String380" xml:space="preserve">
+    <value>Display of the milling paths in X and Y (view from above)</value>
+  </data>
+  <data name="String381" xml:space="preserve">
+    <value>Selection of view</value>
+  </data>
+  <data name="String382" xml:space="preserve">
+    <value>Save G code to file</value>
+  </data>
+  <data name="String383" xml:space="preserve">
+    <value>Print preview</value>
+  </data>
+  <data name="String384" xml:space="preserve">
+    <value>print</value>
+  </data>
+  <data name="String385" xml:space="preserve">
+    <value>Close the window</value>
+  </data>
+  <data name="String386" xml:space="preserve">
+    <value>Display of the milling paths in Y and Z (front view)</value>
+  </data>
+  <data name="String387" xml:space="preserve">
+    <value>Display of the milling paths in X and Z (view from the side)</value>
+  </data>
+  <data name="String388" xml:space="preserve">
+    <value>G-Code file (*.nc)|*.nc|G-Code file (*.cnc)|*.cnc|Text file (*.txt)|*.txt</value>
+  </data>
+  <data name="String389" xml:space="preserve">
+    <value>Finished dimension of the cycle</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Cutter radius correction left (G41)</value>
+  </data>
+  <data name="String390" xml:space="preserve">
+    <value>Movements:</value>
+  </data>
+  <data name="String391" xml:space="preserve">
+    <value> Movements in rapid motion</value>
+  </data>
+  <data name="String392" xml:space="preserve">
+    <value> Movements with programmed feed</value>
+  </data>
+  <data name="String393" xml:space="preserve">
+    <value> Circular movements with programmed feed</value>
+  </data>
+  <data name="String394" xml:space="preserve">
+    <value>Milling path display in X and Y directions</value>
+  </data>
+  <data name="String395" xml:space="preserve">
+    <value>Milling path display in Y and Z directions</value>
+  </data>
+  <data name="String396" xml:space="preserve">
+    <value>Milling path display in X and Z directions</value>
+  </data>
+  <data name="String397" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="String398" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="String399" xml:space="preserve">
+    <value>Programming: 2022 - 2024</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Cutter radius correction right (G42)</value>
+  </data>
+  <data name="String400" xml:space="preserve">
+    <value>Author: </value>
+  </data>
+  <data name="String401" xml:space="preserve">
+    <value>Description:
+
+NC-Tool provides simple cycles for milling and drilling common shapes.
+Graphical input masks and assistance make it easier to create simple ones
+Milling programs for home use.
+
+The output is in standard G code!</value>
+  </data>
+  <data name="String402" xml:space="preserve">
+    <value>Information:
+
+1. The cycles are based on those from Heidenhain, but have been completely
+    reprogrammed and optimized. Milling is always done in synchronism and
+    there is no need for pre-drilling in pockets because the tools travel to the
+    infeed depth on a helical path.
+
+2. For the 'Writing' cycle I took inspiration from 'dingolovethrob'.
+         https://drive.google.com/drive/folders/1nEmfoT8EGrREhB8wdw893vRD0nuCrPLf
+
+
+
+3. For the cycle 'Engrave DXF data' I took inspiration from 'Evren DAGLIOGLU'
+ fetched.
+
+    Project: 'DXFImporter'   /   E-mail: evrenda@yahoo.com
+
+4. This project is open source. Please discuss any major changes with me.
+    Commercial use is not desired.
+    E-mail: petervoigt.dipps@gmx.de</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Maximum processing paths of the machine in mm</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Maximum feed in X/YZ in mm/min</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Absolute safety height before cycle start in mm</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Storage path for *.nc files</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>save and close</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Face milling in X and Y directions</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Discard (default values)</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Generate G code</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Mill a rectangular pocket</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Milling square tenons</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Mill a circular pocket</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>Milling circular tenons</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Mill ring groove</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Mill sealing groove (rectangular).</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Mill bevels in the X or Y direction</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Engrave writing (text)</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Deep hole drilling (with removal)</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Cutter diameter (mm)</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Drill diameter (mm)</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Spindle speed in rpm</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>method</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>from outside to inside</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>lines from Y=0 to Y+</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>Feed infeed mm/min</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>Milling feed in mm/min</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Safety distance (mm)</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Final depth in Z (mm)</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Infeed in Z (mm)</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Cycles</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Dimension in X (mm)</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>Dimension in Y (mm)</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>Abstand in X (mm)</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>Abstand in Y (mm)</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Corner radius R in mm</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>just smooth it out</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>Finishing allowance in X/Y (mm)</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>Angle in degrees</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>milling side</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Click on the page! -&gt;</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Surface processing</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>Oversize raw part in Y (mm)</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>Oversize raw part in X (mm)</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>Diameter of raw part (mm)</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Diameter finished part (mm)</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>Angle of rotation in degrees</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Inner diameter (mm)</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Outer diameter (mm)</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>Groove width in mm</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>Delete drilling table</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>Chipping depth (mm)</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Standard drilling/thread milling</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>Retraction in case of chip breakage (mm)</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>Drilling depth chip breakage (mm)</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Infeed depth (mm)</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Drilling depth (mm)</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>Retraction when chip breaks (mm)</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>Start angle in degrees</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Number of holes</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>Hole circle diameter (mm)</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Number of rows</value>
+  </data>
+</root>
