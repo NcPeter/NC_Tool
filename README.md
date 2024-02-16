@@ -37,6 +37,7 @@ Verfügbare Zyklen:
 Die Ausgabe  erfolgt als Standard G-Code und ist nach dem generieren noch editierbar.
 Der G-Code wird grafisch als Fräsbahn angezeigt.
 
+![image](https://github.com/NcPeter/NC_Tool/assets/156658983/4c97d4df-624e-40af-af27-b1532fc1e425)
 
 
 Bisher gibt einstellbar, die Sprachen: deutsch und englisch
