@@ -40,7 +40,7 @@ Der G-Code wird grafisch als Fräsbahn angezeigt.
 ![image](https://github.com/NcPeter/NC_Tool/assets/156658983/4c97d4df-624e-40af-af27-b1532fc1e425)
 
 
-Bisher gibt einstellbar, die Sprachen: deutsch und englisch
+Bisher gibt es einstellbar die Sprachen: deutsch und englisch
 
 Dies ist mein erstes Projekt in C#, Teile wurden aus VB übersetzt.
 Ich bin noch nicht so vertraut mit C# und ganz sicher nicht perfekt.
