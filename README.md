@@ -34,11 +34,15 @@ Verfügbare Zyklen:
     - Buchstaben und Schriftzüge gravieren
     - 2D DXF-Daten gravieren
 
-Die Ausgabe  erfolgt als Standard G-Code und ist nach dem generieren noch editierbar.
-Der G-Code wird grafisch als Fräsbahn angezeigt.
+Die Zyklen sind denen von Heidenhain iTNC530 nachempfunden, wurden aber komplett
+neu programmiert und optimiert. So wird immer im Gleichlauf gefräst und bei
+Taschen entfällt das Vorbohren in der Mitte, da die Werkzeuge auf einer Helixbahn in die
+Zustelltiefe fahren.
+
+Die Ausgabe  erfolgt als Standard G-Code und ist im Ausgabefenster noch editierbar.
+Der G-Code wird zudem grafisch als Fräsbahn angezeigt.
 
 ![image](https://github.com/NcPeter/NC_Tool/assets/156658983/4c97d4df-624e-40af-af27-b1532fc1e425)
-
 
 Bisher gibt es einstellbar die Sprachen: deutsch und englisch
 
