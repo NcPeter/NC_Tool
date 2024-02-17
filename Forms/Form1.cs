@@ -4772,6 +4772,11 @@ namespace NC_Tool
             PictureBox14.Image = My.Resources.Resources.Bild14_01;
             Info_14.Text = rm.GetString("String227");
         }
+        // Schrifart wurde gewählt
+        private void Font_Art_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
         private void Font_Art_Leave(object sender, EventArgs e)
         {
             PictureBox14.Image = My.Resources.Resources.Bild14_01;
@@ -4997,7 +5002,6 @@ namespace NC_Tool
                                 }
                                 Xofs += theSpace;
                             }
-
                         }
                     }
                 }
