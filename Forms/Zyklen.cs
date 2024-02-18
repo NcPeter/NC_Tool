@@ -2,14 +2,9 @@
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 using System.Globalization;
-using System.Collections;
 using System;
 using static NC_Tool.Form1;
 using System.Drawing;
-using static System.Windows.Forms.AxHost;
-using System.Security.Cryptography;
-using System.Reflection;
-using System.Xml.Linq;
 
 namespace NC_Tool
 {
@@ -87,7 +82,7 @@ namespace NC_Tool
             }
             M = 0;
             // interne Berechnungen
-            DT = DT / 2d;
+            DT /= 2d;
             X = Conversions.ToDouble(Strings.Format(0d - DT, "###0.000"));                                      // Startpunkt in X
             Y = Conversions.ToDouble(Strings.Format(0d - DT, "###0.000"));                                      // Startpunkt in Y
             Z1 = (int)Round(DepthZ / StepZ);                                                                    // Anzahl der Zustellungen
@@ -115,7 +110,7 @@ namespace NC_Tool
                     My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 X" + X.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + Y.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                 }
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + StartPosZ.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                StartPosZ = StartPosZ - StepZ;
+                StartPosZ -= StepZ;
                 My.MyProject.Forms.Form2.Ausgabe.AppendText(My.MyProject.Forms.Form1.rm.GetString("String253") + N.ToString("###") + My.MyProject.Forms.Form1.rm.GetString("String255") + StartPosZ.ToString("#0.0##") + " )" + Constants.vbCrLf);
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FFinish.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " Z" + StartPosZ.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                 // einmal komplett um die Kontur
@@ -136,7 +131,7 @@ namespace NC_Tool
                     for (M = 1; M <= loopTo1; M++)
                     {
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + StartHeight.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        Y = Y + Conversions.ToDouble(Strings.Format(DT, "###0.000"));
+                        Y += Conversions.ToDouble(Strings.Format(DT, "###0.000"));
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 X" + PocketSizeX.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + Y.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FFinish.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " Z" + StartPosZ.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FCut.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " X0.000" + Constants.vbCrLf);
@@ -149,17 +144,17 @@ namespace NC_Tool
                     var loopTo2 = O;
                     for (M = 1; M <= loopTo2; M++)
                     {
-                        X = X + DT;
+                        X += DT;
                         if (X > PocketSizeX / 2d)
                             break;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 X" + X.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        Y1 = Y1 - DT;
+                        Y1 -= DT;
                         if (Y1 < PocketSizeY / 2d)
                             break;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 Y" + Y1.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        X1 = X1 - DT;
+                        X1 -= DT;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 X" + X1.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        Y = Y + DT;
+                        Y += DT;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 Y" + Y.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                     }
                 }
@@ -175,7 +170,7 @@ namespace NC_Tool
                     My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 X" + X.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + Y.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                 }
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + StartPosZ.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                StartPosZ = StartPosZ - BR;
+                StartPosZ -= BR;
                 My.MyProject.Forms.Form2.Ausgabe.AppendText(My.MyProject.Forms.Form1.rm.GetString("String253") + N.ToString("###") + My.MyProject.Forms.Form1.rm.GetString("String255") + StartPosZ.ToString("#0.0##") + "           )" + Constants.vbCrLf);
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FFinish.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " Z" + StartPosZ.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                 // einmal komplett um die Kontur
@@ -192,7 +187,7 @@ namespace NC_Tool
                     for (M = 1; M <= loopTo3; M++)
                     {
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + StartHeight.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        Y = Y + Conversions.ToDouble(Strings.Format(DT, "###0.000"));
+                        Y += Conversions.ToDouble(Strings.Format(DT, "###0.000"));
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 X" + PocketSizeX.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + Y.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FFinish.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " Z" + StartPosZ.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FCut.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " X0.000" + Constants.vbCrLf);
@@ -205,17 +200,17 @@ namespace NC_Tool
                     var loopTo4 = O;
                     for (M = 1; M <= loopTo4; M++)
                     {
-                        X = X + DT;
+                        X += DT;
                         if (X > PocketSizeX / 2d)
                             break;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 X" + X.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        Y1 = Y1 - DT;
+                        Y1 -= DT;
                         if (Y1 < PocketSizeY / 2d)
                             break;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 Y" + Y1.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        X1 = X1 - DT;
+                        X1 -= DT;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 X" + X1.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                        Y = Y + DT;
+                        Y += DT;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 Y" + Y.ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                     }
                 }
@@ -251,7 +246,6 @@ namespace NC_Tool
             double PocketY;
             double PocketsizeXH;
             double PocketsizeYH;
-            double Startheight_org;
             double DepthZ_ORG;
             double Z;
             double XX;
@@ -365,13 +359,12 @@ namespace NC_Tool
                     StepX = StepXY;
                     IterationTemp = (int)Round(PocketsizeXH / StepXY);
                     IterationTemp = Conversion.Int(IterationTemp);
-                    IterationTemp = IterationTemp - 1;
+                    IterationTemp--;
                     if (IterationTemp * StepXY >= PocketX + StepXY) // vermeidet Leerfahrt auf letzter Bahn einer Ebene
                     {
-                        IterationTemp = IterationTemp - 1;
+                        IterationTemp--;
                     }
                 }
-                Startheight_org = StartHeight;
                 if (StartPosZ >= 0d)
                     StartHeight = StartPosZ + StartHeight; // Abnullen des Startpunktes der Z-Schleife
                 if (StartPosZ < 0d)
@@ -382,7 +375,7 @@ namespace NC_Tool
                 ZLoop = (int)Round(DepthZ / StepZ);
                 if (DepthZ_ORG > ZLoop)
                 {
-                    ZLoop = ZLoop + 1;
+                    ZLoop++;
                 }
                 // Äußere Schleife in Z
                 var loopTo = ZLoop;
@@ -623,7 +616,6 @@ namespace NC_Tool
                     StepY = OFin;
                     IterationTemp = 0;
                 }
-                Startheight_org = StartHeight;
                 if (StartPosZ >= 0d)
                     StartHeight = StartPosZ + StartHeight; // Abnullen des Startpunktes der Z-Schleife
                 if (StartPosZ < 0d)
@@ -631,12 +623,12 @@ namespace NC_Tool
                 DepthZ_ORG = DepthZ;
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + StartHeight.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FFinish.ToString("####", System.Globalization.CultureInfo.InvariantCulture) + " Z" + StartPosZ.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                StartPosZ = StartPosZ - StepZ;
+                StartPosZ -= StepZ;
                 DepthZ_ORG = DepthZ / StepZ;
                 ZLoop = (int)Round(DepthZ / StepZ);
                 if (DepthZ_ORG > ZLoop)
                 {
-                    ZLoop = ZLoop + 1;
+                    ZLoop++;
                 }
                 // Äußere Schleife in Z
                 var loopTo2 = ZLoop;
@@ -936,10 +928,10 @@ namespace NC_Tool
                 StepX = StepXY;
                 IterationTemp = (int)Round(OFinX / StepXY);
                 IterationTemp = Conversion.Int(IterationTemp);
-                IterationTemp = IterationTemp - 1;
+                IterationTemp--;
                 if (IterationTemp * StepXY >= OFinX + StepXY) // vermeidet Leerfahrt auf letzter Bahn einer Ebene
                 {
-                    IterationTemp = IterationTemp - 1;
+                    IterationTemp--;
                 }
             }
             // Startposition in Z
@@ -948,12 +940,12 @@ namespace NC_Tool
             if (StartPosZ < 0d)
                 StartHeight = StartPosZ - (-StartHeight); // Abnullen des Startpunktes der Z-Schleife
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + StartHeight.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-            StartPosZ = StartPosZ - StepZ;
+            StartPosZ -= StepZ;
             DepthZ_ORG = DepthZ / StepZ;
             ZLoop = (int)Round(DepthZ / StepZ);
             if (DepthZ_ORG > ZLoop)
             {
-                ZLoop = ZLoop + 1;
+                ZLoop++;
             }
             // Äußere Schleife in Z
             var loopTo = ZLoop;
@@ -1267,12 +1259,12 @@ namespace NC_Tool
                     StartHeight = StartPosZ + StartHeight; // Abnullen des Startpunktes der Z-Schleife
                 if (StartPosZ < 0d)
                     StartHeight = StartPosZ - (-StartHeight); // Abnullen des Startpunktes der Z-Schleife
-                StartPosZ = StartPosZ - StepZ;
+                StartPosZ -= StepZ;
                 DepthZ_ORG = DepthZ / StepZ;
                 ZLoop = (int)Round(DepthZ / StepZ);
                 if (DepthZ_ORG > ZLoop)
                 {
-                    ZLoop = ZLoop + 1;
+                    ZLoop++;
                 }
                 // Äußere Schleife in Z
                 var loopTo = ZLoop;
@@ -1344,17 +1336,17 @@ namespace NC_Tool
                             StepXY3 = Y1;
                             X1 = StartPosX;
                             Y1 = StartPosY - ((X - 1) * StepXY + Step_Temp);
-                            StepXY3 = StepXY3 + Y1;
+                            StepXY3 += Y1;
                             StepXY2 = Temp_XY;
-                            Temp_XY = Temp_XY + Step_Temp;
+                            Temp_XY += Step_Temp;
                             My.MyProject.Forms.Form2.Ausgabe.AppendText("G3 X" + X1.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + Y1.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " I" + 0.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " J" + (-StepXY2).ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                             // Bogen von Y- nach Y+
                             StepXY3 = Y1;
                             X1 = StartPosX;
                             Y1 = -Y1;
-                            StepXY3 = StepXY3 + Y1;
+                            StepXY3 += Y1;
                             StepXY2 = Temp_XY;
-                            Temp_XY = Temp_XY + Step_Temp;
+                            Temp_XY += Step_Temp;
                             My.MyProject.Forms.Form2.Ausgabe.AppendText("G3 X" + X1.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + Y1.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " I" + 0.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " J" + StepXY2.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         }
                         if (X == IterationTemp)
@@ -1415,12 +1407,12 @@ namespace NC_Tool
                 StartPosZ = Conversions.ToDouble(Strings.Format(0, "###0.000"));                                   // Zyklusposition in Z
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 X" + StartPosX.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + StartPosY.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + StartPosZ.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-                StartPosZ = StartPosZ - StepZ;
+                StartPosZ -= StepZ;
                 DepthZ_ORG = DepthZ / StepZ;
                 ZLoop = (int)Round(DepthZ / StepZ);
                 if (DepthZ_ORG > ZLoop)
                 {
-                    ZLoop = ZLoop + 1;
+                    ZLoop++;
                 }
                 // Äußere Schleife in Z
                 My.MyProject.Forms.Form2.Ausgabe.AppendText(My.MyProject.Forms.Form1.rm.GetString("String277") + Constants.vbCrLf);
@@ -1566,7 +1558,7 @@ namespace NC_Tool
             ZLoop = (int)Round(DepthZ / StepZ);
             if (DepthZ_ORG > ZLoop)
             {
-                ZLoop = ZLoop + 1;
+                ZLoop++;
             }
             // wenn Aufmaß in X oder in Y größer 0 ist (Restmaterial entfernen)
             if (OFinX > 0d | OFinY > 0d)
@@ -1623,10 +1615,10 @@ namespace NC_Tool
                             StepX = StepXY;
                             IterationTemp = (int)Round(OFinX / StepXY);
                             IterationTemp = Conversion.Int(IterationTemp);
-                            IterationTemp = IterationTemp - 1;
+                            IterationTemp--;
                             if (IterationTemp * StepXY >= OFinX + StepXY) // vermeidet Leerfahrt auf letzter Bahn einer Ebene
                             {
-                                IterationTemp = IterationTemp - 1;
+                                IterationTemp--;
                             }
                         }
                         // Startposition in X und Y
@@ -1686,10 +1678,10 @@ namespace NC_Tool
                         StepX = StepXY;
                         IterationTemp = (int)Round((R1 - R2) / StepXY);
                         IterationTemp = Conversion.Int(IterationTemp);
-                        IterationTemp = IterationTemp - 1;
+                        IterationTemp--;
                         if (IterationTemp * StepXY >= R1 - R2 + StepXY) // vermeidet Leerfahrt auf letzter Bahn einer Ebene
                         {
-                            IterationTemp = IterationTemp - 1;
+                            IterationTemp--;
                         }
                         // Innere Schleife "Umrandung"
                         for (int M = Iteration; M >= 0; M -= 1)
@@ -1747,10 +1739,10 @@ namespace NC_Tool
                             StepX = StepXY;
                             IterationTemp = (int)Round(OFinX / StepXY);
                             IterationTemp = Conversion.Int(IterationTemp);
-                            IterationTemp = IterationTemp - 1;
+                            IterationTemp--;
                             if (IterationTemp * StepXY >= OFinX + StepXY) // vermeidet Leerfahrt auf letzter Bahn einer Ebene
                             {
-                                IterationTemp = IterationTemp - 1;
+                                IterationTemp--;
                             }
                         }
                         // Startposition in X und Y
@@ -1810,10 +1802,10 @@ namespace NC_Tool
                         StepX = StepXY;
                         IterationTemp = (int)Round((R1 - R2) / StepXY);
                         IterationTemp = Conversion.Int(IterationTemp);
-                        IterationTemp = IterationTemp - 1;
+                        IterationTemp--;
                         if (IterationTemp * StepXY >= R1 - R2 + StepXY) // vermeidet Leerfahrt auf letzter Bahn einer Ebene
                         {
-                            IterationTemp = IterationTemp - 1;
+                            IterationTemp--;
                         }
                         // Innere Schleife "Umrandung"
                         for (int M = Iteration; M >= 0; M -= 1)
@@ -1943,9 +1935,6 @@ namespace NC_Tool
             StepXY = Conversions.ToDouble(Strings.Format(DT / 2d, "###0.000"));                               // Zustellung in X/Y
             FPlunge = 800;                                                       // Positioniervorschub
             StartPosZ = Conversions.ToDouble(Strings.Format(0, "###0.000"));                                   // Zyklusposition in Z
-            Z = 0d;
-            // interne Variablen
-            N = 0;
             // Zyklusbeginn -----------------------------------------------------------------------
             // Zyklus vorbereiten (Vorpositionieren und Spindel EIN)
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + SafetyHeight.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
@@ -1968,12 +1957,12 @@ namespace NC_Tool
                 StartHeight = StartPosZ + StartHeight; // Abnullen des Startpunktes der Z-Schleife
             if (StartPosZ < 0d)
                 StartHeight = StartPosZ - (-StartHeight); // Abnullen des Startpunktes der Z-Schleife
-            StartPosZ = StartPosZ - StepZ;
+            StartPosZ -= StepZ;
             DepthZ_ORG = DepthZ / StepZ;
             ZLoop = (int)Round(DepthZ / StepZ);
             if (DepthZ_ORG > ZLoop)
             {
-                ZLoop = ZLoop + 1;
+                ZLoop++;
             }
             // Äußere Schleife in Z
             var loopTo = ZLoop;
@@ -2131,7 +2120,7 @@ namespace NC_Tool
                 {
                     Koment = Koment + "- " + BP[N, 2] + "° ";
                 }
-                Koment = Koment + My.MyProject.Forms.Form1.rm.GetString("String298");
+                Koment += My.MyProject.Forms.Form1.rm.GetString("String298");
                 My.MyProject.Forms.Form2.Ausgabe.AppendText(Koment + Constants.vbCrLf);
                 StartPosX = BP[N, 0];
                 StartPosY = BP[N, 1];
@@ -2150,16 +2139,16 @@ namespace NC_Tool
                 ZLoop = (int)Round(DepthZ / StepZ);
                 if (DepthZ_ORG > ZLoop)
                 {
-                    ZLoop = ZLoop + 1;
+                    ZLoop++;
                 }
                 // bohren an Bohrposition beginnt
                 Z1 = 0d;                      // Merker für Spanbruch
-                Z1 = Z1 - DepthBs;
+                Z1 -= DepthBs;
                 var loopTo = ZLoop;
                 for (X = 1; X <= loopTo; X++)
                 {
                     // Bohrtiefe um Zustellung erhöhen
-                    Z = Z - StepZ;
+                    Z -= StepZ;
                     // den Rest bis Endtiefe ermitteln
                     if (Z < -DepthZ)
                         Z = -DepthZ;
@@ -2168,19 +2157,19 @@ namespace NC_Tool
                         // ist geplante Bohrtiefe < Spanbruch
                         // bohren nur bis Spanbruch
                         Z_Temp = Z - Z1;
-                        Z = Z - Z_Temp;
+                        Z -= Z_Temp;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FFinish.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " Z" + Z.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         // Rückzug bis Spanbruch
-                        Z = Z + DepthRs;
+                        Z += DepthRs;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + Z.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         // auf Position zurück fahren
-                        Z = Z - DepthRs;
+                        Z -= DepthRs;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + Z.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         // weiter bis Zustelltiefe bohren
-                        Z = Z + Z_Temp;
+                        Z += Z_Temp;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F" + FFinish.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + " Z" + Z.ToString("#0.0##", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
                         // Spanbruch um ein weiter setzen
-                        Z1 = Z1 - DepthBs;
+                        Z1 -= DepthBs;
                     }
                     else
                     {
@@ -2195,7 +2184,7 @@ namespace NC_Tool
                     }
                 }
             }
-            N = N + 1;
+            N++;
             if (BP[N, 0] != 10000d & BP[N, 1] != 10000d & N < 60)
                 goto weiter;
             // Zyklusende ------------------------------------------------------------------------
@@ -2322,12 +2311,12 @@ namespace NC_Tool
                 StartHeight = StartPosZ + StartHeight; 		// Abnullen des Startpunktes der Z-Schleife
             if (StartPosZ < 0d)
                 StartHeight = StartPosZ - (-StartHeight); 	// Abnullen des Startpunktes der Z-Schleife
-            StartPosZ = StartPosZ - StepZ;
+            StartPosZ -= StepZ;
             DepthZ_ORG = DepthZ / StepZ;
             ZLoop = (int)Round(DepthZ / StepZ);
             if (DepthZ_ORG > ZLoop)
             {
-                ZLoop = ZLoop + 1;
+                ZLoop++;
             }
             // Äußere Schleife in Z
             var loopTo = ZLoop;
@@ -2619,7 +2608,7 @@ namespace NC_Tool
             ZLoop = (int)Round(DepthZ / StepZ);
             if (DepthZ_ORG > ZLoop)
             {
-                ZLoop = ZLoop + 1;
+                ZLoop++;
             }
             // Äußere Schleife in Z
             var loopTo = ZLoop;
@@ -2872,7 +2861,6 @@ namespace NC_Tool
             double StepZ_Temp;
             double PocketX;
             double PocketY;
-            double Startheight_org;
             var Z = default(double);
             double XX;
             int ZLoop;
@@ -3018,7 +3006,6 @@ namespace NC_Tool
                 My.MyProject.Forms.Form1.Fehler = Conversions.ToBoolean(1);
                 return;
             }
-            Startheight_org = StartHeight;
             if (StartPosZ >= 0d)
                 StartHeight = StartPosZ + StartHeight; 		// Abnullen des Startpunktes der Z-Schleife
             if (StartPosZ < 0d)
@@ -3029,7 +3016,7 @@ namespace NC_Tool
             ZLoop = (int)Round(DepthZ / StepZ);
             if (DepthZ_ORG > ZLoop)
             {
-                ZLoop = ZLoop + 1;
+                ZLoop++;
             }
             // Äußere Schleife in Z
             // pendelnde Bewegung bei Z-Zustellung
@@ -3272,7 +3259,6 @@ namespace NC_Tool
             double DepthZ_ORG;
             double ZustXY;
             int X;
-            double Startheight_org;
             int ZLoop;
             var Z = default(double);
             double Teilkreisradius;
@@ -3336,7 +3322,6 @@ namespace NC_Tool
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 X" + StartPosX.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + StartPosY.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
             My.MyProject.Forms.Form2.Ausgabe.AppendText("M3 S" + Spin.ToString("#####", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
             // Zyklusbeginn -----------------------------------------------------------------------
-            Startheight_org = StartHeight;
             if (StartPosZ >= 0d)
                 StartHeight = StartPosZ + StartHeight; // Abnullen des Startpunktes der Z-Schleife
             if (StartPosZ < 0d)
@@ -3350,7 +3335,7 @@ namespace NC_Tool
             ZLoop = (int)Round(DepthZ / StepZ);
             if (DepthZ_ORG > ZLoop)
             {
-                ZLoop = ZLoop + 1;
+                ZLoop++;
             }
             // Äußere Schleife in Z
             var loopTo = ZLoop;
@@ -3386,7 +3371,7 @@ namespace NC_Tool
                 }
                 else
                 {
-                    X = X + 1;
+                    X++;
                     ZustXY = X * (DT / 2d);
                     if (Breite < ZustXY + DT / 2d)
                     {
@@ -3456,7 +3441,6 @@ namespace NC_Tool
             // Konstanten
             Z = Conversions.ToDouble(Strings.Format(0, "###0.0"));                                             // Zyklusposition in Z
             // interne Variablen
-            N = 0;
             // Zyklusbeginn -----------------------------------------------------------------------
             // Zyklus vorbereiten (Vorpositionieren und Spindel EIN)
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 Z" + SafetyHeight.ToString("##0.0", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
@@ -3719,7 +3703,7 @@ namespace NC_Tool
             double PosXalt;
             double PosYalt;
             bool option = true;
-            NumberFormatInfo provider = new NumberFormatInfo
+            NumberFormatInfo provider = new()
             {
                 NumberDecimalSeparator = "."
             };
@@ -3791,11 +3775,11 @@ namespace NC_Tool
                     }
                     case 3: // Rechteck
                     {
-                        rectangle temp = (rectangle)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
+                            Rectangl temp = (Rectangl)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
                         int index;
                         string name = "";
                         string test = temp.blockName;
-                        PointF pointF = new PointF();
+                        PointF pointF = new();
                         string x1 = "";
                         string y1 = "";
                         string x2 = "";
@@ -3866,7 +3850,7 @@ namespace NC_Tool
                     }
                     case 5: // Polylinie
                     {
-                        polyline temp = (polyline)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
+                        Polyline temp = (Polyline)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
                         foreach (Line1 obj1 in temp.listOfLines1)
                         {
                             string x1 = Convert.ToDouble(obj1.GetStartPoint.X).ToString("###0.000", System.Globalization.CultureInfo.InvariantCulture);
@@ -3912,7 +3896,7 @@ namespace NC_Tool
                     }
                     case 6: // Bogen
                     {
-                        arc1 temp = (arc1)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
+                        Arc1 temp = (Arc1)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
                         var bogenr = temp.AccessRadius;
                         var startw = temp.AccessStartAngle;
                         var endw = temp.AccessSweepAngle;
@@ -4021,12 +4005,12 @@ namespace NC_Tool
                     }
                     case 7: // Ellipse
                     {
-                        ellipse temp = (ellipse)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
+                        Ellipse temp = (Ellipse)My.MyProject.Forms.Form1.gcodeList[obj.indexNo];
                         var radius = temp.AccessRadius;
                         var centerX = temp.AccessCenterPoint.X;
                         var centerY = temp.AccessCenterPoint.Y;
-                        PointF P1 = new PointF();
-                        PointF P2 = new PointF();
+                        PointF P1 = new();
+                        PointF P2 = new();
                         float rd1, rd2;
                         float e, c, c1, p, p1, xi, yj, tempy;
                         My.MyProject.Forms.Form2.Ausgabe.AppendText(My.MyProject.Forms.Form1.rm.GetString("String352") + Constants.vbCrLf);
@@ -4076,7 +4060,7 @@ namespace NC_Tool
                                     My.MyProject.Forms.Form2.Ausgabe.AppendText("G0 X" + x1 + " Y" + y1 + Constants.vbCrLf);
                                     My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F100 Z" + z + Constants.vbCrLf);
                                     My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 F1000 X" + x2 + " Y" + y2 + Constants.vbCrLf);
-                                    count = count + steps;
+                                    count += steps;
                                 }
                                 else
                                 {
@@ -4093,7 +4077,7 @@ namespace NC_Tool
                                     x2 = x2.Replace(",", ".");
                                     y2 = y2.Replace(",", ".");
                                     My.MyProject.Forms.Form2.Ausgabe.AppendText("G1 X" + x2 + " Y" + y2 + Constants.vbCrLf);
-                                    count = count + steps;
+                                    count += steps;
                                 }
                             }
                             while (count < 360);
@@ -4453,8 +4437,6 @@ namespace NC_Tool
             I = -(P1X - AbstX);
             J = -(P1Y - AbstY);
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G3 X" + P2X.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + P2Y.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " I" + I.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " J" + J.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-
-
             // Radius am linken Ende der Nut
             P1X = Conversions.ToDouble(Operators.AddObject(AbstX, Punkt_X_Kreis(Tk_radius + Zust, SW, OW)));
             P1Y = Conversions.ToDouble(Operators.AddObject(AbstY, Punkt_Y_Kreis(Tk_radius + Zust, SW, OW)));
@@ -4463,8 +4445,6 @@ namespace NC_Tool
             I = Conversions.ToDouble(Operators.SubtractObject(Operators.AddObject(AbstX, Punkt_X_Kreis(Tk_radius, SW, OW)), P1X));
             J = Conversions.ToDouble(Operators.SubtractObject(Operators.AddObject(AbstY, Punkt_Y_Kreis(Tk_radius, SW, OW)), P1Y));
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G3 X" + P2X.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + P2Y.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " I" + I.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " J" + J.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-
-
             // Bewegung vom linken zum rechten Ende der Nut
             P1X = Conversions.ToDouble(Operators.AddObject(AbstX, Punkt_X_Kreis(Tk_radius - Zust, SW, OW)));
             P1Y = Conversions.ToDouble(Operators.AddObject(AbstY, Punkt_Y_Kreis(Tk_radius - Zust, SW, OW)));
@@ -4473,8 +4453,6 @@ namespace NC_Tool
             I = AbstX - P1X;
             J = -(P1Y - AbstY);
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G2 X" + P2X.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + P2Y.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " I" + I.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " J" + J.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-
-
             // Radius am rechten Ende der Nut
             P1X = Conversions.ToDouble(Operators.AddObject(AbstX, Punkt_X_Kreis(Tk_radius - Zust, SW, 0d)));
             P1Y = Conversions.ToDouble(Operators.AddObject(AbstY, Punkt_Y_Kreis(Tk_radius - Zust, SW, 0d)));
@@ -4483,8 +4461,6 @@ namespace NC_Tool
             I = Conversions.ToDouble(Operators.SubtractObject(Operators.AddObject(AbstX, Punkt_X_Kreis(Tk_radius, SW, 0d)), P1X));
             J = Conversions.ToDouble(Operators.SubtractObject(Operators.AddObject(AbstY, Punkt_Y_Kreis(Tk_radius, SW, 0d)), P1Y));
             My.MyProject.Forms.Form2.Ausgabe.AppendText("G3 X" + P2X.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " Y" + P2Y.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " I" + I.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + " J" + J.ToString("##0.000", System.Globalization.CultureInfo.InvariantCulture) + Constants.vbCrLf);
-
-
         }
         #endregion
     }

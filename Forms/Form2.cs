@@ -8,12 +8,8 @@ using static System.Math;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
-using static System.Net.Mime.MediaTypeNames;
 using System.Text.RegularExpressions;
 using System.Runtime.InteropServices;
-using System.Diagnostics.Eventing.Reader;
-using System.Resources;
-using System.Reflection;
 
 namespace NC_Tool
 {
@@ -118,7 +114,7 @@ namespace NC_Tool
         {
             Translate();
             String inputLanguage = _Ausgabe.Text;
-            Regex r = new Regex("\r\n");
+            Regex r = new("\r\n");
             String[] lines = r.Split(inputLanguage);
             foreach (string l in lines)
             {
@@ -135,7 +131,7 @@ namespace NC_Tool
             int a;
             int b;
             string c;
-            Ausgabe.Text = _Editor.Text;
+            Ausgabe.Text = Editor.Text;
             SaveFileDialog1.InitialDirectory = My.MyProject.Forms.Form1.Speicherpfad.Text;
             SaveFileDialog1.FileName = Dateiname + ".nc";
             SaveFileDialog1.Filter = My.MyProject.Forms.Form1.rm.GetString("String388");
@@ -1029,11 +1025,11 @@ namespace NC_Tool
             int F1;
             int F2;
             int F3;
-            PointF StartAlt = new PointF(0, 0);
-            PointF Startpunkt = new PointF(0, 0);
-            PointF Endpunkt = new PointF(0, 0);
-            PointF Kreismitte = new PointF(0, 0);
-            PointF RecLiO = new PointF(0, 0);
+            PointF StartAlt = new(0, 0);
+            PointF Startpunkt = new(0, 0);
+            PointF Endpunkt = new(0, 0);
+            PointF Kreismitte = new(0, 0);
+            PointF RecLiO = new(0, 0);
             float Radius;
             float RecWidht;
             float RecHidht;
@@ -2140,114 +2136,113 @@ namespace NC_Tool
             ToolTip1.Show(My.MyProject.Forms.Form1.rm.GetString("String396"), this, 550, 570, 2000);
         }
         // Reaktion beim verändern des Textes
-        private void _Editor_TextChanged(object sender, EventArgs e)
+        private void Editor_TextChanged(object sender, EventArgs e)
         {
             Invalidate();
             if (textupdate)
             {
                 int start = 0, end = 0;
                 // Berechne die Startposition der aktuellen Zeile
-                for (start = _Editor.SelectionStart - 1; start > 0; start--)
+                for (start = Editor.SelectionStart - 1; start > 0; start--)
                 {
-                    if (_Editor.Text[start] == '\n') { start++; break; }
+                    if (Editor.Text[start] == '\n') { start++; break; }
                 }
                 // Berechne die Endposition der aktuellen Zeile
-                for (end = _Editor.SelectionStart; end < _Editor.Text.Length; end++)
+                for (end = Editor.SelectionStart; end < Editor.Text.Length; end++)
                 {
-                    if (_Editor.Text[end] == '\n') break;
+                    if (Editor.Text[end] == '\n') break;
                 }
                 // Extrahiere die aktuelle Zeile, die bearbeitet wird
-                String line = _Editor.Text.Substring(start, end - start);
+                String line = Editor.Text.Substring(start, end - start);
                 // Den aktuellen Auswahlpunkt des Benutzers sichern
-                int selectionStart = _Editor.SelectionStart;
-                int selectionLength = _Editor.SelectionLength;
+                int selectionStart = Editor.SelectionStart;
+                int selectionLength = Editor.SelectionLength;
                 // Die Zeile in Token aufteilen
-                Regex r = new Regex("([ \\t{}();])");
+                Regex r = new("([ \\t{}();])");
                 string[] tokens = r.Split(line);
                 int index = start;
                 foreach (string token in tokens)
                 {
-                    _Editor.SelectionStart = index;
-                    _Editor.SelectionLength = token.Length;
-                    _Editor.SelectionColor = farbeText;
-                    // Prüfen, ob das Token ein Schlüsselwort ist.      // Check for a comment.
+                    Editor.SelectionStart = index;
+                    Editor.SelectionLength = token.Length;
+                    Editor.SelectionColor = farbeText;
+                    // Prüfen, ob das Token ein Schlüsselwort ist.
                     if (token == "(" || token.StartsWith("("))
                     {
-                        // Find the start of the comment and then extract the whole comment.
                         int index1 = line.IndexOf("(");
                         string comment = line.Substring(index1, line.Length - index);
-                        _Editor.SelectionColor = farbeKoment;
-                        _Editor.SelectedText = comment;
+                        Editor.SelectionColor = farbeKoment;
+                        Editor.SelectedText = comment;
                         break;
                     }
-                    string[] keywords = { "G" };
+                    string[] keywords = ["G"];
                     for (int i = 0; i < keywords.Length; i++)
                     {
                         if (token.Contains(keywords[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeGx;
+                            Editor.SelectionColor = farbeGx;
                         }
                     }
-                    string[] keywords1 = { "G0" };
+                    string[] keywords1 = ["G0"];
                     for (int i = 0; i < keywords1.Length; i++)
                     {
                         if (keywords1[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG0;
+                            Editor.SelectionColor = farbeG0;
                         }
                     }
-                    string[] keywords2 = { "G1" };
+                    string[] keywords2 = ["G1"];
                     for (int i = 0; i < keywords2.Length; i++)
                     {
                         if (keywords2[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG1;
+                            Editor.SelectionColor = farbeG1;
                         }
                     }
-                    string[] keywords3 = { "G2" };
+                    string[] keywords3 = ["G2"];
                     for (int i = 0; i < keywords3.Length; i++)
                     {
                         if (keywords3[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG2;
+                            Editor.SelectionColor = farbeG2;
                         }
                     }
-                    string[] keywords4 = { "G3" };
+                    string[] keywords4 = ["G3"];
                     for (int i = 0; i < keywords4.Length; i++)
                     {
                         if (keywords4[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG3;
+                            Editor.SelectionColor = farbeG3;
                         }
                     }
-                    string[] keywords5 = { "M" };
+                    string[] keywords5 = ["M"];
                     for (int i = 0; i < keywords5.Length; i++)
                     {
                         if (token.Contains(keywords5[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeM;
+                            Editor.SelectionColor = farbeM;
                         }
                     }
-                    string[] keywords6 = { "S" };
+                    string[] keywords6 = ["S"];
                     for (int i = 0; i < keywords6.Length; i++)
                     {
                         if (token.Contains(keywords6[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeS;
+                            Editor.SelectionColor = farbeS;
                         }
                     }
-                    string[] keywords7 = { "T" };
+                    string[] keywords7 = ["T"];
                     for (int i = 0; i < keywords7.Length; i++)
                     {
                         if (token.Contains(keywords7[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeT;
+                            Editor.SelectionColor = farbeT;
                         }
                     }
                     index += token.Length;
                 }
-                _Editor.SelectionStart = selectionStart;
-                _Editor.SelectionLength = selectionLength;
+                Editor.SelectionStart = selectionStart;
+                Editor.SelectionLength = selectionLength;
                 ZN_aktualisieren();
             }
         }
@@ -2266,95 +2261,94 @@ namespace NC_Tool
         {
             if (line != "")
             {
-                Regex r = new Regex("([ \\t{}():;])");
+                Regex r = new("([ \\t{}():;])");
                 string[] tokens = r.Split(line);
                 foreach (String token in tokens)
                 {
-                    // Legen Sie die Standardfarbe und -schriftart des Tokens fest.  
-                    _Editor.SelectionColor = farbeText;
-                    // Prüfen, ob das Token ein Schlüsselwort ist.      // Check for a comment.
+                    // Standardfarbe und -schriftart des Tokens festlegen.  
+                    Editor.SelectionColor = farbeText;
+                    // Prüfen, ob das Token ein Schlüsselwort ist.
                     if (token == "(" || token.StartsWith("("))
                     {
-                        // Find the start of the comment and then extract the whole comment.
                         int index = line.IndexOf("(");
                         string comment = line.Substring(index, line.Length - index);
-                        _Editor.SelectionColor = farbeKoment;
-                        _Editor.SelectedText = comment;
+                        Editor.SelectionColor = farbeKoment;
+                        Editor.SelectedText = comment;
                         break;
                     }
-                    string[] keywords = { "G" };
+                    string[] keywords = ["G"];
                     for (int i = 0; i < keywords.Length; i++)
                     {
                         if (token.Contains(keywords[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeGx;
+                            Editor.SelectionColor = farbeGx;
                         }
                     }
-                    string[] keywords1 = { "G0" };
+                    string[] keywords1 = ["G0"];
                     for (int i = 0; i < keywords1.Length; i++)
                     {
                         if (keywords1[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG0;
+                            Editor.SelectionColor = farbeG0;
                         }
                     }
-                    string[] keywords2 = { "G1" };
+                    string[] keywords2 = ["G1"];
                     for (int i = 0; i < keywords2.Length; i++)
                     {
                         if (keywords2[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG1;
+                            Editor.SelectionColor = farbeG1;
                         }
                     }
-                    string[] keywords3 = { "G2" };
+                    string[] keywords3 = ["G2"];
                     for (int i = 0; i < keywords3.Length; i++)
                     {
                         if (keywords3[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG2;
+                            Editor.SelectionColor = farbeG2;
                         }
                     }
-                    string[] keywords4 = { "G3" };
+                    string[] keywords4 = ["G3"];
                     for (int i = 0; i < keywords4.Length; i++)
                     {
                         if (keywords4[i] == token)
                         {
-                            _Editor.SelectionColor = farbeG3;
+                            Editor.SelectionColor = farbeG3;
                         }
                     }
-                    string[] keywords5 = { "M" };
+                    string[] keywords5 = ["M"];
                     for (int i = 0; i < keywords5.Length; i++)
                     {
                         if (token.Contains(keywords5[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeM;
+                            Editor.SelectionColor = farbeM;
                         }
                     }
-                    string[] keywords6 = { "S" };
+                    string[] keywords6 = ["S"];
                     for (int i = 0; i < keywords6.Length; i++)
                     {
                         if (token.Contains(keywords6[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeS;
+                            Editor.SelectionColor = farbeS;
                         }
                     }
-                    string[] keywords7 = { "T" };
+                    string[] keywords7 = ["T"];
                     for (int i = 0; i < keywords7.Length; i++)
                     {
                         if (token.Contains(keywords7[i]) == true)
                         {
-                            _Editor.SelectionColor = farbeT;
+                            Editor.SelectionColor = farbeT;
                         }
                     }
-                    _Editor.SelectedText = token;
+                    Editor.SelectedText = token;
                 }
-                _Editor.SelectedText = "\n";
+                Editor.SelectedText = "\n";
             }
         }
         // Scroll-Syncronisation mit Zeilennummern
-        private void _Editor_VScroll(object sender, EventArgs e)
+        private void Editor_VScroll(object sender, EventArgs e)
         {
-            Int32 nPos = Form2.GetScrollPos(_Editor.Handle, 1);
+            Int32 nPos = Form2.GetScrollPos(Editor.Handle, 1);
             nPos <<= 16;
             uint wParam = 4 | (uint)nPos;
             Form2.SendMessage(Editor_ZN.Handle, 0x0115, new IntPtr(wParam), new IntPtr(0));
@@ -2363,8 +2357,8 @@ namespace NC_Tool
         private void ZN_aktualisieren()
         {
             Editor_ZN.Clear();
-            Editor_ZN.Font = _Editor.Font;
-            for (int i = 1; i < _Editor.Lines.Length; i++)
+            Editor_ZN.Font = Editor.Font;
+            for (int i = 1; i < Editor.Lines.Length; i++)
             {
                 Editor_ZN.AppendText(i.ToString() + "." + Constants.vbCrLf);
             }
@@ -2375,14 +2369,14 @@ namespace NC_Tool
             if (ZN.Checked == true)
             {
                 Editor_ZN.Visible = true;
-                _Editor.Location = new Point(41, 54);
-                _Editor.Size = new Size(433, 610);
+                Editor.Location = new Point(41, 54);
+                Editor.Size = new Size(433, 610);
             }
             else
             {
                 Editor_ZN.Visible = false;
-                _Editor.Location = new Point(5, 54);
-                _Editor.Size = new Size(469, 610);
+                Editor.Location = new Point(5, 54);
+                Editor.Size = new Size(469, 610);
             }
         }
         // Sprache umstellen

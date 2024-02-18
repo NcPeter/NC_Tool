@@ -9,10 +9,7 @@ using System.Linq;
 using System.Collections;
 using System.IO;
 using System.Drawing.Drawing2D;
-using System.Reflection.Emit;
 using System.Reflection;
-using Microsoft.Win32.SafeHandles;
-using System.Security.Cryptography.X509Certificates;
 using System.Resources;
 
 namespace NC_Tool
@@ -23,17 +20,16 @@ namespace NC_Tool
         #region Variablen
         // Globale Einstellungen und Variablen
         public string Pfad;
-        public bool ProgStart = false;
         public int Sprache;
         public string Infostring;
         public bool Fehler;
         public int Rand;
         public Image PF_Picture;
-        public List<List<string>> gList = new();
+        public List<List<string>> gList = [];
         public float GX = 0;
         public float GY = 0;
         public int pp = 0;
-        public ArrayList listMasterArray = new ArrayList();
+        public ArrayList listMasterArray = [];
         public string inputFileTxt;
         public double XMax, XMin;
         public double YMax, YMin;
@@ -52,15 +48,15 @@ namespace NC_Tool
         public ArrayList gcodeList;
         public ArrayList objectIdentifier;
         public bool onCanvas = false;
-        public polyline thePolyLine = null;
-        public polyline thePolyLine1 = null;
-        public rectangle theRectangle = null;
-        public rectangle theRectangle1 = null;
+        public Polyline thePolyLine = null;
+        public Polyline thePolyLine1 = null;
+        public Rectangl theRectangle = null;
+        public Rectangl theRectangle1 = null;
         public bool polyLineStarting = true;
         public bool CanIDraw = false;
         public FileInfo theSourceFile;
         public string DxfDatei;
-        public Rectangle highlightedRegion = new Rectangle(0, 0, 0, 0);
+        public Rectangle highlightedRegion = new(0, 0, 0, 0);
         public int objektindex;
         public int objekttype;
         public string typeName;
@@ -234,12 +230,12 @@ namespace NC_Tool
             }
         }
         // Menüpunkt Einstellungen gewählt
-        private void einstellungenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EinstellungenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TabControl1.Visible = false;
         }
         // Sprache deutsch gewählt
-        private void deutschToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DeutschToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Sprache = 1;
             Save_Config();
@@ -248,7 +244,7 @@ namespace NC_Tool
             InfoText(tab);
         }
         // Sprache englisch gewählt
-        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EnglishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Sprache = 2;
             Save_Config();
@@ -257,13 +253,13 @@ namespace NC_Tool
             InfoText(tab);
         }
         // Programm beenden
-        private void beendenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BeendenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
         // Zyklen
         // Planfräsen
-        private void planfräsenToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void PlanfräsenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_1, true, true, true, true);
             TB_1.SelectAll();
@@ -273,7 +269,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Schräge
-        private void schrägeFaseToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void SchrägeFaseToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_10, true, true, true, true);
             TB_140.SelectAll();
@@ -283,7 +279,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Rechtecktasche
-        private void rechtecktascheToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void RechtecktascheToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_2, true, true, true, true);
             TB_20.SelectAll();
@@ -293,7 +289,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Rechteckzapfen
-        private void rechteckzapfenToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void RechteckzapfenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_3, true, true, true, true);
             TB_40.SelectAll();
@@ -303,7 +299,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Kreistasche
-        private void kreistascheToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void KreistascheToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_4, true, true, true, true);
             TB_60.SelectAll();
@@ -313,7 +309,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Kreiszapfen
-        private void kreiszapfenToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void KreiszapfenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_5, true, true, true, true);
             TB_70.SelectAll();
@@ -323,7 +319,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Nut
-        private void nutToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void NutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_11, true, true, true, true);
             TB_200.SelectAll();
@@ -333,7 +329,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Ringnut
-        private void ringnutToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void RingnutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_6, true, true, true, true);
             TB_81.SelectAll();
@@ -343,7 +339,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Dichtungsnut
-        private void dichtungsnutToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void DichtungsnutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_9, true, true, true, true);
             TB_120.SelectAll();
@@ -353,7 +349,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Bohrtabelle
-        private void bohrtabelleToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        private void BohrtabelleToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_7, true, true, true, true);
             TB_90.SelectAll();
@@ -363,7 +359,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // BohrbildLochkreis
-        private void bohrbildLochkreisToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        private void BohrbildLochkreisToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_8, true, true, true, true);
             TB_100.SelectAll();
@@ -373,7 +369,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Bohrbild auf Linien
-        private void bohrbildAufLinienToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BohrbildAufLinienToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_12, true, true, true, true);
             TB_150.SelectAll();
@@ -383,7 +379,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Runde Nut
-        private void rundeNutToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void RundeNutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_13, true, true, true, true);
             TB_170.SelectAll();
@@ -393,7 +389,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Buchstaben und Schriftzüge
-        private void schriftGavierenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SchriftGavierenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Font_Art.SelectedIndex = 0;
             SelectNextControl(Abbrechen_14, true, true, true, true);
@@ -404,7 +400,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Gewinde fräsen
-        private void gewindeFräsenToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void GewindeFräsenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             TB_251.SelectedIndex = 0;
             SelectNextControl(Abbrechen_15, true, true, true, true);
@@ -417,7 +413,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Tiefloch bohren
-        private void tieflochBohrenToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void TieflochBohrenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_16, true, true, true, true);
             TB_260.SelectAll();
@@ -427,7 +423,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // DXF wandeln
-        private void dXFWandelnToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DxfWandelnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SelectNextControl(Abbrechen_17, true, true, true, true);
             TB_280.SelectAll();
@@ -437,7 +433,7 @@ namespace NC_Tool
             TabControl1.Visible = true;
         }
         // Infofenster anzeigen
-        private void überToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void ÜberToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             My.MyProject.Forms.AboutBox1.Show();
         }
@@ -5846,12 +5842,12 @@ namespace NC_Tool
 
         #region Zyklus DXF-Daten gravieren
         // neue Datei einlesen
-        private void loadDXF_Click(object sender, EventArgs e)
+        private void LoadDXF_Click(object sender, EventArgs e)
         {
             statusLabel.Text = "";
-            drawingList = new ArrayList();
-            gcodeList = new ArrayList();
-            objectIdentifier = new ArrayList();
+            drawingList = [];
+            gcodeList = [];
+            objectIdentifier = [];
             inputFileTxt = "";
             dateiname.Text = "";
             openFileDialog1.InitialDirectory = Application.StartupPath + "\\DxfSamples\\";
@@ -5871,7 +5867,7 @@ namespace NC_Tool
             }
             openFileDialog1.Dispose();
             statusLabel.Text = rm.GetString("String343");
-            zeichneDXF();
+            ZeichneDXF();
             TB_280.Focus();
             TB_280.SelectAll();
         }
@@ -6151,82 +6147,59 @@ namespace NC_Tool
                 MessageBox.Show(rm.GetString("String355"), rm.GetString("String356"));
             }
             Datei1 = My.MyProject.Computer.FileSystem.OpenTextFileReader(Datei);
-            if (ProgStart == false)
-            {
-                string temp = Datei1.ReadLine();
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                temp = Datei1.ReadLine();
-                temp = Datei1.ReadLine();
-                temp = Datei1.ReadLine();
-                temp = Datei1.ReadLine();
-                temp = Datei1.ReadLine();
-                Sprache = Conversions.ToInteger(Datei1.ReadLine());
-                ProgStart = true;
-            }
-            else
-            {
-                Speicherpfad.Text = Datei1.ReadLine();
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    pp = 0;
-                if (a == 1)
-                    pp = 1;
-                ComboBox1.SelectedIndex = pp;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    RB_1.Checked = false;
-                if (a == 1)
-                    RB_1.Checked = true;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    RB_2.Checked = false;
-                if (a == 1)
-                    RB_2.Checked = true;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    RB_3.Checked = false;
-                if (a == 1)
-                    RB_3.Checked = true;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    RB_4.Checked = false;
-                if (a == 1)
-                    RB_4.Checked = true;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    CB_1.Checked = false;
-                if (a == 1)
-                    CB_1.Checked = true;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    RB_5.Checked = false;
-                if (a == 1)
-                    RB_5.Checked = true;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    RB_6.Checked = false;
-                if (a == 1)
-                    RB_6.Checked = true;
-                a = Conversions.ToInteger(Datei1.ReadLine());
-                if (a == 0)
-                    RB_7.Checked = false;
-                if (a == 1)
-                    RB_7.Checked = true;
-                Max_X.Text = Datei1.ReadLine();
-                Max_Y.Text = Datei1.ReadLine();
-                Max_Z.Text = Datei1.ReadLine();
-                Max_F.Text = Datei1.ReadLine();
-                SH1.Text = Datei1.ReadLine();
-                Sprache = Conversions.ToInteger(Datei1.ReadLine());
-            }
+            Speicherpfad.Text = Datei1.ReadLine();
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                pp = 0;
+            if (a == 1)
+                pp = 1;
+            ComboBox1.SelectedIndex = pp;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                RB_1.Checked = false;
+            if (a == 1)
+                RB_1.Checked = true;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                RB_2.Checked = false;
+            if (a == 1)
+                RB_2.Checked = true;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                RB_3.Checked = false;
+            if (a == 1)
+                RB_3.Checked = true;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                RB_4.Checked = false;
+            if (a == 1)
+                RB_4.Checked = true;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                CB_1.Checked = false;
+            if (a == 1)
+                CB_1.Checked = true;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                RB_5.Checked = false;
+            if (a == 1)
+                RB_5.Checked = true;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                RB_6.Checked = false;
+            if (a == 1)
+                RB_6.Checked = true;
+            a = Conversions.ToInteger(Datei1.ReadLine());
+            if (a == 0)
+                RB_7.Checked = false;
+            if (a == 1)
+                RB_7.Checked = true;
+            Max_X.Text = Datei1.ReadLine();
+            Max_Y.Text = Datei1.ReadLine();
+            Max_Z.Text = Datei1.ReadLine();
+            Max_F.Text = Datei1.ReadLine();
+            SH1.Text = Datei1.ReadLine();
+            Sprache = Conversions.ToInteger(Datei1.ReadLine());
             Datei1.Close();
         }
         // Einstellungen in "config.txt" speichern
@@ -6356,36 +6329,36 @@ namespace NC_Tool
             // Formular 1
             this.Text = rm.GetString("String3");
             #region Menü
-            programmToolStripMenuItem.Text = rm.GetString("String4");
-            einstellungenToolStripMenuItem.Text = rm.GetString("String2");
-            spracheStripMenuItem.Text = rm.GetString("String5");
-            beendenToolStripMenuItem.Text = rm.GetString("String1");
-            zyklenToolStripMenuItem1.Text = rm.GetString("String7");
-            überToolStripMenuItem1.Text = rm.GetString("String6");
-            flächenbearbeitungToolStripMenuItem1.Text = rm.GetString("String8");
-            standardbohrenGewindeFräsenToolStripMenuItem.Text = rm.GetString("String9");
-            taschenToolStripMenuItem1.Text = rm.GetString("String10");
-            zapfenToolStripMenuItem1.Text = rm.GetString("String11");
-            nutenFräsenToolStripMenuItem.Text = rm.GetString("String12");
-            bohrbilderToolStripMenuItem1.Text = rm.GetString("String13");
-            sonderzyklenToolStripMenuItem1.Text = rm.GetString("String14");
-            planfräsenToolStripMenuItem1.Text = rm.GetString("String15");
-            schrägeFaseToolStripMenuItem1.Text = rm.GetString("String16");
-            tieflochBohrenToolStripMenuItem1.Text = rm.GetString("String17");
-            gewindeFräsenToolStripMenuItem1.Text = rm.GetString("String18");
-            rechtecktascheToolStripMenuItem1.Text = rm.GetString("String19");
-            kreistascheToolStripMenuItem1.Text = rm.GetString("String20");
-            rechteckzapfenToolStripMenuItem1.Text = rm.GetString("String21");
-            kreiszapfenToolStripMenuItem1.Text = rm.GetString("String22");
-            nutToolStripMenuItem1.Text = rm.GetString("String23");
-            ringnutToolStripMenuItem1.Text = rm.GetString("String24");
-            dichtungsnutToolStripMenuItem1.Text = rm.GetString("String25");
-            rundeNutToolStripMenuItem1.Text = rm.GetString("String26");
-            bohrtabelleToolStripMenuItem1.Text = rm.GetString("String27");
-            bohrbildLochkreisToolStripMenuItem1.Text = rm.GetString("String28");
-            bohrbildAufLinienToolStripMenuItem.Text = rm.GetString("String29");
-            schriftGavierenToolStripMenuItem.Text = rm.GetString("String30");
-            dXFWandelnToolStripMenuItem.Text = rm.GetString("String31");
+            ProgrammToolStripMenuItem.Text = rm.GetString("String4");
+            EinstellungenToolStripMenuItem.Text = rm.GetString("String2");
+            SpracheStripMenuItem.Text = rm.GetString("String5");
+            BeendenToolStripMenuItem.Text = rm.GetString("String1");
+            ZyklenToolStripMenuItem1.Text = rm.GetString("String7");
+            ÜberToolStripMenuItem1.Text = rm.GetString("String6");
+            FlächenbearbeitungToolStripMenuItem1.Text = rm.GetString("String8");
+            StandardbohrenGewindeFräsenToolStripMenuItem.Text = rm.GetString("String9");
+            TaschenToolStripMenuItem1.Text = rm.GetString("String10");
+            ZapfenToolStripMenuItem1.Text = rm.GetString("String11");
+            NutenFräsenToolStripMenuItem.Text = rm.GetString("String12");
+            BbohrbilderToolStripMenuItem1.Text = rm.GetString("String13");
+            SonderzyklenToolStripMenuItem1.Text = rm.GetString("String14");
+            PlanfräsenToolStripMenuItem1.Text = rm.GetString("String15");
+            SchrägeFaseToolStripMenuItem1.Text = rm.GetString("String16");
+            TieflochBohrenToolStripMenuItem1.Text = rm.GetString("String17");
+            GewindeFräsenToolStripMenuItem1.Text = rm.GetString("String18");
+            RechtecktascheToolStripMenuItem1.Text = rm.GetString("String19");
+            KreistascheToolStripMenuItem1.Text = rm.GetString("String20");
+            RechteckzapfenToolStripMenuItem1.Text = rm.GetString("String21");
+            KreiszapfenToolStripMenuItem1.Text = rm.GetString("String22");
+            NutToolStripMenuItem1.Text = rm.GetString("String23");
+            RingnutToolStripMenuItem1.Text = rm.GetString("String24");
+            DichtungsnutToolStripMenuItem1.Text = rm.GetString("String25");
+            RundeNutToolStripMenuItem1.Text = rm.GetString("String26");
+            BohrtabelleToolStripMenuItem1.Text = rm.GetString("String27");
+            BohrbildLochkreisToolStripMenuItem1.Text = rm.GetString("String28");
+            BohrbildAufLinienToolStripMenuItem.Text = rm.GetString("String29");
+            SchriftGavierenToolStripMenuItem.Text = rm.GetString("String30");
+            DxfWandelnToolStripMenuItem.Text = rm.GetString("String31");
             NutenToolStripMenuItem.Text = rm.GetString("String122");
             #endregion
             #region Einstellungen
@@ -6787,8 +6760,6 @@ namespace NC_Tool
         public void ReadFromFile(string textFile)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             XMin = 0; YMin = 0;
             XMax = 0; YMax = 0;
             theSourceFile = new FileInfo(textFile);
@@ -6867,8 +6838,6 @@ namespace NC_Tool
         private void SizeMinModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             do
             {
                 GetLineCouple(reader, out line1, out line2);
@@ -6887,8 +6856,6 @@ namespace NC_Tool
         private void SizeMaxModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             do
             {
                 GetLineCouple(reader, out line1, out line2);
@@ -6907,8 +6874,6 @@ namespace NC_Tool
         private void LineModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             double x1 = 0;
             double y1 = 0;
             double x2 = 0;
@@ -6975,13 +6940,13 @@ namespace NC_Tool
             double y2 = 0;
             int counter = 0;
             int openOrClosed = 0;
-            ArrayList pointListStart = new ArrayList();
-            ArrayList pointListEnd = new ArrayList();
-            ArrayList layers = new ArrayList();
-            PointF Startpunkt = new PointF();
-            PointF Endpunkt = new PointF();
-            PointF SortStart = new PointF();
-            PointF SortEnd = new PointF();
+            ArrayList pointListStart = [];
+            ArrayList pointListEnd = [];
+            ArrayList layers = [];
+            PointF Startpunkt = new();
+            PointF Endpunkt = new();
+            PointF SortStart = new();
+            PointF SortEnd = new();
             string layer = "";
             string blockName = "";
             do
@@ -7075,8 +7040,8 @@ namespace NC_Tool
                             y2 = SortEnd.Y;
                     }
                 }
-                int ix = drawingList.Add(new rectangle(new Point((int)x1, (int)-y1), new Point((int)x2, (int)-y2), Color.White, Color.Red, 1, 0, blockName));
-                int ix1 = gcodeList.Add(new rectangle(new PointF((float)x1, (float)y1), new PointF((float)x2, (float)y2), Color.White, Color.Red, 1, 0, blockName));
+                int ix = drawingList.Add(new Rectangl(new Point((int)x1, (int)-y1), new Point((int)x2, (int)-y2), Color.White, Color.Red, 1, 0, blockName));
+                int ix1 = gcodeList.Add(new Rectangl(new PointF((float)x1, (float)y1), new PointF((float)x2, (float)y2), Color.White, Color.Red, 1, 0, blockName));
                 objectIdentifier.Add(new DrawingObject(3, ix));
             }
         }
@@ -7084,8 +7049,6 @@ namespace NC_Tool
         private void CircleModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             double x1 = 0;
             double y1 = 0;
             double radius = 0;
@@ -7122,7 +7085,7 @@ namespace NC_Tool
                 }
             }
             while (line1 != "40");
-            int ix = drawingList.Add(new circle(new Point((int)x1, (int)-y1), radius, Color.White, Color.Red, 1));
+            int ix = drawingList.Add(new Circle(new Point((int)x1, (int)-y1), radius, Color.White, Color.Red, 1));
             int ix1 = gcodeList.Add(new Circle1(new PointF((float)x1, (float)y1), radius, Color.White, Color.Red, 1));
             objectIdentifier.Add(new DrawingObject(4, ix));
         }
@@ -7134,16 +7097,16 @@ namespace NC_Tool
             line2 = "0";
             double x1 = 0;
             double y1 = 0;
-            thePolyLine = new polyline(Color.White, 1);
-            thePolyLine1 = new polyline(Color.White, 1);
+            thePolyLine = new Polyline(Color.White, 1);
+            thePolyLine1 = new Polyline(Color.White, 1);
             int ix = drawingList.Add(thePolyLine);
             int ix1 = gcodeList.Add(thePolyLine1);
             objectIdentifier.Add(new DrawingObject(5, ix));
             int counter = 0;
             int numberOfVertices = 1;
             int openOrClosed = 0;
-            ArrayList pointList = new ArrayList();
-            ArrayList pointList1 = new ArrayList();
+            ArrayList pointList = [];
+            ArrayList pointList1 = [];
             do
             {
                 GetLineCouple(reader, out line1, out line2);
@@ -7199,16 +7162,16 @@ namespace NC_Tool
             line2 = "0";
             double x1 = 0;
             double y1 = 0;
-            thePolyLine = new polyline(Color.White, 1);
-            thePolyLine1 = new polyline(Color.White, 1);
+            thePolyLine = new Polyline(Color.White, 1);
+            thePolyLine1 = new Polyline(Color.White, 1);
             int ix = drawingList.Add(thePolyLine);
             int ix1 = gcodeList.Add(thePolyLine1);
             objectIdentifier.Add(new DrawingObject(5, ix));
             int counter = 0;
             int numberOfVertices = 1;
             int openOrClosed = 0;
-            ArrayList pointList = new ArrayList();
-            ArrayList pointList1 = new ArrayList();
+            ArrayList pointList = [];
+            ArrayList pointList1 = [];
             do
             {
                 GetLineCouple(reader, out line1, out line2);
@@ -7260,8 +7223,6 @@ namespace NC_Tool
         private void ArcModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             double x1 = 0;
             double y1 = 0;
             double radius = 0;
@@ -7312,16 +7273,14 @@ namespace NC_Tool
                     angle2 = Convert.ToDouble(line2);
             }
             while (line1 != "51");
-            int ix = drawingList.Add(new arc(new Point((int)x1, (int)-y1), radius, angle1, angle2, Color.White, Color.Red, 1));
-            int ix1 = gcodeList.Add(new arc1(new PointF((float)x1, (float)y1), radius, angle1, angle2, Color.White, Color.Red, 1));
+            int ix = drawingList.Add(new Arc(new Point((int)x1, (int)-y1), radius, angle1, angle2, Color.White, Color.Red, 1));
+            int ix1 = gcodeList.Add(new Arc1(new PointF((float)x1, (float)y1), radius, angle1, angle2, Color.White, Color.Red, 1));
             objectIdentifier.Add(new DrawingObject(6, ix));
         }
         // Interpretiert Ellipseobjekte                         (Objekt 7)
         private void EllipseModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             double x1 = 0;
             double y1 = 0;
             double x2 = 0;
@@ -7370,16 +7329,14 @@ namespace NC_Tool
                 }
             }
             while (line1 != "42");
-            int ix = drawingList.Add(new ellipse(new PointF((float)x1, (float)-y1), new PointF((float)x2, (float)y2), (float)faktor, angle1, angle2, Color.White, Color.Red, 1));
-            int ix1 = gcodeList.Add(new ellipse(new PointF((float)x1, (float)y1), new PointF((float)x2, (float)y2), (float)faktor, angle1, angle2, Color.White, Color.Red, 1));
+            int ix = drawingList.Add(new Ellipse(new PointF((float)x1, (float)-y1), new PointF((float)x2, (float)y2), (float)faktor, angle1, angle2, Color.White, Color.Red, 1));
+            int ix1 = gcodeList.Add(new Ellipse(new PointF((float)x1, (float)y1), new PointF((float)x2, (float)y2), (float)faktor, angle1, angle2, Color.White, Color.Red, 1));
             objectIdentifier.Add(new DrawingObject(7, ix));
         }
         // Interpretiert einen Text-Eintrag                     (Objekt 8)
         private void TextModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             double x1 = 0;
             double y1 = 0;
             double x2 = 0;
@@ -7423,18 +7380,16 @@ namespace NC_Tool
                 }
             }
             while (line1 != "1");
-            int ix = drawingList.Add(new text(new PointF((float)x1, (float)-y1), textheight, blocktext));
-            int ix1 = gcodeList.Add(new text(new PointF((float)x1, (float)-y1), textheight, blocktext));
+            int ix = drawingList.Add(new Texte(new PointF((float)x1, (float)-y1), textheight, blocktext));
+            int ix1 = gcodeList.Add(new Texte(new PointF((float)x1, (float)-y1), textheight, blocktext));
             objectIdentifier.Add(new DrawingObject(8, ix));
         }
         // Interpretiert einen Insert-Eintrag                   (Objekt 9)
         private void InsertModule(StreamReader reader)
         {
             string line1, line2;
-            line1 = "0";
-            line2 = "0";
             string InsertName = "";
-            PointF InsertPoint = new PointF();
+            PointF InsertPoint = new();
             do
             {
                 GetLineCouple(reader, out line1, out line2);
@@ -7511,13 +7466,13 @@ namespace NC_Tool
             public abstract void Draw(Pen pen, Graphics g);
             public abstract bool Highlight(Pen pen, Graphics g, Point point);
         }
-        public void zeichneDXF() {
+        public void ZeichneDXF() {
             Graphics g = PictureBox17.CreateGraphics();
             Draw(g);
         }
         public void Draw(Graphics g)
         {
-            Pen lePen = new Pen(Color.Black, 1);
+            Pen lePen = new(Color.Black, 1);
             g.TranslateTransform(2, this.PictureBox17.Size.Height - 5);
             if (YMin < 0)
                 g.TranslateTransform(0, -(int)Math.Abs(YMin));                  // Transformiert den Ursprungspunkt in die untere linke Ecke des Fensters.
@@ -7541,10 +7496,10 @@ namespace NC_Tool
                         }
                     case 3:             // Rechteck 
                         {
-                            rectangle temp = (rectangle)drawingList[obj.indexNo];
+                            Rectangl temp = (Rectangl)drawingList[obj.indexNo];
                             int index;
                             string name = "";
-                            PointF pointF = new PointF();
+                            PointF pointF = new();
                             foreach (DrawingObject inserttest in objectIdentifier)
                             {
                                 if (inserttest.shapeType == 9)
@@ -7563,7 +7518,7 @@ namespace NC_Tool
                         }
                     case 4:             // Kreis
                         {
-                            circle temp = (circle)drawingList[obj.indexNo];
+                            Circle temp = (Circle)drawingList[obj.indexNo];
                             lePen.Width = temp.AccessLineWidth;
                             if (mainScale == 0)
                                 mainScale = 1;
@@ -7572,7 +7527,7 @@ namespace NC_Tool
                         }
                     case 5:             // Polylinie
                         {
-                            polyline temp = (polyline)drawingList[obj.indexNo];
+                            Polyline temp = (Polyline)drawingList[obj.indexNo];
                             lePen.Width = temp.AccessLineWidth;
                             if (mainScale == 0)
                                 mainScale = 1;
@@ -7581,7 +7536,7 @@ namespace NC_Tool
                         }
                     case 6:             // Bogen
                         {
-                            arc temp = (arc)drawingList[obj.indexNo];
+                            Arc temp = (Arc)drawingList[obj.indexNo];
                             lePen.Width = temp.AccessLineWidth;
                             if (mainScale == 0)
                                 mainScale = 1;
@@ -7590,7 +7545,7 @@ namespace NC_Tool
                         }
                     case 7:             // Ellipse
                         {
-                            ellipse temp = (ellipse)drawingList[obj.indexNo];
+                            Ellipse temp = (Ellipse)drawingList[obj.indexNo];
                             lePen.Width = temp.AccessLineWidth;
                             if (mainScale == 0)
                                 mainScale = 1;
@@ -7599,7 +7554,7 @@ namespace NC_Tool
                         }
                     case 8:             // Text
                         {
-                            text temp = (text)drawingList[obj.indexNo];
+                            Texte temp = (Texte)drawingList[obj.indexNo];
                             if (mainScale == 0)
                                 mainScale = 1;
                             temp.Draw(g, temp.textString, temp.textHeight, mainScale);
@@ -7974,11 +7929,11 @@ namespace NC_Tool
         }
         #endregion
         #region Rectangle class
-        public class rectangle : Line1
+        public class Rectangl : Line1
         {
             public string blockName;
 
-            public rectangle(PointF start, PointF end, Color color, Color fill, int w, int angle, string name)
+            public Rectangl(PointF start, PointF end, Color color, Color fill, int w, int angle, string name)
             {
                 startPoint = start;
                 endPoint = end;
@@ -8044,9 +7999,9 @@ namespace NC_Tool
                 }
                 PointF P1 = GetStartPoint;
                 PointF P2 = GetEndPoint;
-                PointF P3 = new PointF(P2.X, P1.Y);
-                PointF P4 = new PointF(P1.X, P2.Y);
-                PointF center = new PointF(P1.X + (P3.X - P1.X) / 2, P1.Y + (P4.Y - P1.Y) / 2);
+                PointF P3 = new(P2.X, P1.Y);
+                PointF P4 = new(P1.X, P2.Y);
+                PointF center = new(P1.X + (P3.X - P1.X) / 2, P1.Y + (P4.Y - P1.Y) / 2);
                 int angle = AccessRotation;
                 if (angle != 0)
                 {
@@ -8064,7 +8019,7 @@ namespace NC_Tool
             private PointF CalculateRotatedNewPoint(PointF P, PointF center, int angle)
             {
                 double angleRad = angle * 1 / 57.2957;
-                PointF tempPoint = new PointF(P.X - center.X, P.Y - center.Y);
+                PointF tempPoint = new(P.X - center.X, P.Y - center.Y);
                 double radius = Math.Sqrt((tempPoint.X * tempPoint.X) + (tempPoint.Y * tempPoint.Y));
                 double radiant1 = Math.Acos(tempPoint.X / radius);
                 if (tempPoint.X < 0 && tempPoint.Y < 0)
@@ -8072,8 +8027,8 @@ namespace NC_Tool
                 if (tempPoint.X > 0 && tempPoint.Y < 0)
                     radiant1 = -radiant1;
                 double radiant2 = Math.Asin(tempPoint.Y / radius);
-                radiant1 = radiant1 + angleRad;
-                radiant2 = radiant2 + angleRad;
+                radiant1 += angleRad;
+                radiant2 += angleRad;
                 double temp;
                 temp = radius * Math.Cos(radiant1);
                 P.X = (int)temp + (int)center.X;
@@ -8085,15 +8040,15 @@ namespace NC_Tool
             {
                 PointF P1 = GetStartPoint;
                 PointF P2 = GetEndPoint;
-                PointF P3 = new PointF(P2.X, P1.Y);
-                PointF P4 = new PointF(P1.X, P2.Y);
+                PointF P3 = new(P2.X, P1.Y);
+                PointF P4 = new(P1.X, P2.Y);
                 if (AccessRotation != 0)
                 {
-                    PointF bottom = new PointF(0, 0);
-                    PointF top = new PointF(0, 0);
-                    PointF left = new PointF(0, 0);
-                    PointF right = new PointF(0, 0);
-                    PointF center = new PointF(P1.X + (P3.X - P1.X) / 2, P1.Y + (P4.Y - P1.Y) / 2);
+                    PointF bottom = new(0, 0);
+                    PointF top = new(0, 0);
+                    PointF left = new(0, 0);
+                    PointF right = new(0, 0);
+                    PointF center = new(P1.X + (P3.X - P1.X) / 2, P1.Y + (P4.Y - P1.Y) / 2);
                     P1 = CalculateRotatedNewPoint(P1, center, AccessRotation);
                     P2 = CalculateRotatedNewPoint(P2, center, AccessRotation);
                     P3 = CalculateRotatedNewPoint(P3, center, AccessRotation);
@@ -8142,10 +8097,10 @@ namespace NC_Tool
                         top = P3;
                     if (minY == P4.Y)
                         top = P4;
-                    double c1 = checkPosition(left, top, point);
-                    double c2 = checkPosition(right, top, point);
-                    double c3 = checkPosition(right, bottom, point);
-                    double c4 = checkPosition(left, bottom, point);
+                    double c1 = CheckPosition(left, top, point);
+                    double c2 = CheckPosition(right, top, point);
+                    double c3 = CheckPosition(right, bottom, point);
+                    double c4 = CheckPosition(left, bottom, point);
                     if ((c1 > 0 && c2 > 0 && c3 < 0 && c4 < 0))
                     {
                         pen.Color = Color.LightGreen;
@@ -8177,7 +8132,7 @@ namespace NC_Tool
                 }
                 return false;
             }
-            private double checkPosition(PointF P1, PointF P2, PointF current)
+            private double CheckPosition(PointF P1, PointF P2, PointF current)
             {
                 double m = (double)(P2.Y - P1.Y) / (P2.X - P1.X);
                 return ((current.Y - P1.Y) - (m * (current.X - P1.X)));
@@ -8193,14 +8148,14 @@ namespace NC_Tool
         }
         #endregion
         #region Ellipse Class
-        public class ellipse : Shape
+        public class Ellipse : Shape
         {
             private PointF centerPoint;
             private PointF centerPoint1;
             private double faktor;
             private double startAngle;
             private double endAngle;
-            public ellipse(PointF center, PointF center1, double r, double startangle, double endangle, Color color1, Color color2, int w)
+            public Ellipse(PointF center, PointF center1, double r, double startangle, double endangle, Color color1, Color color2, int w)
             {
                 centerPoint = center;
                 centerPoint1 = center1;
@@ -8351,8 +8306,8 @@ namespace NC_Tool
                     rd2 = (float)Math.Abs(centerPoint1.Y * faktor);
                 }
                 P1 = centerPoint;
-                rd1 = rd1 * (float)scale;
-                rd2 = rd2 * (float)scale;
+                rd1 *= (float)scale;
+                rd2 *= (float)scale;
                 P1.X = (centerPoint.X - rd1) * (float)scale;
                 P1.Y = (centerPoint.Y - rd2) * (float)scale;
                 float sA = (float)(startAngle * 180 / Math.PI);
@@ -8399,11 +8354,11 @@ namespace NC_Tool
         }
         #endregion
         #region Circle Class
-        public class circle : Shape
+        public class Circle : Shape
         {
             private Point centerPoint;
             private double radius;
-            public circle(Point center, double r, Color color1, Color color2, int w)
+            public Circle(Point center, double r, Color color1, Color color2, int w)
             {
                 centerPoint = center;
                 radius = r;
@@ -8666,14 +8621,14 @@ namespace NC_Tool
         }
         #endregion
         #region Polyline Class
-        public class polyline : Shape
+        public class Polyline : Shape
         {
             public ArrayList listOfLines;
             public ArrayList listOfLines1;
-            public polyline(Color color, int w)
+            public Polyline(Color color, int w)
             {
-                listOfLines = new ArrayList();
-                listOfLines1 = new ArrayList();
+                listOfLines = [];
+                listOfLines1 = [];
                 contourColor = color;
                 lineWidth = w;
             }
@@ -8786,13 +8741,13 @@ namespace NC_Tool
         }
         #endregion
         #region Arc Class
-        public class arc : Shape
+        public class Arc : Shape
         {
             private Point centerPoint;
             private double radius;
             private double startAngle;
             private double sweepAngle;
-            public arc(Point center, double r, double startangle, double sweepangle, Color color1, Color color2, int w)
+            public Arc(Point center, double r, double startangle, double sweepangle, Color color1, Color color2, int w)
             {
                 centerPoint = center;
                 radius = r;
@@ -8953,13 +8908,13 @@ namespace NC_Tool
                 return false;
             }
         }
-        public class arc1 : Shape
+        public class Arc1 : Shape
         {
             private PointF centerPoint;
             private double radius;
             private double startAngle;
             private double sweepAngle;
-            public arc1(PointF center, double r, double startangle, double sweepangle, Color color1, Color color2, int w)
+            public Arc1(PointF center, double r, double startangle, double sweepangle, Color color1, Color color2, int w)
             {
                 centerPoint = center;
                 radius = r;
@@ -9122,13 +9077,13 @@ namespace NC_Tool
         }
         #endregion
         #region Text class
-        public class text
+        public class Texte
         {
             public PointF startPoint;
             public double textHeight;
             public string textString;
             public int shapeIdentifier;
-            public text(PointF start, double texth,string textname)
+            public Texte(PointF start, double texth,string textname)
             {
                 startPoint = start;
                 textHeight = texth;
@@ -9137,9 +9092,9 @@ namespace NC_Tool
             }
             public void Draw(Graphics g, string text, double hight, double scale)
             {
-                Font drawFont = new Font("Arial", 8);
-                SolidBrush drawBrush = new SolidBrush(Color.Black);
-                PointF drawPoint = new PointF((float)startPoint.X * (float)scale, ((float)startPoint.Y - (float)hight) * (float)scale);
+                Font drawFont = new("Arial", 8);
+                SolidBrush drawBrush = new(Color.Black);
+                PointF drawPoint = new((float)startPoint.X * (float)scale, ((float)startPoint.Y - (float)hight) * (float)scale);
                 g.DrawString(text, drawFont, drawBrush, drawPoint);
             }
             public virtual PointF GetStartPoint

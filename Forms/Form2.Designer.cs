@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Drawing;
+﻿using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
@@ -59,7 +57,7 @@ namespace NC_Tool
             this.Label5 = new System.Windows.Forms.Label();
             this.CNC_Info = new System.Windows.Forms.TextBox();
             this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this._Editor = new System.Windows.Forms.RichTextBox();
+            this.Editor = new System.Windows.Forms.RichTextBox();
             this.Editor_ZN = new System.Windows.Forms.RichTextBox();
             this.ZN = new System.Windows.Forms.CheckBox();
             this.Panel1.SuspendLayout();
@@ -253,17 +251,17 @@ namespace NC_Tool
             this.CNC_Info.Size = new System.Drawing.Size(347, 97);
             this.CNC_Info.TabIndex = 19;
             // 
-            // _Editor
+            // Editor
             // 
-            this._Editor.BackColor = System.Drawing.Color.White;
-            this._Editor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._Editor.Location = new System.Drawing.Point(41, 54);
-            this._Editor.Name = "_Editor";
-            this._Editor.Size = new System.Drawing.Size(433, 610);
-            this._Editor.TabIndex = 20;
-            this._Editor.Text = "";
-            this._Editor.VScroll += new System.EventHandler(this._Editor_VScroll);
-            this._Editor.TextChanged += new System.EventHandler(this._Editor_TextChanged);
+            this.Editor.BackColor = System.Drawing.Color.White;
+            this.Editor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editor.Location = new System.Drawing.Point(41, 54);
+            this.Editor.Name = "Editor";
+            this.Editor.Size = new System.Drawing.Size(433, 610);
+            this.Editor.TabIndex = 20;
+            this.Editor.Text = "";
+            this.Editor.VScroll += new System.EventHandler(this.Editor_VScroll);
+            this.Editor.TextChanged += new System.EventHandler(this.Editor_TextChanged);
             // 
             // Editor_ZN
             // 
@@ -296,7 +294,7 @@ namespace NC_Tool
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(986, 705);
             this.Controls.Add(this.ZN);
-            this.Controls.Add(this._Editor);
+            this.Controls.Add(this.Editor);
             this.Controls.Add(this.Editor_ZN);
             this.Controls.Add(this.CNC_Info);
             this.Controls.Add(this.Label5);
@@ -422,7 +420,7 @@ namespace NC_Tool
         internal TextBox CNC_Info;
         internal ToolTip ToolTip1;
         private TextBox _Ausgabe;
-        private RichTextBox _Editor;
+        private RichTextBox Editor;
         private RichTextBox Editor_ZN;
         private CheckBox ZN;
 

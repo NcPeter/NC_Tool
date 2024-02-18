@@ -568,38 +568,38 @@ namespace NC_Tool
             this.PictureBox17 = new System.Windows.Forms.PictureBox();
             this.label218 = new System.Windows.Forms.Label();
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.programmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.einstellungenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.spracheStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zyklenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.flächenbearbeitungToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.planfräsenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.schrägeFaseToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.standardbohrenGewindeFräsenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tieflochBohrenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gewindeFräsenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.taschenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rechtecktascheToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.kreistascheToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.zapfenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rechteckzapfenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.kreiszapfenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nutenFräsenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ringnutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dichtungsnutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rundeNutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bohrbilderToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bohrtabelleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bohrbildLochkreisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bohrbildAufLinienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sonderzyklenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.schriftGavierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dXFWandelnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.überToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProgrammToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EinstellungenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpracheStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnglishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BeendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ZyklenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.FlächenbearbeitungToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.PlanfräsenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SchrägeFaseToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.StandardbohrenGewindeFräsenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TieflochBohrenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.GewindeFräsenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TaschenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.RechtecktascheToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.KreistascheToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ZapfenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.RechteckzapfenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.KreiszapfenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.NutenFräsenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.RingnutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.DichtungsnutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.RundeNutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.BbohrbilderToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.BohrtabelleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.BohrbildLochkreisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.BohrbildAufLinienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SonderzyklenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SchriftGavierenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DxfWandelnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ÜberToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Programm = new System.Windows.Forms.ToolStripMenuItem();
             this.Optionen = new System.Windows.Forms.ToolStripMenuItem();
             this.Beenden = new System.Windows.Forms.ToolStripMenuItem();
@@ -5251,6 +5251,7 @@ namespace NC_Tool
             this.Font_Art.Name = "Font_Art";
             this.Font_Art.Size = new System.Drawing.Size(204, 21);
             this.Font_Art.TabIndex = 491;
+            this.Font_Art.SelectedIndexChanged += new System.EventHandler(this.Font_Art_SelectedIndexChanged);
             this.Font_Art.Enter += new System.EventHandler(this.Font_Art_Enter);
             this.Font_Art.Leave += new System.EventHandler(this.Font_Art_Leave);
             // 
@@ -6327,7 +6328,7 @@ namespace NC_Tool
             this.loadDXF.Size = new System.Drawing.Size(87, 23);
             this.loadDXF.TabIndex = 573;
             this.loadDXF.UseVisualStyleBackColor = true;
-            this.loadDXF.Click += new System.EventHandler(this.loadDXF_Click);
+            this.loadDXF.Click += new System.EventHandler(this.LoadDXF_Click);
             // 
             // Abbrechen_17
             // 
@@ -6383,245 +6384,245 @@ namespace NC_Tool
             this.MenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.programmToolStripMenuItem,
-            this.zyklenToolStripMenuItem1,
-            this.überToolStripMenuItem1});
+            this.ProgrammToolStripMenuItem,
+            this.ZyklenToolStripMenuItem1,
+            this.ÜberToolStripMenuItem1});
             this.MenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip1.Name = "MenuStrip1";
             this.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.MenuStrip1.Size = new System.Drawing.Size(697, 25);
             this.MenuStrip1.TabIndex = 1;
             // 
-            // programmToolStripMenuItem
+            // ProgrammToolStripMenuItem
             // 
-            this.programmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.einstellungenToolStripMenuItem,
-            this.spracheStripMenuItem,
-            this.beendenToolStripMenuItem});
-            this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
-            this.programmToolStripMenuItem.Size = new System.Drawing.Size(12, 21);
+            this.ProgrammToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.EinstellungenToolStripMenuItem,
+            this.SpracheStripMenuItem,
+            this.BeendenToolStripMenuItem});
+            this.ProgrammToolStripMenuItem.Name = "ProgrammToolStripMenuItem";
+            this.ProgrammToolStripMenuItem.Size = new System.Drawing.Size(12, 21);
             // 
-            // einstellungenToolStripMenuItem
+            // EinstellungenToolStripMenuItem
             // 
-            this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
-            this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
-            this.einstellungenToolStripMenuItem.Click += new System.EventHandler(this.einstellungenToolStripMenuItem_Click);
+            this.EinstellungenToolStripMenuItem.Name = "EinstellungenToolStripMenuItem";
+            this.EinstellungenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.EinstellungenToolStripMenuItem.Click += new System.EventHandler(this.EinstellungenToolStripMenuItem_Click);
             // 
-            // spracheStripMenuItem
+            // SpracheStripMenuItem
             // 
-            this.spracheStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deutschToolStripMenuItem,
-            this.englishToolStripMenuItem});
-            this.spracheStripMenuItem.Name = "spracheStripMenuItem";
-            this.spracheStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.SpracheStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DeutschToolStripMenuItem,
+            this.EnglishToolStripMenuItem});
+            this.SpracheStripMenuItem.Name = "SpracheStripMenuItem";
+            this.SpracheStripMenuItem.Size = new System.Drawing.Size(68, 22);
             // 
-            // deutschToolStripMenuItem
+            // DeutschToolStripMenuItem
             // 
-            this.deutschToolStripMenuItem.Image = global::NC_Tool.My.Resources.Resources.flagge_de;
-            this.deutschToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.deutschToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deutschToolStripMenuItem.Name = "deutschToolStripMenuItem";
-            this.deutschToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
-            this.deutschToolStripMenuItem.Text = "deutsch";
-            this.deutschToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.deutschToolStripMenuItem.Click += new System.EventHandler(this.deutschToolStripMenuItem_Click);
+            this.DeutschToolStripMenuItem.Image = global::NC_Tool.My.Resources.Resources.flagge_de;
+            this.DeutschToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeutschToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DeutschToolStripMenuItem.Name = "DeutschToolStripMenuItem";
+            this.DeutschToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.DeutschToolStripMenuItem.Text = "deutsch";
+            this.DeutschToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeutschToolStripMenuItem.Click += new System.EventHandler(this.DeutschToolStripMenuItem_Click);
             // 
-            // englishToolStripMenuItem
+            // EnglishToolStripMenuItem
             // 
-            this.englishToolStripMenuItem.Image = global::NC_Tool.My.Resources.Resources.flagge_en;
-            this.englishToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.englishToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
-            this.englishToolStripMenuItem.Text = "english";
-            this.englishToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            this.EnglishToolStripMenuItem.Image = global::NC_Tool.My.Resources.Resources.flagge_en;
+            this.EnglishToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EnglishToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.EnglishToolStripMenuItem.Name = "EnglishToolStripMenuItem";
+            this.EnglishToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.EnglishToolStripMenuItem.Text = "english";
+            this.EnglishToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EnglishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItem_Click);
             // 
-            // beendenToolStripMenuItem
+            // BeendenToolStripMenuItem
             // 
-            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
-            this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
+            this.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem";
+            this.BeendenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.BeendenToolStripMenuItem.Click += new System.EventHandler(this.BeendenToolStripMenuItem_Click);
             // 
-            // zyklenToolStripMenuItem1
+            // ZyklenToolStripMenuItem1
             // 
-            this.zyklenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.flächenbearbeitungToolStripMenuItem1,
-            this.standardbohrenGewindeFräsenToolStripMenuItem,
-            this.taschenToolStripMenuItem1,
-            this.zapfenToolStripMenuItem1,
-            this.nutenFräsenToolStripMenuItem,
-            this.bohrbilderToolStripMenuItem1,
-            this.sonderzyklenToolStripMenuItem1});
-            this.zyklenToolStripMenuItem1.Name = "zyklenToolStripMenuItem1";
-            this.zyklenToolStripMenuItem1.Size = new System.Drawing.Size(12, 21);
+            this.ZyklenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FlächenbearbeitungToolStripMenuItem1,
+            this.StandardbohrenGewindeFräsenToolStripMenuItem,
+            this.TaschenToolStripMenuItem1,
+            this.ZapfenToolStripMenuItem1,
+            this.NutenFräsenToolStripMenuItem,
+            this.BbohrbilderToolStripMenuItem1,
+            this.SonderzyklenToolStripMenuItem1});
+            this.ZyklenToolStripMenuItem1.Name = "ZyklenToolStripMenuItem1";
+            this.ZyklenToolStripMenuItem1.Size = new System.Drawing.Size(12, 21);
             // 
-            // flächenbearbeitungToolStripMenuItem1
+            // FlächenbearbeitungToolStripMenuItem1
             // 
-            this.flächenbearbeitungToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.planfräsenToolStripMenuItem1,
-            this.schrägeFaseToolStripMenuItem1});
-            this.flächenbearbeitungToolStripMenuItem1.Name = "flächenbearbeitungToolStripMenuItem1";
-            this.flächenbearbeitungToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.FlächenbearbeitungToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.PlanfräsenToolStripMenuItem1,
+            this.SchrägeFaseToolStripMenuItem1});
+            this.FlächenbearbeitungToolStripMenuItem1.Name = "FlächenbearbeitungToolStripMenuItem1";
+            this.FlächenbearbeitungToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
             // 
-            // planfräsenToolStripMenuItem1
+            // PlanfräsenToolStripMenuItem1
             // 
-            this.planfräsenToolStripMenuItem1.Name = "planfräsenToolStripMenuItem1";
-            this.planfräsenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.planfräsenToolStripMenuItem1.Click += new System.EventHandler(this.planfräsenToolStripMenuItem1_Click);
+            this.PlanfräsenToolStripMenuItem1.Name = "PlanfräsenToolStripMenuItem1";
+            this.PlanfräsenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.PlanfräsenToolStripMenuItem1.Click += new System.EventHandler(this.PlanfräsenToolStripMenuItem1_Click);
             // 
-            // schrägeFaseToolStripMenuItem1
+            // SchrägeFaseToolStripMenuItem1
             // 
-            this.schrägeFaseToolStripMenuItem1.Name = "schrägeFaseToolStripMenuItem1";
-            this.schrägeFaseToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.schrägeFaseToolStripMenuItem1.Click += new System.EventHandler(this.schrägeFaseToolStripMenuItem1_Click);
+            this.SchrägeFaseToolStripMenuItem1.Name = "SchrägeFaseToolStripMenuItem1";
+            this.SchrägeFaseToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.SchrägeFaseToolStripMenuItem1.Click += new System.EventHandler(this.SchrägeFaseToolStripMenuItem1_Click);
             // 
-            // standardbohrenGewindeFräsenToolStripMenuItem
+            // StandardbohrenGewindeFräsenToolStripMenuItem
             // 
-            this.standardbohrenGewindeFräsenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tieflochBohrenToolStripMenuItem1,
-            this.gewindeFräsenToolStripMenuItem1});
-            this.standardbohrenGewindeFräsenToolStripMenuItem.Name = "standardbohrenGewindeFräsenToolStripMenuItem";
-            this.standardbohrenGewindeFräsenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.StandardbohrenGewindeFräsenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TieflochBohrenToolStripMenuItem1,
+            this.GewindeFräsenToolStripMenuItem1});
+            this.StandardbohrenGewindeFräsenToolStripMenuItem.Name = "StandardbohrenGewindeFräsenToolStripMenuItem";
+            this.StandardbohrenGewindeFräsenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             // 
-            // tieflochBohrenToolStripMenuItem1
+            // TieflochBohrenToolStripMenuItem1
             // 
-            this.tieflochBohrenToolStripMenuItem1.Name = "tieflochBohrenToolStripMenuItem1";
-            this.tieflochBohrenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.tieflochBohrenToolStripMenuItem1.Click += new System.EventHandler(this.tieflochBohrenToolStripMenuItem1_Click);
+            this.TieflochBohrenToolStripMenuItem1.Name = "TieflochBohrenToolStripMenuItem1";
+            this.TieflochBohrenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.TieflochBohrenToolStripMenuItem1.Click += new System.EventHandler(this.TieflochBohrenToolStripMenuItem1_Click);
             // 
-            // gewindeFräsenToolStripMenuItem1
+            // GewindeFräsenToolStripMenuItem1
             // 
-            this.gewindeFräsenToolStripMenuItem1.Name = "gewindeFräsenToolStripMenuItem1";
-            this.gewindeFräsenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.gewindeFräsenToolStripMenuItem1.Click += new System.EventHandler(this.gewindeFräsenToolStripMenuItem1_Click);
+            this.GewindeFräsenToolStripMenuItem1.Name = "GewindeFräsenToolStripMenuItem1";
+            this.GewindeFräsenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.GewindeFräsenToolStripMenuItem1.Click += new System.EventHandler(this.GewindeFräsenToolStripMenuItem1_Click);
             // 
-            // taschenToolStripMenuItem1
+            // TaschenToolStripMenuItem1
             // 
-            this.taschenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rechtecktascheToolStripMenuItem1,
-            this.kreistascheToolStripMenuItem1});
-            this.taschenToolStripMenuItem1.Name = "taschenToolStripMenuItem1";
-            this.taschenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.TaschenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.RechtecktascheToolStripMenuItem1,
+            this.KreistascheToolStripMenuItem1});
+            this.TaschenToolStripMenuItem1.Name = "TaschenToolStripMenuItem1";
+            this.TaschenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
             // 
-            // rechtecktascheToolStripMenuItem1
+            // RechtecktascheToolStripMenuItem1
             // 
-            this.rechtecktascheToolStripMenuItem1.Name = "rechtecktascheToolStripMenuItem1";
-            this.rechtecktascheToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.rechtecktascheToolStripMenuItem1.Click += new System.EventHandler(this.rechtecktascheToolStripMenuItem1_Click);
+            this.RechtecktascheToolStripMenuItem1.Name = "RechtecktascheToolStripMenuItem1";
+            this.RechtecktascheToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.RechtecktascheToolStripMenuItem1.Click += new System.EventHandler(this.RechtecktascheToolStripMenuItem1_Click);
             // 
-            // kreistascheToolStripMenuItem1
+            // KreistascheToolStripMenuItem1
             // 
-            this.kreistascheToolStripMenuItem1.Name = "kreistascheToolStripMenuItem1";
-            this.kreistascheToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.kreistascheToolStripMenuItem1.Click += new System.EventHandler(this.kreistascheToolStripMenuItem1_Click);
+            this.KreistascheToolStripMenuItem1.Name = "KreistascheToolStripMenuItem1";
+            this.KreistascheToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.KreistascheToolStripMenuItem1.Click += new System.EventHandler(this.KreistascheToolStripMenuItem1_Click);
             // 
-            // zapfenToolStripMenuItem1
+            // ZapfenToolStripMenuItem1
             // 
-            this.zapfenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rechteckzapfenToolStripMenuItem1,
-            this.kreiszapfenToolStripMenuItem1});
-            this.zapfenToolStripMenuItem1.Name = "zapfenToolStripMenuItem1";
-            this.zapfenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.ZapfenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.RechteckzapfenToolStripMenuItem1,
+            this.KreiszapfenToolStripMenuItem1});
+            this.ZapfenToolStripMenuItem1.Name = "ZapfenToolStripMenuItem1";
+            this.ZapfenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
             // 
-            // rechteckzapfenToolStripMenuItem1
+            // RechteckzapfenToolStripMenuItem1
             // 
-            this.rechteckzapfenToolStripMenuItem1.Name = "rechteckzapfenToolStripMenuItem1";
-            this.rechteckzapfenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.rechteckzapfenToolStripMenuItem1.Click += new System.EventHandler(this.rechteckzapfenToolStripMenuItem1_Click);
+            this.RechteckzapfenToolStripMenuItem1.Name = "RechteckzapfenToolStripMenuItem1";
+            this.RechteckzapfenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.RechteckzapfenToolStripMenuItem1.Click += new System.EventHandler(this.RechteckzapfenToolStripMenuItem1_Click);
             // 
-            // kreiszapfenToolStripMenuItem1
+            // KreiszapfenToolStripMenuItem1
             // 
-            this.kreiszapfenToolStripMenuItem1.Name = "kreiszapfenToolStripMenuItem1";
-            this.kreiszapfenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.kreiszapfenToolStripMenuItem1.Click += new System.EventHandler(this.kreiszapfenToolStripMenuItem1_Click);
+            this.KreiszapfenToolStripMenuItem1.Name = "KreiszapfenToolStripMenuItem1";
+            this.KreiszapfenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.KreiszapfenToolStripMenuItem1.Click += new System.EventHandler(this.KreiszapfenToolStripMenuItem1_Click);
             // 
-            // nutenFräsenToolStripMenuItem
+            // NutenFräsenToolStripMenuItem
             // 
-            this.nutenFräsenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nutToolStripMenuItem1,
-            this.ringnutToolStripMenuItem1,
-            this.dichtungsnutToolStripMenuItem1,
-            this.rundeNutToolStripMenuItem1});
-            this.nutenFräsenToolStripMenuItem.Name = "nutenFräsenToolStripMenuItem";
-            this.nutenFräsenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.NutenFräsenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NutToolStripMenuItem1,
+            this.RingnutToolStripMenuItem1,
+            this.DichtungsnutToolStripMenuItem1,
+            this.RundeNutToolStripMenuItem1});
+            this.NutenFräsenToolStripMenuItem.Name = "NutenFräsenToolStripMenuItem";
+            this.NutenFräsenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             // 
-            // nutToolStripMenuItem1
+            // NutToolStripMenuItem1
             // 
-            this.nutToolStripMenuItem1.Name = "nutToolStripMenuItem1";
-            this.nutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.nutToolStripMenuItem1.Click += new System.EventHandler(this.nutToolStripMenuItem1_Click);
+            this.NutToolStripMenuItem1.Name = "NutToolStripMenuItem1";
+            this.NutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.NutToolStripMenuItem1.Click += new System.EventHandler(this.NutToolStripMenuItem1_Click);
             // 
-            // ringnutToolStripMenuItem1
+            // RingnutToolStripMenuItem1
             // 
-            this.ringnutToolStripMenuItem1.Name = "ringnutToolStripMenuItem1";
-            this.ringnutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.ringnutToolStripMenuItem1.Click += new System.EventHandler(this.ringnutToolStripMenuItem1_Click);
+            this.RingnutToolStripMenuItem1.Name = "RingnutToolStripMenuItem1";
+            this.RingnutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.RingnutToolStripMenuItem1.Click += new System.EventHandler(this.RingnutToolStripMenuItem1_Click);
             // 
-            // dichtungsnutToolStripMenuItem1
+            // DichtungsnutToolStripMenuItem1
             // 
-            this.dichtungsnutToolStripMenuItem1.Name = "dichtungsnutToolStripMenuItem1";
-            this.dichtungsnutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.dichtungsnutToolStripMenuItem1.Click += new System.EventHandler(this.dichtungsnutToolStripMenuItem1_Click);
+            this.DichtungsnutToolStripMenuItem1.Name = "DichtungsnutToolStripMenuItem1";
+            this.DichtungsnutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.DichtungsnutToolStripMenuItem1.Click += new System.EventHandler(this.DichtungsnutToolStripMenuItem1_Click);
             // 
-            // rundeNutToolStripMenuItem1
+            // RundeNutToolStripMenuItem1
             // 
-            this.rundeNutToolStripMenuItem1.Name = "rundeNutToolStripMenuItem1";
-            this.rundeNutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.rundeNutToolStripMenuItem1.Click += new System.EventHandler(this.rundeNutToolStripMenuItem1_Click);
+            this.RundeNutToolStripMenuItem1.Name = "RundeNutToolStripMenuItem1";
+            this.RundeNutToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.RundeNutToolStripMenuItem1.Click += new System.EventHandler(this.RundeNutToolStripMenuItem1_Click);
             // 
-            // bohrbilderToolStripMenuItem1
+            // BbohrbilderToolStripMenuItem1
             // 
-            this.bohrbilderToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bohrtabelleToolStripMenuItem1,
-            this.bohrbildLochkreisToolStripMenuItem1,
-            this.bohrbildAufLinienToolStripMenuItem});
-            this.bohrbilderToolStripMenuItem1.Name = "bohrbilderToolStripMenuItem1";
-            this.bohrbilderToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.BbohrbilderToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BohrtabelleToolStripMenuItem1,
+            this.BohrbildLochkreisToolStripMenuItem1,
+            this.BohrbildAufLinienToolStripMenuItem});
+            this.BbohrbilderToolStripMenuItem1.Name = "BbohrbilderToolStripMenuItem1";
+            this.BbohrbilderToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
             // 
-            // bohrtabelleToolStripMenuItem1
+            // BohrtabelleToolStripMenuItem1
             // 
-            this.bohrtabelleToolStripMenuItem1.Name = "bohrtabelleToolStripMenuItem1";
-            this.bohrtabelleToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.bohrtabelleToolStripMenuItem1.Click += new System.EventHandler(this.bohrtabelleToolStripMenuItem1_Click_1);
+            this.BohrtabelleToolStripMenuItem1.Name = "BohrtabelleToolStripMenuItem1";
+            this.BohrtabelleToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.BohrtabelleToolStripMenuItem1.Click += new System.EventHandler(this.BohrtabelleToolStripMenuItem1_Click_1);
             // 
-            // bohrbildLochkreisToolStripMenuItem1
+            // BohrbildLochkreisToolStripMenuItem1
             // 
-            this.bohrbildLochkreisToolStripMenuItem1.Name = "bohrbildLochkreisToolStripMenuItem1";
-            this.bohrbildLochkreisToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
-            this.bohrbildLochkreisToolStripMenuItem1.Click += new System.EventHandler(this.bohrbildLochkreisToolStripMenuItem1_Click_1);
+            this.BohrbildLochkreisToolStripMenuItem1.Name = "BohrbildLochkreisToolStripMenuItem1";
+            this.BohrbildLochkreisToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.BohrbildLochkreisToolStripMenuItem1.Click += new System.EventHandler(this.BohrbildLochkreisToolStripMenuItem1_Click_1);
             // 
-            // bohrbildAufLinienToolStripMenuItem
+            // BohrbildAufLinienToolStripMenuItem
             // 
-            this.bohrbildAufLinienToolStripMenuItem.Name = "bohrbildAufLinienToolStripMenuItem";
-            this.bohrbildAufLinienToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
-            this.bohrbildAufLinienToolStripMenuItem.Click += new System.EventHandler(this.bohrbildAufLinienToolStripMenuItem_Click);
+            this.BohrbildAufLinienToolStripMenuItem.Name = "BohrbildAufLinienToolStripMenuItem";
+            this.BohrbildAufLinienToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.BohrbildAufLinienToolStripMenuItem.Click += new System.EventHandler(this.BohrbildAufLinienToolStripMenuItem_Click);
             // 
-            // sonderzyklenToolStripMenuItem1
+            // SonderzyklenToolStripMenuItem1
             // 
-            this.sonderzyklenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.schriftGavierenToolStripMenuItem,
-            this.dXFWandelnToolStripMenuItem});
-            this.sonderzyklenToolStripMenuItem1.Name = "sonderzyklenToolStripMenuItem1";
-            this.sonderzyklenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
+            this.SonderzyklenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SchriftGavierenToolStripMenuItem,
+            this.DxfWandelnToolStripMenuItem});
+            this.SonderzyklenToolStripMenuItem1.Name = "SonderzyklenToolStripMenuItem1";
+            this.SonderzyklenToolStripMenuItem1.Size = new System.Drawing.Size(68, 22);
             // 
-            // schriftGavierenToolStripMenuItem
+            // SchriftGavierenToolStripMenuItem
             // 
-            this.schriftGavierenToolStripMenuItem.Name = "schriftGavierenToolStripMenuItem";
-            this.schriftGavierenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
-            this.schriftGavierenToolStripMenuItem.Click += new System.EventHandler(this.schriftGavierenToolStripMenuItem_Click);
+            this.SchriftGavierenToolStripMenuItem.Name = "SchriftGavierenToolStripMenuItem";
+            this.SchriftGavierenToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.SchriftGavierenToolStripMenuItem.Click += new System.EventHandler(this.SchriftGavierenToolStripMenuItem_Click);
             // 
-            // dXFWandelnToolStripMenuItem
+            // DxfWandelnToolStripMenuItem
             // 
-            this.dXFWandelnToolStripMenuItem.Name = "dXFWandelnToolStripMenuItem";
-            this.dXFWandelnToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
-            this.dXFWandelnToolStripMenuItem.Click += new System.EventHandler(this.dXFWandelnToolStripMenuItem_Click);
+            this.DxfWandelnToolStripMenuItem.Name = "DxfWandelnToolStripMenuItem";
+            this.DxfWandelnToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.DxfWandelnToolStripMenuItem.Click += new System.EventHandler(this.DxfWandelnToolStripMenuItem_Click);
             // 
-            // überToolStripMenuItem1
+            // ÜberToolStripMenuItem1
             // 
-            this.überToolStripMenuItem1.Name = "überToolStripMenuItem1";
-            this.überToolStripMenuItem1.Size = new System.Drawing.Size(12, 21);
-            this.überToolStripMenuItem1.Click += new System.EventHandler(this.überToolStripMenuItem1_Click);
+            this.ÜberToolStripMenuItem1.Name = "ÜberToolStripMenuItem1";
+            this.ÜberToolStripMenuItem1.Size = new System.Drawing.Size(12, 21);
+            this.ÜberToolStripMenuItem1.Click += new System.EventHandler(this.ÜberToolStripMenuItem1_Click);
             // 
             // Programm
             // 
@@ -7817,35 +7818,35 @@ namespace NC_Tool
         internal Label label217;
         internal TextBox TB_270;
         internal TextBox TB_269;
-        private ToolStripMenuItem programmToolStripMenuItem;
-        private ToolStripMenuItem einstellungenToolStripMenuItem;
-        private ToolStripMenuItem beendenToolStripMenuItem;
-        private ToolStripMenuItem zyklenToolStripMenuItem1;
-        private ToolStripMenuItem flächenbearbeitungToolStripMenuItem1;
-        private ToolStripMenuItem standardbohrenGewindeFräsenToolStripMenuItem;
-        private ToolStripMenuItem taschenToolStripMenuItem1;
-        private ToolStripMenuItem zapfenToolStripMenuItem1;
-        private ToolStripMenuItem bohrbilderToolStripMenuItem1;
-        private ToolStripMenuItem sonderzyklenToolStripMenuItem1;
-        private ToolStripMenuItem überToolStripMenuItem1;
-        private ToolStripMenuItem planfräsenToolStripMenuItem1;
-        private ToolStripMenuItem schrägeFaseToolStripMenuItem1;
-        private ToolStripMenuItem tieflochBohrenToolStripMenuItem1;
-        private ToolStripMenuItem gewindeFräsenToolStripMenuItem1;
-        private ToolStripMenuItem rechtecktascheToolStripMenuItem1;
-        private ToolStripMenuItem kreistascheToolStripMenuItem1;
-        private ToolStripMenuItem rechteckzapfenToolStripMenuItem1;
-        private ToolStripMenuItem kreiszapfenToolStripMenuItem1;
-        private ToolStripMenuItem nutenFräsenToolStripMenuItem;
-        private ToolStripMenuItem nutToolStripMenuItem1;
-        private ToolStripMenuItem ringnutToolStripMenuItem1;
-        private ToolStripMenuItem dichtungsnutToolStripMenuItem1;
-        private ToolStripMenuItem rundeNutToolStripMenuItem1;
-        private ToolStripMenuItem bohrtabelleToolStripMenuItem1;
-        private ToolStripMenuItem bohrbildLochkreisToolStripMenuItem1;
-        private ToolStripMenuItem bohrbildAufLinienToolStripMenuItem;
-        private ToolStripMenuItem schriftGavierenToolStripMenuItem;
-        private ToolStripMenuItem dXFWandelnToolStripMenuItem;
+        private ToolStripMenuItem ProgrammToolStripMenuItem;
+        private ToolStripMenuItem EinstellungenToolStripMenuItem;
+        private ToolStripMenuItem BeendenToolStripMenuItem;
+        private ToolStripMenuItem ZyklenToolStripMenuItem1;
+        private ToolStripMenuItem FlächenbearbeitungToolStripMenuItem1;
+        private ToolStripMenuItem StandardbohrenGewindeFräsenToolStripMenuItem;
+        private ToolStripMenuItem TaschenToolStripMenuItem1;
+        private ToolStripMenuItem ZapfenToolStripMenuItem1;
+        private ToolStripMenuItem BbohrbilderToolStripMenuItem1;
+        private ToolStripMenuItem SonderzyklenToolStripMenuItem1;
+        private ToolStripMenuItem ÜberToolStripMenuItem1;
+        private ToolStripMenuItem PlanfräsenToolStripMenuItem1;
+        private ToolStripMenuItem SchrägeFaseToolStripMenuItem1;
+        private ToolStripMenuItem TieflochBohrenToolStripMenuItem1;
+        private ToolStripMenuItem GewindeFräsenToolStripMenuItem1;
+        private ToolStripMenuItem RechtecktascheToolStripMenuItem1;
+        private ToolStripMenuItem KreistascheToolStripMenuItem1;
+        private ToolStripMenuItem RechteckzapfenToolStripMenuItem1;
+        private ToolStripMenuItem KreiszapfenToolStripMenuItem1;
+        private ToolStripMenuItem NutenFräsenToolStripMenuItem;
+        private ToolStripMenuItem NutToolStripMenuItem1;
+        private ToolStripMenuItem RingnutToolStripMenuItem1;
+        private ToolStripMenuItem DichtungsnutToolStripMenuItem1;
+        private ToolStripMenuItem RundeNutToolStripMenuItem1;
+        private ToolStripMenuItem BohrtabelleToolStripMenuItem1;
+        private ToolStripMenuItem BohrbildLochkreisToolStripMenuItem1;
+        private ToolStripMenuItem BohrbildAufLinienToolStripMenuItem;
+        private ToolStripMenuItem SchriftGavierenToolStripMenuItem;
+        private ToolStripMenuItem DxfWandelnToolStripMenuItem;
         internal Label label218;
         internal Label Info_17;
         internal Button Gcode_17;
@@ -7867,7 +7868,7 @@ namespace NC_Tool
         internal TextBox TB_283;
         internal TextBox TB_282;
         private OpenFileDialog openFileDialog1;
-        private ToolStripMenuItem spracheStripMenuItem;
+        private ToolStripMenuItem SpracheStripMenuItem;
         private StatusStrip statusStrip1;
         public ToolStripStatusLabel statusLabel;
         internal TabPage TabPage17;
@@ -7875,7 +7876,7 @@ namespace NC_Tool
         internal CheckBox ellipse_option;
         public PictureBox PictureBox17;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private ToolStripMenuItem deutschToolStripMenuItem;
-        private ToolStripMenuItem englishToolStripMenuItem;
+        private ToolStripMenuItem DeutschToolStripMenuItem;
+        private ToolStripMenuItem EnglishToolStripMenuItem;
     }
 }
