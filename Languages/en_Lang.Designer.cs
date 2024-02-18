@@ -3494,6 +3494,33 @@ namespace NC_Tool.Languages {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Drilling matrix ähnelt.
+        /// </summary>
+        internal static string String403 {
+            get {
+                return ResourceManager.GetString("String403", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Deep hole drilling ähnelt.
+        /// </summary>
+        internal static string String404 {
+            get {
+                return ResourceManager.GetString("String404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die File is loading. ähnelt.
+        /// </summary>
+        internal static string String405 {
+            get {
+                return ResourceManager.GetString("String405", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Maximum processing paths of the machine in mm ähnelt.
         /// </summary>
         internal static string String41 {

@@ -1542,6 +1542,15 @@ Die Ausgabe erfolgt im Standard G-Code!</value>
     Komerzielle Verwendung ist nicht erwünscht.
     E-mail: petervoigt.dipps@gmx.de</value>
   </data>
+  <data name="String403" xml:space="preserve">
+    <value>Bohrmatrix</value>
+  </data>
+  <data name="String404" xml:space="preserve">
+    <value>Tieflochbohrung</value>
+  </data>
+  <data name="String405" xml:space="preserve">
+    <value>Datei wird geladen.</value>
+  </data>
   <data name="String41" xml:space="preserve">
     <value>maximale Verarbeitungswege der Maschine in mm</value>
   </data>

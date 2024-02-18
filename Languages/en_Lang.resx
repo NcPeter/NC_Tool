@@ -1529,6 +1529,15 @@ The output is in standard G code!</value>
     Commercial use is not desired.
     E-mail: petervoigt.dipps@gmx.de</value>
   </data>
+  <data name="String403" xml:space="preserve">
+    <value>Drilling matrix</value>
+  </data>
+  <data name="String404" xml:space="preserve">
+    <value>Deep hole drilling</value>
+  </data>
+  <data name="String405" xml:space="preserve">
+    <value>File is loading.</value>
+  </data>
   <data name="String41" xml:space="preserve">
     <value>Maximum processing paths of the machine in mm</value>
   </data>

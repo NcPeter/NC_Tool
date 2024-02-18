@@ -3508,6 +3508,33 @@ namespace NC_Tool.Languages {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Bohrmatrix ähnelt.
+        /// </summary>
+        internal static string String403 {
+            get {
+                return ResourceManager.GetString("String403", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Tieflochbohrung ähnelt.
+        /// </summary>
+        internal static string String404 {
+            get {
+                return ResourceManager.GetString("String404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Datei wird geladen. ähnelt.
+        /// </summary>
+        internal static string String405 {
+            get {
+                return ResourceManager.GetString("String405", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die maximale Verarbeitungswege der Maschine in mm ähnelt.
         /// </summary>
         internal static string String41 {
