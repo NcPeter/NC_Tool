@@ -61,6 +61,7 @@ namespace NC_Tool
         public int objekttype;
         public string typeName;
         public ResourceManager rm;
+        public string StatusText;
         #endregion
         public Form1()
         {
@@ -88,10 +89,12 @@ namespace NC_Tool
             Schriftarten.Font_lesen();
             Infostring = rm.GetString("String123");
             Info_01.Text = Infostring;
+            timer1.Start();
         }
         // Wechsel der Registerkarten
         private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            StatusText = "";
             // Planfräsen
             if (TabControl1.SelectedTab.Name == "TabPage1")
             {
@@ -547,6 +550,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_1_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_1.Text = "8,0";
             TB_2.Text = "4000";
             TB_3.Text = "3,0";
@@ -577,6 +581,7 @@ namespace NC_Tool
             double ZS;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_1.Text = TB_1.Text.Replace(".", ",");
                 TB_2.Text = TB_2.Text.Replace(".", ",");
@@ -830,6 +835,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_2_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_20.Text = "8,0";
             TB_21.Text = "4000";
             TB_22.Text = "3,0";
@@ -877,6 +883,7 @@ namespace NC_Tool
             }
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_20.Text = TB_20.Text.Replace(".", ",");
                 TB_21.Text = TB_21.Text.Replace(".", ",");
@@ -1131,6 +1138,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_3_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_40.Text = "8,0";
             TB_41.Text = "4000";
             TB_42.Text = "3,0";
@@ -1158,6 +1166,7 @@ namespace NC_Tool
             int BFY;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_40.Text = TB_40.Text.Replace(".", ",");
                 TB_41.Text = TB_41.Text.Replace(".", ",");
@@ -1391,6 +1400,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_4_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_60.Text = "8,0";
             TB_61.Text = "4000";
             TB_62.Text = "3,0";
@@ -1422,6 +1432,7 @@ namespace NC_Tool
             float Temp;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_60.Text = TB_60.Text.Replace(".", ",");
                 TB_61.Text = TB_61.Text.Replace(".", ",");
@@ -1648,6 +1659,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_5_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_70.Text = "8,0";
             TB_71.Text = "4000";
             TB_72.Text = "3,0";
@@ -1674,6 +1686,7 @@ namespace NC_Tool
             int BFY;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_70.Text = TB_70.Text.Replace(".", ",");
                 TB_71.Text = TB_71.Text.Replace(".", ",");
@@ -1886,6 +1899,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_6_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_81.Text = "8,0";
             TB_82.Text = "4000";
             TB_83.Text = "3,0";
@@ -1907,6 +1921,7 @@ namespace NC_Tool
             float Skalierung;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_81.Text = TB_81.Text.Replace(".", ",");
                 TB_82.Text = TB_82.Text.Replace(".", ",");
@@ -2107,6 +2122,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_7_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_90.Text = "3,0";
             TB_91.Text = "2000";
             TB_92.Text = "3,0";
@@ -2278,6 +2294,7 @@ namespace NC_Tool
         // Bohrtabelle löschen
         private void BT_loeschen_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             Control Next_Contr;
             int Temp;
             int Temp1;
@@ -2305,6 +2322,7 @@ namespace NC_Tool
             float Ytemp;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_90.Text = TB_90.Text.Replace(".", ",");
                 TB_91.Text = TB_91.Text.Replace(".", ",");
@@ -2706,6 +2724,7 @@ namespace NC_Tool
                 Zyklen.DepthZ = -Convert.ToDouble(TB_93.Text);                          // Bohrtiefe
                 Zyklen.StepZ = Conversions.ToDouble(TB_94.Text);                        // Zustelltiefe
                 Zyklen.FFinish = Conversions.ToInteger(TB_95.Text);                     // Vorschub Zustellung
+                Zyklen.FCut = Conversions.ToInteger(TB_95.Text);                        // 
                 Zyklen.DepthBs = Conversions.ToDouble(TB_96.Text);                      // Bohrtiefe Spanbruch
                 Zyklen.DepthRs = Conversions.ToDouble(TB_97.Text);                      // Rückzug bis Spanbruch
                 Zyklen.DepthAst = Conversions.ToDouble(TB_98.Text);                     // Ausspantiefe
@@ -2745,7 +2764,6 @@ namespace NC_Tool
                 if (Conversions.ToInteger(Fehler) == 0)
                 {
                     My.MyProject.Forms.Form2.Dateiname = rm.GetString("String369");
-                    My.MyProject.Forms.Form2.Show();
                 }
                 return;
             }
@@ -2870,6 +2888,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_8_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_100.Text = "3,0";
             TB_101.Text = "2000";
             TB_102.Text = "3,0";
@@ -2903,6 +2922,7 @@ namespace NC_Tool
             float Temp;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_100.Text = TB_100.Text.Replace(".", ",");
                 TB_101.Text = TB_101.Text.Replace(".", ",");
@@ -3076,6 +3096,7 @@ namespace NC_Tool
                 Zyklen.DepthZ = -Convert.ToDouble(TB_103.Text);                         // Bohrtiefe
                 Zyklen.StepZ = Conversions.ToDouble(TB_104.Text);                       // Zustelltiefe
                 Zyklen.FFinish = Conversions.ToInteger(TB_105.Text);                    // Vorschub Zustellung
+                Zyklen.FCut = Conversions.ToInteger(TB_105.Text);                       // 
                 Zyklen.DepthBs = Conversions.ToDouble(TB_106.Text);                     // Bohrtiefe Spanbruch
                 Zyklen.DepthRs = Conversions.ToDouble(TB_107.Text);                     // Rückzug bis Spanbruch
                 Zyklen.DepthAst = Conversions.ToDouble(TB_108.Text);                    // Ausspantiefe
@@ -3116,7 +3137,6 @@ namespace NC_Tool
                 if (Conversions.ToInteger(Fehler) == 0)
                 {
                     My.MyProject.Forms.Form2.Dateiname = rm.GetString("String370");
-                    My.MyProject.Forms.Form2.Show();
                 }
                 return;
             }
@@ -3237,6 +3257,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_9_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_120.Text = "3,0";
             TB_121.Text = "8000";
             TB_122.Text = "3,0";
@@ -3261,6 +3282,7 @@ namespace NC_Tool
             float Temp;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_120.Text = TB_120.Text.Replace(".", ",");
                 TB_121.Text = TB_121.Text.Replace(".", ",");
@@ -3546,6 +3568,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_10_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_140.Text = "8,0";
             TB_141.Text = "4000";
             TB_142.Text = "3,0";
@@ -3576,6 +3599,7 @@ namespace NC_Tool
             int BFY;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_140.Text = TB_140.Text.Replace(".", ",");
                 TB_142.Text = TB_142.Text.Replace(".", ",");
@@ -3816,6 +3840,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_11_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_200.Text = "3,0";
             TB_201.Text = "4000";
             TB_202.Text = "3,0";
@@ -3848,6 +3873,7 @@ namespace NC_Tool
             float Temp;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_200.Text = TB_200.Text.Replace(".", ",");
                 TB_201.Text = TB_201.Text.Replace(".", ",");
@@ -4130,6 +4156,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_12_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_150.Text = "3,0";
             TB_151.Text = "2000";
             TB_152.Text = "3,0";
@@ -4173,7 +4200,7 @@ namespace NC_Tool
             int loopTo1;
             try
             {
-                statusLabel.Text = rm.GetString("String354");
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_150.Text = TB_150.Text.Replace(".", ",");
                 TB_151.Text = TB_151.Text.Replace(".", ",");
@@ -4307,6 +4334,7 @@ namespace NC_Tool
                 Zyklen.DepthZ = -Convert.ToDouble(TB_153.Text);                          // Bohrtiefe
                 Zyklen.StepZ = Conversions.ToDouble(TB_154.Text);                        // Zustelltiefe
                 Zyklen.FFinish = Conversions.ToInteger(TB_155.Text);                     // Vorschub Zustellung
+                Zyklen.FCut = Conversions.ToInteger(TB_155.Text);                        // 
                 Zyklen.DepthBs = Conversions.ToDouble(TB_156.Text);                      // Bohrtiefe Spanbruch
                 Zyklen.DepthRs = 0.2d;                                                   // Rückzug bis Spanbruch
                 Zyklen.DepthAst = Conversions.ToDouble(TB_157.Text);                     // Ausspantiefe
@@ -4351,9 +4379,7 @@ namespace NC_Tool
                 // Editor anzeigen
                 if (Conversions.ToInteger(Fehler) == 0)
                 {
-                    My.MyProject.Forms.Form2.Dateiname = "Bohrmatrix";
-                    My.MyProject.Forms.Form2.Show();
-                    statusLabel.Text = "";
+                    My.MyProject.Forms.Form2.Dateiname = rm.GetString("String403");
                 }
                 return;
         }
@@ -4489,6 +4515,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_13_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_170.Text = "3,0";
             TB_171.Text = "4000";
             TB_172.Text = "3,0";
@@ -4516,6 +4543,7 @@ namespace NC_Tool
             double Dimension_X;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_170.Text = TB_170.Text.Replace(".", ",");
                 TB_171.Text = TB_171.Text.Replace(".", ",");
@@ -4781,6 +4809,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_14_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_220.Text = "1,0";
             TB_221.Text = "10000";
             TB_222.Text = "3,0";
@@ -4820,6 +4849,7 @@ namespace NC_Tool
             bool step1 = false;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_220.Text = TB_220.Text.Replace(".", ",");
                 TB_221.Text = TB_221.Text.Replace(".", ",");
@@ -5295,6 +5325,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_15_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             RadioButton2.Checked = false;
             RadioButton1.Checked = true;
             TB_250.Text = "3.0";
@@ -5324,6 +5355,7 @@ namespace NC_Tool
             double TTemp;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_250.Text = TB_250.Text.Replace(".", ",");
                 TB_251.Text = TB_251.Text.Replace(".", ",");
@@ -5669,6 +5701,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_16_Click(object sender, EventArgs e)
         {
+            StatusText = "";
             TB_260.Text = "3.0";
             TB_261.Text = "1400";
             TB_262.Text = "3.0";
@@ -5697,6 +5730,7 @@ namespace NC_Tool
             float Temp;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_260.Text = TB_260.Text.Replace(".", ",");
                 TB_261.Text = TB_261.Text.Replace(".", ",");
@@ -5779,6 +5813,7 @@ namespace NC_Tool
                 Zyklen.DepthZ = -Convert.ToDouble(TB_263.Text);                         // Bohrtiefe
                 Zyklen.StepZ = Conversions.ToDouble(TB_264.Text);                       // Zustelltiefe
                 Zyklen.FFinish = Conversions.ToInteger(TB_265.Text);                    // Vorschub Zustellung
+                Zyklen.FCut = Conversions.ToInteger(TB_265.Text);                       // 
                 Zyklen.DepthBs = Conversions.ToDouble(TB_266.Text);                     // Bohrtiefe Spanbruch
                 Zyklen.DepthRs = Conversions.ToDouble(TB_267.Text);                     // Rückzug bis Spanbruch
                 Zyklen.DepthAst = Conversions.ToDouble(TB_268.Text);                    // Ausspantiefe
@@ -5828,8 +5863,7 @@ namespace NC_Tool
                 // Editor anzeigen
                 if (Conversions.ToInteger(Fehler) == 0)
                 {
-                    My.MyProject.Forms.Form2.Dateiname = "Tieflochbohrung";
-                    My.MyProject.Forms.Form2.Show();
+                    My.MyProject.Forms.Form2.Dateiname = rm.GetString("String404");
                 }
                 return;
             }
@@ -5844,7 +5878,7 @@ namespace NC_Tool
         // neue Datei einlesen
         private void LoadDXF_Click(object sender, EventArgs e)
         {
-            statusLabel.Text = "";
+            StatusText = "";
             drawingList = [];
             gcodeList = [];
             objectIdentifier = [];
@@ -5861,12 +5895,13 @@ namespace NC_Tool
                 inputFileTxt = openFileDialog1.FileName;
                 if (inputFileTxt.Length > 0)
                 {
+                    StatusText = rm.GetString("String405");
                     dateiname.Text = inputFileTxt;
                     ReadFromFile(inputFileTxt);
                 }
             }
             openFileDialog1.Dispose();
-            statusLabel.Text = rm.GetString("String343");
+            StatusText = rm.GetString("String343");
             ZeichneDXF();
             TB_280.Focus();
             TB_280.SelectAll();
@@ -5937,7 +5972,7 @@ namespace NC_Tool
         // verwerfen und Standardwerte eintragen
         private void Abbrechen_17_Click(object sender, EventArgs e)
         {
-            statusLabel.Text = "";
+            StatusText = "";
             TB_280.Text = "1.0";
             TB_281.Text = "12000";
             TB_282.Text = "3.0";
@@ -5968,6 +6003,7 @@ namespace NC_Tool
             float Skalierung;
             try
             {
+                StatusText = rm.GetString("String354");
                 // Eingabefehler korrigieren
                 TB_280.Text = TB_280.Text.Replace(".", ",");
                 TB_281.Text = TB_281.Text.Replace(".", ",");
@@ -6752,6 +6788,11 @@ namespace NC_Tool
                         break;
                     }
             }
+        }
+        // Aktualisierung Statuszeile
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            statusLabel.Text = StatusText;
         }
         #endregion
 

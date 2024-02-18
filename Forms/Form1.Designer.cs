@@ -36,6 +36,7 @@ namespace NC_Tool
         [DebuggerStepThrough()]
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TabControl1 = new System.Windows.Forms.TabControl();
             this.TabPage1 = new System.Windows.Forms.TabPage();
@@ -669,7 +670,7 @@ namespace NC_Tool
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TabControl1.SuspendLayout();
             this.TabPage1.SuspendLayout();
             this.GroupBox6.SuspendLayout();
@@ -7154,6 +7155,10 @@ namespace NC_Tool
             this.statusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.statusLabel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7875,8 +7880,9 @@ namespace NC_Tool
         internal TabPage TabPage16;
         internal CheckBox ellipse_option;
         public PictureBox PictureBox17;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private ToolStripMenuItem DeutschToolStripMenuItem;
         private ToolStripMenuItem EnglishToolStripMenuItem;
+        private Timer timer1;
+        private System.ComponentModel.IContainer components;
     }
 }

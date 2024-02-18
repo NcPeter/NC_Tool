@@ -2199,6 +2199,7 @@ namespace NC_Tool
             {
                 My.MyProject.Forms.Form2.Ausgabe.AppendText("M30" + Constants.vbCrLf);
             }
+            My.MyProject.Forms.Form2.Show();
         }
         #endregion
 
