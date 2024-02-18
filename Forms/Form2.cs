@@ -2348,7 +2348,7 @@ namespace NC_Tool
         // Scroll-Syncronisation mit Zeilennummern
         private void Editor_VScroll(object sender, EventArgs e)
         {
-            Int32 nPos = Form2.GetScrollPos(Editor.Handle, 1);
+            Int64 nPos = Form2.GetScrollPos(Editor.Handle, 1);
             nPos <<= 16;
             uint wParam = 4 | (uint)nPos;
             Form2.SendMessage(Editor_ZN.Handle, 0x0115, new IntPtr(wParam), new IntPtr(0));

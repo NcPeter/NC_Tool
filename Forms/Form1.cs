@@ -4300,6 +4300,7 @@ namespace NC_Tool
                             Table_Pos++;
                         }
                     }
+                    Zyklen.BP[Table_Pos, 0] = 10000d;
                 }
                 else    // Drehwinkel <> 0                                            
                 {
