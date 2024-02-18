@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.VisualBasic;
-using Microsoft.VisualBasic.CompilerServices;
+﻿using System.Collections.Generic;
 
 namespace NC_Tool
 {
@@ -14,6 +8,7 @@ namespace NC_Tool
 
         public static void Font_lesen()
         {
+            // Font name: HP1345A
             if (Schriftsatz == 1)
             {
             My.MyProject.Forms.Form1.gList.Add(new List<string>
@@ -1310,11 +1305,12 @@ namespace NC_Tool
              "X0 Y9",
              "ZF"
             });     // *
-            }       // Font name: HP1345A
+            }
+            // 
             if (Schriftsatz == 2)
             {
 
-            }       //
+            }
         }
     }
 }
