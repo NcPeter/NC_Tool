@@ -1538,8 +1538,8 @@ Die Ausgabe erfolgt im Standard G-Code!</value>
     geholt.
     Projekt: 'DXFImporter'   /   E-mail: evrenda@yahoo.com
 
-4. Dieses Projekt ist Open Source. Größere Veränderungen bitte mit mir absprechen.
-    Komerzielle Verwendung ist nicht erwünscht.
+4. Dieses Projekt ist Open Source (GPL-3.0 -Lizenz).
+    Größere Veränderungen bitte mit mir absprechen, bzw. mich informieren.
     E-mail: petervoigt.dipps@gmx.de</value>
   </data>
   <data name="String403" xml:space="preserve">
@@ -1550,6 +1550,9 @@ Die Ausgabe erfolgt im Standard G-Code!</value>
   </data>
   <data name="String405" xml:space="preserve">
     <value>Datei wird geladen.</value>
+  </data>
+  <data name="String406" xml:space="preserve">
+    <value>Lizenz</value>
   </data>
   <data name="String41" xml:space="preserve">
     <value>maximale Verarbeitungswege der Maschine in mm</value>

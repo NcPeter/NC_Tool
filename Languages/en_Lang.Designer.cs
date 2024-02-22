@@ -3521,6 +3521,15 @@ namespace NC_Tool.Languages {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die License ähnelt.
+        /// </summary>
+        internal static string String406 {
+            get {
+                return ResourceManager.GetString("String406", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Maximum processing paths of the machine in mm ähnelt.
         /// </summary>
         internal static string String41 {

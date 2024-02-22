@@ -1525,9 +1525,9 @@ The output is in standard G code!</value>
 
     Project: 'DXFImporter'   /   E-mail: evrenda@yahoo.com
 
-4. This project is open source. Please discuss any major changes with me.
-    Commercial use is not desired.
-    E-mail: petervoigt.dipps@gmx.de</value>
+4. This project is open source (GPL 3.0 license).
+     Please discuss any major changes with me or inform me.
+     E-mail: petervoigt.dipps@gmx.de</value>
   </data>
   <data name="String403" xml:space="preserve">
     <value>Drilling matrix</value>
@@ -1537,6 +1537,9 @@ The output is in standard G code!</value>
   </data>
   <data name="String405" xml:space="preserve">
     <value>File is loading.</value>
+  </data>
+  <data name="String406" xml:space="preserve">
+    <value>License</value>
   </data>
   <data name="String41" xml:space="preserve">
     <value>Maximum processing paths of the machine in mm</value>
