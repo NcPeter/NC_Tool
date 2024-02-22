@@ -441,7 +441,7 @@ namespace NC_Tool
             My.MyProject.Forms.AboutBox1.Show();
         }
         #endregion
-// ------------------------------------------------------------------------------------------------
+        // ------------------------------------------------------------------------------------------------
         #region Zyklus Planfräsen in X und Y-Richtung
         // Hilfe anzeigen (Sicherheitsabstand)
         private void TB_3_GotFocus(object sender, EventArgs e)
