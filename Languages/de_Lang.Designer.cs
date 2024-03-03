@@ -3374,7 +3374,7 @@ namespace NC_Tool.Languages {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  Bewegungen mit programmiertem Vorschub ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die  Liniarbewegungen mit programmiertem Vorschub ähnelt.
         /// </summary>
         internal static string String392 {
             get {

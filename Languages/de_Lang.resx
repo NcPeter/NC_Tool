@@ -1481,7 +1481,7 @@ Die Anwendung startet wenn diese Meldung mit 'OK' bestätigt wurde.</value>
     <value> Bewegungen im Eilgang</value>
   </data>
   <data name="String392" xml:space="preserve">
-    <value> Bewegungen mit programmiertem Vorschub</value>
+    <value> Liniarbewegungen mit programmiertem Vorschub</value>
   </data>
   <data name="String393" xml:space="preserve">
     <value> Kreisbewegungen mit programmiertem Vorschub</value>

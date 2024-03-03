@@ -1466,7 +1466,7 @@ The application starts when this message is confirmed with 'OK'.</value>
     <value> Movements in rapid motion</value>
   </data>
   <data name="String392" xml:space="preserve">
-    <value> Movements with programmed feed</value>
+    <value> Liniar movements with programmed feed</value>
   </data>
   <data name="String393" xml:space="preserve">
     <value> Circular movements with programmed feed</value>

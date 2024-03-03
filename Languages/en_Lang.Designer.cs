@@ -3359,7 +3359,7 @@ namespace NC_Tool.Languages {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  Movements with programmed feed ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die  Liniar movements with programmed feed ähnelt.
         /// </summary>
         internal static string String392 {
             get {
