@@ -42,6 +42,7 @@ Zustelltiefe fahren.
 Die Ausgabe  erfolgt als Standard G-Code und ist im Ausgabefenster noch editierbar.
 Der G-Code wird zudem grafisch als Fräsbahn dargestellt.
 
+![image](https://github.com/NcPeter/NC_Tool/assets/156658983/50a29063-4b46-4f2b-a7a3-e76463653d54)
 
 
 Bisher gibt es einstellbar die Sprachen: deutsch und englisch
