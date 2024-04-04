@@ -62,6 +62,7 @@ namespace NC_Tool
         public string typeName;
         public ResourceManager rm;
         public string StatusText;
+        public int Fontweidht;
         #endregion
         public Form1()
         {
@@ -4800,7 +4801,18 @@ namespace NC_Tool
         // Schrifart wurde gewählt
         private void Font_Art_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            gList.Clear();
+            Schriftarten.Schriftsatz = Font_Art.SelectedIndex + 1;
+            switch (Font_Art.SelectedIndex + 1)
+            {
+                case 1:
+                    Fontweidht = 12;
+                    break;
+                case 2:
+                    Fontweidht = 13;
+                    break;
+            }
+            Schriftarten.Font_lesen();
         }
         private void Font_Art_Leave(object sender, EventArgs e)
         {
@@ -4859,8 +4871,8 @@ namespace NC_Tool
                 TB_224.Text = TB_224.Text.Replace(".", ",");
                 TB_225.Text = TB_225.Text.Replace(".", ",");
                 TB_226.Text = TB_226.Text.Replace(".", ",");
-                TB_227.Text = TB_227.Text.Replace(".", ",");
                 TB_228.Text = TB_228.Text.Replace(".", ",");
+                TB_229.Text = TB_229.Text.Replace(".", ",");
                 Fehler = false;
                 //Zyklusparameter übergeben
                 Zyklen.DT = Conversions.ToDouble(TB_220.Text);                      //Werkzeugdurchmesser
@@ -4940,7 +4952,7 @@ namespace NC_Tool
                 theFlyheight = Conversions.ToSingle(TB_222.Text);       // Sicherheitshöhe
                 theCutheight = Convert.ToSingle(TB_223.Text);           // Frästiefe
                 theFontheight = Convert.ToSingle(TB_228.Text);          // Schriftgröße
-                theSpace = 18;                                          // Abstand zwischen den Zeichen
+                theSpace = Fontweidht + Convert.ToInt16(TB_229.Text);   // Abstand zwischen den Zeichen
                 zspeed = Convert.ToInt16(TB_225.Text);                  // Vorschub Z
                 fspeed = Convert.ToInt16(TB_226.Text);                  // Vorschub Fräsen
                 if (theFlyheight > 0.5)
@@ -4962,6 +4974,7 @@ namespace NC_Tool
                 if (TB_227.Text != "")
                 {
                     string thestring = TB_227.Text;
+                    int stringlaenge = thestring.Length;
                     foreach (char thechar in thestring)
                     {
                         string tempstring = gList[1][3];
@@ -6330,24 +6343,31 @@ namespace NC_Tool
         }
         public void Getcoords(string thestring)
         {
+            string theXbit;
+            string theYbit;
             string nstring = thestring.Trim().ToUpper();
             int Xpos = nstring.LastIndexOf("X");
             int Ypos = nstring.LastIndexOf("Y");
-            if ((Xpos == -1) | (Ypos == -1))
+            if (Xpos == -1)
             {
-                MessageBox.Show(rm.GetString("String357"));
-                Application.Exit();
+                nstring = "X" + Convert.ToString(GX) + " " + nstring;
+                Xpos = nstring.LastIndexOf("X");
+                Ypos = nstring.LastIndexOf("Y");
+                //MessageBox.Show(rm.GetString("String357"));
+                //Application.Exit();
             }
-            else
+            else if (Ypos == -1)
             {
-                if (Ypos > Xpos)
-                {
-                    string theYbit = nstring.Substring(Ypos + 1);
-                    string theXbit = nstring.Substring(1, Ypos - 1).Trim();
-                    GX = Convert.ToSingle(theXbit);
-                    GY = Convert.ToSingle(theYbit);
-                    // int ac = 1;
-                }
+                nstring = nstring + " Y" + Convert.ToString(GY);
+                Xpos = nstring.LastIndexOf("X");
+                Ypos = nstring.LastIndexOf("Y");
+            }
+            if (Ypos > Xpos)
+            {
+                theYbit = nstring.Substring(Ypos + 1);
+                theXbit = nstring.Substring(1, Ypos - 1).Trim();
+                GX = Convert.ToSingle(theXbit);
+                GY = Convert.ToSingle(theYbit);
             }
         }
         // Treadsicheres schreiben in die Statuszeile
@@ -6668,6 +6688,7 @@ namespace NC_Tool
             Label67.Text = rm.GetString("String85");
             BT_loeschen.Text = rm.GetString("String88");
             GroupBox6.Text = rm.GetString("String230");
+            label219.Text = rm.GetString("String407");
             #endregion
             #region Infos und Meldungen
             Infostring = rm.GetString("String123");

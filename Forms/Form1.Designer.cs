@@ -671,6 +671,8 @@ namespace NC_Tool
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.TB_229 = new System.Windows.Forms.TextBox();
+            this.label219 = new System.Windows.Forms.Label();
             this.TabControl1.SuspendLayout();
             this.TabPage1.SuspendLayout();
             this.GroupBox6.SuspendLayout();
@@ -5211,6 +5213,8 @@ namespace NC_Tool
             // TabPage14
             // 
             this.TabPage14.BackColor = System.Drawing.Color.Lavender;
+            this.TabPage14.Controls.Add(this.label219);
+            this.TabPage14.Controls.Add(this.TB_229);
             this.TabPage14.Controls.Add(this.Font_Art);
             this.TabPage14.Controls.Add(this.label190);
             this.TabPage14.Controls.Add(this.Label191);
@@ -7159,6 +7163,23 @@ namespace NC_Tool
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // TB_229
+            // 
+            this.TB_229.Location = new System.Drawing.Point(470, 356);
+            this.TB_229.Name = "TB_229";
+            this.TB_229.Size = new System.Drawing.Size(51, 20);
+            this.TB_229.TabIndex = 494;
+            this.TB_229.Text = "4";
+            this.TB_229.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label219
+            // 
+            this.label219.AutoSize = true;
+            this.label219.Location = new System.Drawing.Point(527, 359);
+            this.label219.Name = "label219";
+            this.label219.Size = new System.Drawing.Size(0, 13);
+            this.label219.TabIndex = 505;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7884,5 +7905,7 @@ namespace NC_Tool
         private ToolStripMenuItem EnglishToolStripMenuItem;
         private Timer timer1;
         private System.ComponentModel.IContainer components;
+        private Label label219;
+        internal TextBox TB_229;
     }
 }
