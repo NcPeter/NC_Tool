@@ -3530,6 +3530,15 @@ namespace NC_Tool.Languages {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Character spacing ähnelt.
+        /// </summary>
+        internal static string String407 {
+            get {
+                return ResourceManager.GetString("String407", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Maximum processing paths of the machine in mm ähnelt.
         /// </summary>
         internal static string String41 {

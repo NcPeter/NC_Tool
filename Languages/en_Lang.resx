@@ -1541,6 +1541,9 @@ The output is in standard G code!</value>
   <data name="String406" xml:space="preserve">
     <value>License</value>
   </data>
+  <data name="String407" xml:space="preserve">
+    <value>Character spacing</value>
+  </data>
   <data name="String41" xml:space="preserve">
     <value>Maximum processing paths of the machine in mm</value>
   </data>

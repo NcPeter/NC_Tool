@@ -3544,6 +3544,15 @@ namespace NC_Tool.Languages {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zeichenabstand ähnelt.
+        /// </summary>
+        internal static string String407 {
+            get {
+                return ResourceManager.GetString("String407", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die maximale Verarbeitungswege der Maschine in mm ähnelt.
         /// </summary>
         internal static string String41 {

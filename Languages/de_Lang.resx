@@ -1554,6 +1554,9 @@ Die Ausgabe erfolgt im Standard G-Code!</value>
   <data name="String406" xml:space="preserve">
     <value>Lizenz</value>
   </data>
+  <data name="String407" xml:space="preserve">
+    <value>Zeichenabstand</value>
+  </data>
   <data name="String41" xml:space="preserve">
     <value>maximale Verarbeitungswege der Maschine in mm</value>
   </data>
