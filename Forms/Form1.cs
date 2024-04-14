@@ -62,7 +62,6 @@ namespace NC_Tool
         public string typeName;
         public ResourceManager rm;
         public string StatusText;
-        public int Fontweidht;
         #endregion
         public Form1()
         {
@@ -4803,16 +4802,16 @@ namespace NC_Tool
         {
             gList.Clear();
             Schriftarten.Schriftsatz = Font_Art.SelectedIndex + 1;
-            switch (Font_Art.SelectedIndex + 1)
+            Schriftarten.Font_lesen();
+            switch (Font_Art.SelectedIndex)
             {
-                case 1:
-                    Fontweidht = 12;
+                case 0:
+                    TB_227.Font = new System.Drawing.Font("OCR-A BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     break;
-                case 2:
-                    Fontweidht = 13;
+                case 1:
+                    TB_227.Font = new System.Drawing.Font("RomanS_IV25", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     break;
             }
-            Schriftarten.Font_lesen();
         }
         private void Font_Art_Leave(object sender, EventArgs e)
         {
@@ -4860,6 +4859,7 @@ namespace NC_Tool
             int fspeed;
             bool step = false;
             bool step1 = false;
+            int Breite = 0;
             try
             {
                 StatusText = rm.GetString("String354");
@@ -4952,7 +4952,7 @@ namespace NC_Tool
                 theFlyheight = Conversions.ToSingle(TB_222.Text);       // Sicherheitshöhe
                 theCutheight = Convert.ToSingle(TB_223.Text);           // Frästiefe
                 theFontheight = Convert.ToSingle(TB_228.Text);          // Schriftgröße
-                theSpace = Fontweidht + Convert.ToInt16(TB_229.Text);   // Abstand zwischen den Zeichen
+                theSpace = Convert.ToInt16(TB_229.Text);                // Abstand zwischen den Zeichen
                 zspeed = Convert.ToInt16(TB_225.Text);                  // Vorschub Z
                 fspeed = Convert.ToInt16(TB_226.Text);                  // Vorschub Fräsen
                 if (theFlyheight > 0.5)
@@ -4985,7 +4985,8 @@ namespace NC_Tool
                             {
                                 My.MyProject.Forms.Form2.Ausgabe.AppendText(rm.GetString("String338") + thechar + " )" + Constants.vbCrLf);
                                 int numberofitems = gcodestringlist.Count();
-                                for (int i = 1; i < (numberofitems); i++)
+                                Breite = Convert.ToInt16(gcodestringlist[1]);
+                                for (int i = 2; i < (numberofitems); i++)
                                 {
                                     string ls = gcodestringlist[i];
                                     if (ls.Trim() == "ZF")
@@ -5040,7 +5041,7 @@ namespace NC_Tool
                                         }
                                     }
                                 }
-                                Xofs += theSpace;
+                                Xofs += Breite + theSpace;
                             }
                         }
                     }

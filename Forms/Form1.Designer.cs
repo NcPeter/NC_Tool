@@ -458,6 +458,8 @@ namespace NC_Tool
             this.PictureBox13 = new System.Windows.Forms.PictureBox();
             this.Label167 = new System.Windows.Forms.Label();
             this.TabPage14 = new System.Windows.Forms.TabPage();
+            this.label219 = new System.Windows.Forms.Label();
+            this.TB_229 = new System.Windows.Forms.TextBox();
             this.Font_Art = new System.Windows.Forms.ComboBox();
             this.label190 = new System.Windows.Forms.Label();
             this.Label191 = new System.Windows.Forms.Label();
@@ -671,8 +673,6 @@ namespace NC_Tool
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.TB_229 = new System.Windows.Forms.TextBox();
-            this.label219 = new System.Windows.Forms.Label();
             this.TabControl1.SuspendLayout();
             this.TabPage1.SuspendLayout();
             this.GroupBox6.SuspendLayout();
@@ -5246,12 +5246,29 @@ namespace NC_Tool
             this.TabPage14.Size = new System.Drawing.Size(689, 495);
             this.TabPage14.TabIndex = 12;
             // 
+            // label219
+            // 
+            this.label219.AutoSize = true;
+            this.label219.Location = new System.Drawing.Point(527, 359);
+            this.label219.Name = "label219";
+            this.label219.Size = new System.Drawing.Size(0, 13);
+            this.label219.TabIndex = 505;
+            // 
+            // TB_229
+            // 
+            this.TB_229.Location = new System.Drawing.Point(470, 356);
+            this.TB_229.Name = "TB_229";
+            this.TB_229.Size = new System.Drawing.Size(51, 20);
+            this.TB_229.TabIndex = 494;
+            this.TB_229.Text = "4";
+            this.TB_229.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Font_Art
             // 
             this.Font_Art.FormattingEnabled = true;
             this.Font_Art.Items.AddRange(new object[] {
             "HP1345A",
-            "RomanS"});
+            "RomanS_IV50"});
             this.Font_Art.Location = new System.Drawing.Point(470, 259);
             this.Font_Art.Name = "Font_Art";
             this.Font_Art.Size = new System.Drawing.Size(204, 21);
@@ -5297,9 +5314,10 @@ namespace NC_Tool
             // 
             // TB_227
             // 
+            this.TB_227.Font = new System.Drawing.Font("OCR-A BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_227.Location = new System.Drawing.Point(470, 330);
             this.TB_227.Name = "TB_227";
-            this.TB_227.Size = new System.Drawing.Size(204, 20);
+            this.TB_227.Size = new System.Drawing.Size(204, 21);
             this.TB_227.TabIndex = 493;
             this.TB_227.Text = "Beispiel";
             this.TB_227.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -7162,23 +7180,6 @@ namespace NC_Tool
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // TB_229
-            // 
-            this.TB_229.Location = new System.Drawing.Point(470, 356);
-            this.TB_229.Name = "TB_229";
-            this.TB_229.Size = new System.Drawing.Size(51, 20);
-            this.TB_229.TabIndex = 494;
-            this.TB_229.Text = "4";
-            this.TB_229.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label219
-            // 
-            this.label219.AutoSize = true;
-            this.label219.Location = new System.Drawing.Point(527, 359);
-            this.label219.Name = "label219";
-            this.label219.Size = new System.Drawing.Size(0, 13);
-            this.label219.TabIndex = 505;
             // 
             // Form1
             // 
