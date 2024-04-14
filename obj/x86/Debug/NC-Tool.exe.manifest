@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NC-Tool.exe" size="2463128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NC-Tool.exe" size="2644888">
       <assemblyIdentity name="NC-Tool" version="1.3.1.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ggIsQ+w/hGf2KIeK1JIXUQbJHv0LFQz2BgsmJtRsE4A=</dsig:DigestValue>
+        <dsig:DigestValue>cWvZZa/J0ZPo82bNrNdNhS3UPCLjxU/GH6h3DX1woxY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
