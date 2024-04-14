@@ -31,7 +31,7 @@ Verfügbare Zyklen:
     - Bohrbild Lochkreis
     - Bohrbild auf Linien (Lochmuster)
 7. Sonderzyklen
-    - Buchstaben und Schriftzüge gravieren
+    - Buchstaben und Schriftzüge gravieren (aktuell zwei Schriftarten verfügbar)
     - 2D DXF-Daten gravieren
 
 Die Zyklen sind denen von Heidenhain iTNC530 nachempfunden, wurden aber komplett
